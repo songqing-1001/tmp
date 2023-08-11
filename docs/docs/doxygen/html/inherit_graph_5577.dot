@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::SCEVOperand",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SCEVOperand.html",tooltip="struct for holding enough information to help calculate the cost of the given SCEV when expanded into..."];
+}

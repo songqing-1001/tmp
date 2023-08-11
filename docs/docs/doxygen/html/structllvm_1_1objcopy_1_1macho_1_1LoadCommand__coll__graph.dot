@@ -1,0 +1,15 @@
+digraph "llvm::objcopy::macho::LoadCommand"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::objcopy::macho\l::LoadCommand",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Sections" ,fontname="Helvetica"];
+  Node2 [label="vector\< std::unique\l_ptr\< llvm::objcopy\l::macho::Section \> \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MachOLoadCommand" ,fontname="Helvetica"];
+  Node3 [label="llvm::MachO::macho\l_load_command",height=0.2,width=0.4,color="black",URL="$unionllvm_1_1MachO_1_1macho__load__command.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Payload" ,fontname="Helvetica"];
+  Node4 [label="vector\< uint8_t \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

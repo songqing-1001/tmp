@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::orc::shared::\lSPSSerializationTraits\l\< SPSMachOJITDylibDepInfo,\l MachOPlatform::MachOJITDylibDep\lInfo \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1SPSSerializationTraits_3_01SPSMachOJITDylibDepInfo_00_01MachOPlatf7a1060906f80d5d82f7db47c5ddca552.html",tooltip=" "];
+}

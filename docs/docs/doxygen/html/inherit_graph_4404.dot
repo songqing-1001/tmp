@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::OpenMPIRBuilder\l::TargetDataInfo",height=0.2,width=0.4,color="black",URL="$classllvm_1_1OpenMPIRBuilder_1_1TargetDataInfo.html",tooltip="Struct that keeps the information that should be kept throughout a 'target data' region."];
+}

@@ -1,0 +1,10 @@
+digraph "clang::threadSafety::til::Project"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::threadSafety\l::til::Project",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Project a named slot from a C++ struct or class."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::threadSafety\l::til::SExpr",height=0.2,width=0.4,color="black",URL="$classclang_1_1threadSafety_1_1til_1_1SExpr.html",tooltip="Base class for AST nodes in the typed intermediate language."];
+}

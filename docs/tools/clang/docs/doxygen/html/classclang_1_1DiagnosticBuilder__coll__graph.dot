@@ -1,0 +1,28 @@
+digraph "clang::DiagnosticBuilder"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::DiagnosticBuilder",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A little helper class used to produce diagnostics."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::StreamingDiagnostic",height=0.2,width=0.4,color="black",URL="$classclang_1_1StreamingDiagnostic.html",tooltip="The streaming interface shared between DiagnosticBuilder and PartialDiagnostic."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DiagStorage" ,fontname="Helvetica"];
+  Node3 [label="clang::DiagnosticStorage",height=0.2,width=0.4,color="black",URL="$structclang_1_1DiagnosticStorage.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DiagRanges" ,fontname="Helvetica"];
+  Node4 [label="llvm::SmallVector\<\l clang::CharSourceRange, 8 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::CharSourceRange, 8 \>" ,fontname="Helvetica"];
+  Node5 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FixItHints" ,fontname="Helvetica"];
+  Node6 [label="llvm::SmallVector\<\l clang::FixItHint, 6 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::FixItHint, 6 \>" ,fontname="Helvetica"];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DiagArgumentsVal" ,fontname="Helvetica"];
+  Node7 [label="uint64_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DiagArgumentsStr" ,fontname="Helvetica"];
+  Node8 [label="string",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DiagArgumentsKind\nNumDiagArgs" ,fontname="Helvetica"];
+  Node9 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Allocator" ,fontname="Helvetica"];
+  Node10 [label="clang::StreamingDiagnostic\l::DiagStorageAllocator",height=0.2,width=0.4,color="black",URL="$classclang_1_1StreamingDiagnostic_1_1DiagStorageAllocator.html",tooltip="An allocator for DiagnosticStorage objects, which uses a small cache to objects, used to reduce mallo..."];
+}

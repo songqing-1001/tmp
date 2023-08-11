@@ -1,0 +1,19 @@
+digraph "llvm::dxbc::Header"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::dxbc::Header",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FileHash" ,fontname="Helvetica"];
+  Node2 [label="llvm::dxbc::Hash",height=0.2,width=0.4,color="black",URL="$structllvm_1_1dxbc_1_1Hash.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Digest" ,fontname="Helvetica"];
+  Node3 [label="uint8_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FileSize\nPartCount" ,fontname="Helvetica"];
+  Node4 [label="uint32_t",height=0.2,width=0.4,color="black",URL="$classuint32__t.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Magic" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Version" ,fontname="Helvetica"];
+  Node5 [label="llvm::dxbc::ContainerVersion",height=0.2,width=0.4,color="black",URL="$structllvm_1_1dxbc_1_1ContainerVersion.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Minor\nMajor" ,fontname="Helvetica"];
+  Node6 [label="uint16_t",height=0.2,width=0.4,color="black",URL="$classuint16__t.html",tooltip=" "];
+}

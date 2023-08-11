@@ -1,0 +1,12 @@
+digraph "include/clang/Tooling/ASTDiff" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e1ce9e33a6714cd40d140bf8ba3da7d2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Tooling" fontname="Helvetica", fontsize="10", URL="dir_e1ce9e33a6714cd40d140bf8ba3da7d2.html"]
+  dir_a98d682560d5dbb8a50d4060d6ae280b [shape=box, label="ASTDiff", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a98d682560d5dbb8a50d4060d6ae280b.html"];
+  }
+  dir_b7f1fb8e22c16abc1bb9b644ee717a58 [shape=box label="AST" URL="dir_b7f1fb8e22c16abc1bb9b644ee717a58.html"];
+  dir_a98d682560d5dbb8a50d4060d6ae280b->dir_b7f1fb8e22c16abc1bb9b644ee717a58 [headlabel="1", labeldistance=1.5 headhref="dir_000098_000013.html"];
+}

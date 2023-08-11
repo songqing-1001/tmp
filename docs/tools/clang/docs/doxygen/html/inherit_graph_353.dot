@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::CapturedStmt\l::Capture",height=0.2,width=0.4,color="black",URL="$classclang_1_1CapturedStmt_1_1Capture.html",tooltip="Describes the capture of either a variable, or 'this', or variable-length array type."];
+}

@@ -1,0 +1,18 @@
+digraph "llvm::LoopUnrollOptions"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::LoopUnrollOptions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A set of parameters used to control various transforms performed by the LoopUnroll pass."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AllowRuntime\nAllowPartial\nAllowProfileBasedPeeling\nAllowUpperBound\nAllowPeeling" ,fontname="Helvetica"];
+  Node2 [label="optional\< bool \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FullUnrollMaxCount" ,fontname="Helvetica"];
+  Node3 [label="optional\< unsigned \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OptLevel" ,fontname="Helvetica"];
+  Node4 [label="int",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OnlyWhenForced" ,fontname="Helvetica"];
+  Node5 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ForgetSCEV" ,fontname="Helvetica"];
+  Node6 [label="const",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

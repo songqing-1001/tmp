@@ -1,0 +1,46 @@
+digraph "llvm::orc::LLLazyJITBuilder"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::orc::LLLazyJITBuilder",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Constructs LLLazyJIT instances."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::orc::LLLazyJITBuilder\lState",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1LLLazyJITBuilderState.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::orc::LLJITBuilderState",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1LLJITBuilderState.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" JTMB" ,fontname="Helvetica"];
+  Node4 [label="optional\< llvm::orc\l::JITTargetMachineBuilder \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ES" ,fontname="Helvetica"];
+  Node5 [label="unique_ptr\< llvm::orc\l::ExecutionSession \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SetUpPlatform" ,fontname="Helvetica"];
+  Node6 [label="function\< Error(LLJIT &J)\>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CreateObjectLinkingLayer" ,fontname="Helvetica"];
+  Node7 [label="function\< Expected\l\< std::unique_ptr\< ObjectLayer\l \> \>(ExecutionSession &, const\l Triple &)\>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NumCompileThreads" ,fontname="Helvetica"];
+  Node8 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" EPC" ,fontname="Helvetica"];
+  Node9 [label="unique_ptr\< llvm::orc\l::ExecutorProcessControl \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DL" ,fontname="Helvetica"];
+  Node10 [label="optional\< llvm::DataLayout \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CreateCompileFunction" ,fontname="Helvetica"];
+  Node11 [label="function\< Expected\l\< std::unique_ptr\< IRCompile\lLayer::IRCompiler \> \>(JITTargetMachine\lBuilder JTMB)\>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LazyCompileFailureAddr" ,fontname="Helvetica"];
+  Node12 [label="llvm::orc::ExecutorAddr",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1ExecutorAddr.html",tooltip="Represents an address in the executor process."];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ISMBuilder" ,fontname="Helvetica"];
+  Node13 [label="function\< std::unique\l_ptr\< IndirectStubsManager \>()\>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TT" ,fontname="Helvetica"];
+  Node14 [label="llvm::Triple",height=0.2,width=0.4,color="black",URL="$classllvm_1_1Triple.html",tooltip="Triple - Helper class for working with autoconf configuration names."];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LCTMgr" ,fontname="Helvetica"];
+  Node15 [label="unique_ptr\< llvm::orc\l::LazyCallThroughManager \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node16 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="llvm::orc::LLLazyJITBuilder\lSetters\< LLLazyJIT, LLLazyJITBuilder,\l LLLazyJITBuilderState \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1LLLazyJITBuilderSetters.html",tooltip=" "];
+  Node17 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="llvm::orc::LLJITBuilderSetters\l\< LLLazyJIT, LLLazyJITBuilder,\l LLLazyJITBuilderState \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1LLJITBuilderSetters.html",tooltip=" "];
+  Node18 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< LLLazyJIT, LLLazyJITBuilder,\l LLLazyJITBuilderState \>" ,fontname="Helvetica"];
+  Node18 [label="llvm::orc::LLJITBuilderSetters\l\< JITType, SetterImpl, State \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1LLJITBuilderSetters.html",tooltip=" "];
+  Node19 -> Node16 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< LLLazyJIT, LLLazyJITBuilder,\l LLLazyJITBuilderState \>" ,fontname="Helvetica"];
+  Node19 [label="llvm::orc::LLLazyJITBuilder\lSetters\< JITType, SetterImpl,\l State \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1LLLazyJITBuilderSetters.html",tooltip=" "];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

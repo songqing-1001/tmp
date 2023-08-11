@@ -1,0 +1,55 @@
+digraph "clang::CanQual&lt; T &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::CanQual\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a canonical, potentially-qualified type."];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DependentSizedExtVector\lType \>" ,fontname="Helvetica"];
+  Node2 [label="clang::CanQual\< Dependent\lSizedExtVectorType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< RecordType \>" ,fontname="Helvetica"];
+  Node3 [label="clang::CanQual\< RecordType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DecltypeType \>" ,fontname="Helvetica"];
+  Node4 [label="clang::CanQual\< Decltype\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< MemberPointerType \>" ,fontname="Helvetica"];
+  Node5 [label="clang::CanQual\< MemberPointer\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TagType \>" ,fontname="Helvetica"];
+  Node6 [label="clang::CanQual\< TagType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TemplateTypeParmType \>" ,fontname="Helvetica"];
+  Node7 [label="clang::CanQual\< Template\lTypeParmType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< FunctionProtoType \>" ,fontname="Helvetica"];
+  Node8 [label="clang::CanQual\< Function\lProtoType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< BlockPointerType \>" ,fontname="Helvetica"];
+  Node9 [label="clang::CanQual\< BlockPointer\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ObjCObjectPointerType \>" ,fontname="Helvetica"];
+  Node10 [label="clang::CanQual\< ObjCObject\lPointerType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ReferenceType \>" ,fontname="Helvetica"];
+  Node11 [label="clang::CanQual\< Reference\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< FunctionType \>" ,fontname="Helvetica"];
+  Node12 [label="clang::CanQual\< Function\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< UnaryTransformType \>" ,fontname="Helvetica"];
+  Node13 [label="clang::CanQual\< UnaryTransform\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TypeOfType \>" ,fontname="Helvetica"];
+  Node14 [label="clang::CanQual\< TypeOfType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< EnumType \>" ,fontname="Helvetica"];
+  Node15 [label="clang::CanQual\< EnumType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node16 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Type \>" ,fontname="Helvetica"];
+  Node16 [label="clang::CanQual\< Type \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< VectorType \>" ,fontname="Helvetica"];
+  Node17 [label="clang::CanQual\< VectorType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node18 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< LValueReferenceType \>" ,fontname="Helvetica"];
+  Node18 [label="clang::CanQual\< LValueReference\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node19 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< PointerType \>" ,fontname="Helvetica"];
+  Node19 [label="clang::CanQual\< PointerType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node20 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ExtVectorType \>" ,fontname="Helvetica"];
+  Node20 [label="clang::CanQual\< ExtVector\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node21 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ComplexType \>" ,fontname="Helvetica"];
+  Node21 [label="clang::CanQual\< ComplexType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node22 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< RValueReferenceType \>" ,fontname="Helvetica"];
+  Node22 [label="clang::CanQual\< RValueReference\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node23 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< FunctionNoProtoType \>" ,fontname="Helvetica"];
+  Node23 [label="clang::CanQual\< Function\lNoProtoType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node1 -> Node24 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ObjCObjectType \>" ,fontname="Helvetica"];
+  Node24 [label="clang::CanQual\< ObjCObject\lType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+}

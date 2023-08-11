@@ -1,0 +1,20 @@
+digraph "clang::TemplateParamObjectDecl"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::TemplateParamObjectDecl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A template parameter object."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::ValueDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1ValueDecl.html",tooltip="Represent the declaration of a variable (in which case it is an lvalue) a function (in which case it ..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::NamedDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1NamedDecl.html",tooltip="This represents a decl that may have a name."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::Decl",height=0.2,width=0.4,color="black",URL="$classclang_1_1Decl.html",tooltip="Decl - This represents one declaration (or definition), e.g."];
+  Node5 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::Mergeable\< Template\lParamObjectDecl \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1Mergeable.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TemplateParamObjectDecl \>" ,fontname="Helvetica"];
+  Node6 [label="clang::Mergeable\< decl\l_type \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1Mergeable.html",tooltip="Provides common interface for the Decls that cannot be redeclared, but can be merged if the same decl..."];
+  Node7 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FoldingSetNode",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

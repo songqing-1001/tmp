@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::orc::ExecutorProcess\lControl::RunAsTask",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1ExecutorProcessControl_1_1RunAsTask.html",tooltip="Constructs an IncomingWFRHandler from a function object by creating a new function object that dispat..."];
+}

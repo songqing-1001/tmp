@@ -1,0 +1,16 @@
+digraph "clang::transformer::Edit"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::transformer\l::Edit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A concrete description of a source edit, represented by a character range in the source to be replace..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Kind" ,fontname="Helvetica"];
+  Node2 [label="EditKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Metadata" ,fontname="Helvetica"];
+  Node3 [label="Any",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Range" ,fontname="Helvetica"];
+  Node4 [label="clang::CharSourceRange",height=0.2,width=0.4,color="black",URL="$classclang_1_1CharSourceRange.html",tooltip="Represents a character-granular source range."];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Note\nReplacement" ,fontname="Helvetica"];
+  Node5 [label="string",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

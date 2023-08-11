@@ -1,0 +1,12 @@
+digraph "lib/Tooling/Core" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c4270fa7a06cd7372c7af2452fb3367e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Tooling" fontname="Helvetica", fontsize="10", URL="dir_c4270fa7a06cd7372c7af2452fb3367e.html"]
+  dir_a185277bca4bef34cc189af07116b3ce [shape=box, label="Core", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a185277bca4bef34cc189af07116b3ce.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_a185277bca4bef34cc189af07116b3ce->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="14", labeldistance=1.5 headhref="dir_000063_000001.html"];
+}

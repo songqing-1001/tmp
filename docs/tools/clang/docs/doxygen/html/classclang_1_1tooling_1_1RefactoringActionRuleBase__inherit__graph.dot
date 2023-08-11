@@ -1,0 +1,21 @@
+digraph "clang::tooling::RefactoringActionRuleBase"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::tooling::Refactoring\lActionRuleBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A common refactoring action rule interface that defines the 'invoke' function that performs the refac..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::tooling::FindSymbol\lOccurrencesRefactoringRule",height=0.2,width=0.4,color="black",URL="$classclang_1_1tooling_1_1FindSymbolOccurrencesRefactoringRule.html",tooltip="A type of refactoring action rule that finds a set of symbol occurrences that reference a particular ..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::tooling::Refactoring\lActionRule",height=0.2,width=0.4,color="black",URL="$classclang_1_1tooling_1_1RefactoringActionRule.html",tooltip="A refactoring action rule is a wrapper class around a specific refactoring action rule (SourceChangeR..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::tooling::SourceChange\lRefactoringRule",height=0.2,width=0.4,color="black",URL="$classclang_1_1tooling_1_1SourceChangeRefactoringRule.html",tooltip="A type of refactoring action rule that produces source replacements in the form of atomic changes."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::tooling::ExtractFunction",height=0.2,width=0.4,color="black",URL="$classclang_1_1tooling_1_1ExtractFunction.html",tooltip="An \"Extract Function\" refactoring moves code into a new function that's then called from the place wh..."];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::tooling::Qualified\lRenameRule",height=0.2,width=0.4,color="black",URL="$classclang_1_1tooling_1_1QualifiedRenameRule.html",tooltip=" "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="clang::tooling::RenameOccurrences",height=0.2,width=0.4,color="black",URL="$classclang_1_1tooling_1_1RenameOccurrences.html",tooltip=" "];
+}

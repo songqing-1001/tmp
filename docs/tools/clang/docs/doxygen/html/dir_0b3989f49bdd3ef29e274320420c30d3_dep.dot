@@ -1,0 +1,22 @@
+digraph "lib/DirectoryWatcher" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_97aefd0d527b934f1d99a682da8fe6a9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_97aefd0d527b934f1d99a682da8fe6a9.html"]
+  subgraph clusterdir_0b3989f49bdd3ef29e274320420c30d3 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0b3989f49bdd3ef29e274320420c30d3.html"];
+    dir_0b3989f49bdd3ef29e274320420c30d3 [shape=plaintext label="DirectoryWatcher"];
+    dir_eb29a699d4e119aa6b9f15342c1ef0f2 [shape=box label="default" color="black" fillcolor="white" style="filled" URL="dir_eb29a699d4e119aa6b9f15342c1ef0f2.html"];
+    dir_3d7a1ee98779685acf547493593d9483 [shape=box label="linux" color="black" fillcolor="white" style="filled" URL="dir_3d7a1ee98779685acf547493593d9483.html"];
+    dir_9003b83ff7e514198d9fd409cbc49a76 [shape=box label="mac" color="black" fillcolor="white" style="filled" URL="dir_9003b83ff7e514198d9fd409cbc49a76.html"];
+    dir_fcd17e630b186a5093adbc84cd41ad4f [shape=box label="windows" color="black" fillcolor="white" style="filled" URL="dir_fcd17e630b186a5093adbc84cd41ad4f.html"];
+  }
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_eb29a699d4e119aa6b9f15342c1ef0f2->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000107_000001.html"];
+  dir_fcd17e630b186a5093adbc84cd41ad4f->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000110_000001.html"];
+  dir_9003b83ff7e514198d9fd409cbc49a76->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000109_000001.html"];
+  dir_3d7a1ee98779685acf547493593d9483->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000108_000001.html"];
+}

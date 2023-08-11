@@ -1,0 +1,12 @@
+digraph "include/llvm/Testing/Annotations" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6b40c0cfc9c0572062b47f473228bea5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Testing" fontname="Helvetica", fontsize="10", URL="dir_6b40c0cfc9c0572062b47f473228bea5.html"]
+  dir_10fbde2209ce125e98d0cbebb0158d32 [shape=box, label="Annotations", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_10fbde2209ce125e98d0cbebb0158d32.html"];
+  }
+  dir_32453792af2ba70c54e3ccae3a790d1b [shape=box label="ADT" URL="dir_32453792af2ba70c54e3ccae3a790d1b.html"];
+  dir_10fbde2209ce125e98d0cbebb0158d32->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="3", labeldistance=1.5 headhref="dir_000304_000007.html"];
+}

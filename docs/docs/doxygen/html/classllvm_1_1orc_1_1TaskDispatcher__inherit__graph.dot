@@ -1,0 +1,12 @@
+digraph "llvm::orc::TaskDispatcher"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::orc::TaskDispatcher",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract base for classes that dispatch ORC Tasks."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::orc::DynamicThread\lPoolTaskDispatcher",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1DynamicThreadPoolTaskDispatcher.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::orc::InPlaceTaskDispatcher",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1InPlaceTaskDispatcher.html",tooltip="Runs all tasks on the current thread."];
+}

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::sema::LambdaScope\lInfo::ShadowedOuterDecl",height=0.2,width=0.4,color="black",URL="$structclang_1_1sema_1_1LambdaScopeInfo_1_1ShadowedOuterDecl.html",tooltip="Contains all of the variables defined in this lambda that shadow variables that were defined in paren..."];
+}

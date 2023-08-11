@@ -1,0 +1,12 @@
+digraph "lib/DebugInfo/DWARF" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fd055cdb294ed2abe541ad964f928ab2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DebugInfo" fontname="Helvetica", fontsize="10", URL="dir_fd055cdb294ed2abe541ad964f928ab2.html"]
+  dir_d0459d4496fd2ef8c1cc111460b1dacb [shape=box, label="DWARF", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d0459d4496fd2ef8c1cc111460b1dacb.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_d0459d4496fd2ef8c1cc111460b1dacb->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="289", labeldistance=1.5 headhref="dir_000045_000001.html"];
+}

@@ -1,0 +1,15 @@
+digraph "lib/Target/DirectX/MCTargetDesc" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2c957dfb38624d46c4493f76ab744bd5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DirectX" fontname="Helvetica", fontsize="10", URL="dir_2c957dfb38624d46c4493f76ab744bd5.html"]
+  dir_ce1962d66c10d58f0e7ad868c51653e4 [shape=box, label="MCTargetDesc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ce1962d66c10d58f0e7ad868c51653e4.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_9db2a2da39bf7063a47d1913040ed070 [shape=box label="TargetInfo" URL="dir_9db2a2da39bf7063a47d1913040ed070.html"];
+  dir_ce1962d66c10d58f0e7ad868c51653e4->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="15", labeldistance=1.5 headhref="dir_000136_000001.html"];
+  dir_ce1962d66c10d58f0e7ad868c51653e4->dir_9db2a2da39bf7063a47d1913040ed070 [headlabel="1", labeldistance=1.5 headhref="dir_000136_000137.html"];
+  dir_9db2a2da39bf7063a47d1913040ed070->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="3", labeldistance=1.5 headhref="dir_000137_000001.html"];
+}

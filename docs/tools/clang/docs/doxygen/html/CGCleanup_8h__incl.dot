@@ -1,0 +1,45 @@
+digraph "lib/CodeGen/CGCleanup.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="lib/CodeGen/CGCleanup.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EHScopeStack.h",height=0.2,width=0.4,color="black",URL="$EHScopeStack_8h.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang/Basic/LLVM.h",height=0.2,width=0.4,color="black",URL="$LLVM_8h.html",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="llvm/Support/Casting.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm/ADT/SmallVector.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm/ADT/STLExtras.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="llvm/IR/BasicBlock.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="llvm/IR/Instructions.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="llvm/IR/Value.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Address.h",height=0.2,width=0.4,color="black",URL="$Address_8h.html",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="clang/AST/CharUnits.h",height=0.2,width=0.4,color="black",URL="$CharUnits_8h.html",tooltip=" "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="llvm/ADT/DenseMapInfo.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="llvm/Support/Alignment.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="llvm/Support/DataTypes.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="llvm/Support/MathExtras.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="llvm/ADT/PointerIntPair.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="llvm/IR/Constants.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="llvm/ADT/SmallPtrSet.h",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

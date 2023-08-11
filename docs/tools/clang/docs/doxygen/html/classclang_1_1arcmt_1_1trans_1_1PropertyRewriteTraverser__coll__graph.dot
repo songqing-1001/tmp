@@ -1,0 +1,10 @@
+digraph "clang::arcmt::trans::PropertyRewriteTraverser"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::arcmt::trans\l::PropertyRewriteTraverser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::arcmt::trans\l::ASTTraverser",height=0.2,width=0.4,color="black",URL="$classclang_1_1arcmt_1_1trans_1_1ASTTraverser.html",tooltip=" "];
+}

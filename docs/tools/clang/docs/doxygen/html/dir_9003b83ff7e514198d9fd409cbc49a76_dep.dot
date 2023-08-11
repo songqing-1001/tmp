@@ -1,0 +1,12 @@
+digraph "lib/DirectoryWatcher/mac" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0b3989f49bdd3ef29e274320420c30d3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DirectoryWatcher" fontname="Helvetica", fontsize="10", URL="dir_0b3989f49bdd3ef29e274320420c30d3.html"]
+  dir_9003b83ff7e514198d9fd409cbc49a76 [shape=box, label="mac", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9003b83ff7e514198d9fd409cbc49a76.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_9003b83ff7e514198d9fd409cbc49a76->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000109_000001.html"];
+}

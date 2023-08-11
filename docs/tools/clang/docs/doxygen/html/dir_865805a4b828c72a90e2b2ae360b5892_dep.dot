@@ -1,0 +1,12 @@
+digraph "lib/StaticAnalyzer/Core" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5323669f7aaa7f9ff43db9a3c9e1bf2d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="StaticAnalyzer" fontname="Helvetica", fontsize="10", URL="dir_5323669f7aaa7f9ff43db9a3c9e1bf2d.html"]
+  dir_865805a4b828c72a90e2b2ae360b5892 [shape=box, label="Core", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_865805a4b828c72a90e2b2ae360b5892.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_865805a4b828c72a90e2b2ae360b5892->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="461", labeldistance=1.5 headhref="dir_000057_000001.html"];
+}

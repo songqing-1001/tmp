@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::DeclContext\l::specific_decl_iterator\l\< SpecificDecl \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1DeclContext_1_1specific__decl__iterator.html",tooltip="specific_decl_iterator - Iterates over a subrange of declarations stored in a DeclContext,..."];
+}

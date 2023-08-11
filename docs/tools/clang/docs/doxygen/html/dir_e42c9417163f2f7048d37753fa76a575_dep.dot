@@ -1,0 +1,10 @@
+digraph "include/clang/ExtractAPI/Serialization" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_49137a51754185a909c54fb5b4e8b068 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ExtractAPI" fontname="Helvetica", fontsize="10", URL="dir_49137a51754185a909c54fb5b4e8b068.html"]
+  dir_e42c9417163f2f7048d37753fa76a575 [shape=box, label="Serialization", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e42c9417163f2f7048d37753fa76a575.html"];
+  }
+}

@@ -1,0 +1,23 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9825 [label="llvm::orc::ExecutorProcess\lControl",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1ExecutorProcessControl.html",tooltip="ExecutorProcessControl supports interaction with a JIT target process."];
+  Node9825 -> Node7029 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7029 [label="llvm::orc::SelfExecutorProcess\lControl",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1SelfExecutorProcessControl.html",tooltip="A ExecutorProcessControl implementation targeting the current process."];
+  Node9825 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="llvm::orc::SimpleRemoteEPC",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1SimpleRemoteEPC.html",tooltip=" "];
+  Node9825 -> Node9826 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9826 [label="llvm::orc::UnsupportedExecutor\lProcessControl",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1UnsupportedExecutorProcessControl.html",tooltip="A ExecutorProcessControl instance that asserts if any of its methods are used."];
+  Node7027 [label="llvm::orc::ExecutorProcess\lControl::MemoryAccess",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1ExecutorProcessControl_1_1MemoryAccess.html",tooltip="APIs for manipulating memory in the target process."];
+  Node7027 -> Node7028 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7028 [label="llvm::orc::EPCGenericMemory\lAccess",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1EPCGenericMemoryAccess.html",tooltip=" "];
+  Node7027 -> Node7029 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="llvm::orc::SimpleRemoteEPCTransport\lClient",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1SimpleRemoteEPCTransportClient.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::orc::SimpleRemoteEPCServer",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1SimpleRemoteEPCServer.html",tooltip="A simple EPC server implementation."];
+}

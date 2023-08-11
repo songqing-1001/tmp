@@ -1,0 +1,24 @@
+digraph "clang::CXXDeductionGuideDecl"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::CXXDeductionGuideDecl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a C++ deduction guide declaration."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::FunctionDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1FunctionDecl.html",tooltip="Represents a function declaration or definition."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::DeclaratorDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1DeclaratorDecl.html",tooltip="Represents a ValueDecl that came out of a declarator."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::ValueDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1ValueDecl.html",tooltip="Represent the declaration of a variable (in which case it is an lvalue) a function (in which case it ..."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::NamedDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1NamedDecl.html",tooltip="This represents a decl that may have a name."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::Decl",height=0.2,width=0.4,color="black",URL="$classclang_1_1Decl.html",tooltip="Decl - This represents one declaration (or definition), e.g."];
+  Node7 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="clang::DeclContext",height=0.2,width=0.4,color="black",URL="$classclang_1_1DeclContext.html",tooltip="DeclContext - This is used only as base class of specific decl types that can act as declaration cont..."];
+  Node8 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="clang::Redeclarable\l\< FunctionDecl \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1Redeclarable.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< FunctionDecl \>" ,fontname="Helvetica"];
+  Node9 [label="clang::Redeclarable\l\< decl_type \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1Redeclarable.html",tooltip="Provides common interface for the Decls that can be redeclared."];
+}

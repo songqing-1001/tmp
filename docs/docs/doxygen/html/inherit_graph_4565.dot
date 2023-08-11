@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::orc::shared::\lSPSSerializationTraits\l\< SPSSequence\< SPSElementTag\lT \>, SequenceT, std::enable\l_if_t\< TrivialSPSSequenceSerialization\l\< SPSElementTagT, SequenceT \>::available \> \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1SPSSerializationTraits_3_01SPSSequence_3_01SPSElementTagT_01_4_00_ed575893dac4ff6043352af59254a864.html",tooltip="'Trivial' sequence serialization: Sequence is serialized as a uint64_t size followed by a for-earch l..."];
+}

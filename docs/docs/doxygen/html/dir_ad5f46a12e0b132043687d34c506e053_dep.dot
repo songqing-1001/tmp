@@ -1,0 +1,16 @@
+digraph "include/llvm/TableGen" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_dcde91663b8816e1e2311938ccd8f690 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="llvm" fontname="Helvetica", fontsize="10", URL="dir_dcde91663b8816e1e2311938ccd8f690.html"]
+  dir_ad5f46a12e0b132043687d34c506e053 [shape=box, label="TableGen", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ad5f46a12e0b132043687d34c506e053.html"];
+  }
+  dir_ae1e398ac700924fa434b51c248a5531 [shape=box label="Support" color="red" URL="dir_ae1e398ac700924fa434b51c248a5531.html"];
+  dir_32453792af2ba70c54e3ccae3a790d1b [shape=box label="ADT" URL="dir_32453792af2ba70c54e3ccae3a790d1b.html"];
+  dir_ad5f46a12e0b132043687d34c506e053->dir_ae1e398ac700924fa434b51c248a5531 [headlabel="9", labeldistance=1.5 headhref="dir_000019_000011.html"];
+  dir_ad5f46a12e0b132043687d34c506e053->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="20", labeldistance=1.5 headhref="dir_000019_000007.html"];
+  dir_ae1e398ac700924fa434b51c248a5531->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="188", labeldistance=1.5 headhref="dir_000011_000007.html"];
+  dir_32453792af2ba70c54e3ccae3a790d1b->dir_ae1e398ac700924fa434b51c248a5531 [headlabel="81", labeldistance=1.5 headhref="dir_000007_000011.html"];
+}

@@ -1,0 +1,12 @@
+digraph "lib/Driver/ToolChains/Arch" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ef7b02972dd14e77cedb8b03bc67e5c0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ToolChains" fontname="Helvetica", fontsize="10", URL="dir_ef7b02972dd14e77cedb8b03bc67e5c0.html"]
+  dir_26d9cb982ec322e82f8f56c0d2eb1c21 [shape=box, label="Arch", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_26d9cb982ec322e82f8f56c0d2eb1c21.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_26d9cb982ec322e82f8f56c0d2eb1c21->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="50", labeldistance=1.5 headhref="dir_000106_000001.html"];
+}

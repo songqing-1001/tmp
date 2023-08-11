@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::ExtensionRAIIObject",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExtensionRAIIObject.html",tooltip="ExtensionRAIIObject - This saves the state of extension warnings when constructed and disables them."];
+}

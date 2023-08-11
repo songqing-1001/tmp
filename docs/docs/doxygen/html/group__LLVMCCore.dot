@@ -1,0 +1,40 @@
+digraph "Core"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node6 [label="Modules",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreModule.html",tooltip="Modules represent the top-level structure in an LLVM program. An LLVM module is effectively a transla..."];
+  Node16 [label="Linker",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreLinker.html",tooltip=" "];
+  Node3 [label="Comdats",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreComdat.html",tooltip=" "];
+  Node4 [label="Types and Enumerations",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreTypes.html",tooltip=" "];
+  Node13 [label="Pass Managers",height=0.2,width=0.4,color="black",URL="$group__LLVMCCorePassManagers.html",tooltip=" "];
+  Node10 [label="Basic Block",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreValueBasicBlock.html",tooltip="A basic block represents a single entry single exit section of code. Basic blocks contain a list of i..."];
+  Node12 [label="Pass Registry",height=0.2,width=0.4,color="black",URL="$group__LLVMCCorePassRegistry.html",tooltip=" "];
+  Node9 [label="Metadata",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreValueMetadata.html",tooltip=" "];
+  Node8 [label="Values",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreValues.html",tooltip="The bulk of LLVM's object model consists of values, which comprise a very rich type hierarchy."];
+  Node15 [label="IR Reader",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreIRReader.html",tooltip=" "];
+  Node11 [label="Instructions",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreValueInstruction.html",tooltip="Functions in this group relate to the inspection and manipulation of individual instructions."];
+  Node14 [label="Debug Information",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreDebugInfo.html",tooltip="This file declares the C API endpoints for generating DWARF Debug Info."];
+  Node17 [label="New Pass Manager",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreNewPM.html",tooltip=" "];
+  Node7 [label="Types",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreType.html",tooltip="Types represent the type of a value."];
+  Node5 [label="Contexts",height=0.2,width=0.4,color="black",URL="$group__LLVMCCoreContext.html",tooltip="Contexts are execution states for the core LLVM IR system."];
+  Node1 [label="Core",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This modules provide an interface to libLLVMCore, which implements the LLVM intermediate representati..."];
+  Node2 [label="LLVM-C: C interface\l to LLVM",height=0.2,width=0.4,color="black",URL="$group__LLVMC.html",tooltip="This module exposes parts of the LLVM library as a C API."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node16 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node17 [shape=plaintext, dir="back", style="solid"];
+}

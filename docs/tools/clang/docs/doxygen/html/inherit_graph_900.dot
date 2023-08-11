@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::ento::MemRegionVisitor\l\< ImplClass, RetTy \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ento_1_1MemRegionVisitor.html",tooltip="MemRegionVisitor - this class implements a simple visitor for MemRegion subclasses."];
+}

@@ -1,0 +1,12 @@
+digraph "clang::PrintingPolicy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::PrintingPolicy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Describes how types, statements, expressions, and declarations should be printed."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Callbacks" ,fontname="Helvetica"];
+  Node2 [label="clang::PrintingCallbacks",height=0.2,width=0.4,color="black",URL="$classclang_1_1PrintingCallbacks.html",tooltip="Callbacks to use to customize the behavior of the pretty-printer."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PrintInjectedClassNameWith\lArguments\nPrintCanonicalTypes\nSuppressImplicitBase\nAlignof\nRestrict\nConstantsAsWritten\nMSVCFormatting\nHalf\nTerseOutput\nSuppressStrongLifetime\n..." ,fontname="Helvetica"];
+  Node3 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+}

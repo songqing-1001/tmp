@@ -1,0 +1,19 @@
+digraph "llvm::CallbackVH"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::CallbackVH",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Value handle with callbacks on RAUW and destruction."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::ValueHandleBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1ValueHandleBase.html",tooltip="This is the common base class of value handles."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::bfi_detail::BFICallback\lVH\< BasicBlock, BFIImplT \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1bfi__detail_1_1BFICallbackVH_3_01BasicBlock_00_01BFIImplT_01_4.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="llvm::IVStrideUse",height=0.2,width=0.4,color="black",URL="$classllvm_1_1IVStrideUse.html",tooltip="IVStrideUse - Keep track of one use of a strided induction variable."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm::PreservedCFGChecker\lInstrumentation::BBGuard",height=0.2,width=0.4,color="black",URL="$structllvm_1_1PreservedCFGCheckerInstrumentation_1_1BBGuard.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::SCEVUnknown",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SCEVUnknown.html",tooltip="This means that we are dealing with an entirely unknown SCEV value, and only represent it as its LLVM..."];
+}

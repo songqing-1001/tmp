@@ -1,0 +1,12 @@
+digraph "lib/Bitcode/Writer" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_749d2cb0e1eb5e5dffe5846f316219ac {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Bitcode" fontname="Helvetica", fontsize="10", URL="dir_749d2cb0e1eb5e5dffe5846f316219ac.html"]
+  dir_9a75624839d6068de89e921cb8d24d56 [shape=box, label="Writer", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9a75624839d6068de89e921cb8d24d56.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_9a75624839d6068de89e921cb8d24d56->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="101", labeldistance=1.5 headhref="dir_000035_000001.html"];
+}

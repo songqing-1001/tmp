@@ -1,0 +1,12 @@
+digraph "include/llvm/Linker" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_dcde91663b8816e1e2311938ccd8f690 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="llvm" fontname="Helvetica", fontsize="10", URL="dir_dcde91663b8816e1e2311938ccd8f690.html"]
+  dir_076470912d841fe7e158a4642e2b685c [shape=box, label="Linker", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_076470912d841fe7e158a4642e2b685c.html"];
+  }
+  dir_32453792af2ba70c54e3ccae3a790d1b [shape=box label="ADT" URL="dir_32453792af2ba70c54e3ccae3a790d1b.html"];
+  dir_076470912d841fe7e158a4642e2b685c->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="4", labeldistance=1.5 headhref="dir_000278_000007.html"];
+}

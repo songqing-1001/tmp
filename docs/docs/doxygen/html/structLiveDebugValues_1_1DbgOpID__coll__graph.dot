@@ -1,0 +1,15 @@
+digraph "LiveDebugValues::DbgOpID"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LiveDebugValues::DbgOpID",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An ID used in the DbgOpIDMap (below) to lookup a stored DbgOp."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ID" ,fontname="Helvetica"];
+  Node2 [label="struct",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RawID" ,fontname="Helvetica"];
+  Node3 [label="uint32_t",height=0.2,width=0.4,color="black",URL="$classuint32__t.html",tooltip=" "];
+  Node1 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" UndefID" ,fontname="Helvetica"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @433" ,fontname="Helvetica"];
+  Node4 [label="anonymous:@433",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

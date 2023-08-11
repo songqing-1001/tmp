@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::FunctionType\l::ExtParameterInfo",height=0.2,width=0.4,color="black",URL="$classclang_1_1FunctionType_1_1ExtParameterInfo.html",tooltip="Interesting information about a specific parameter that can't simply be reflected in parameter's type..."];
+}

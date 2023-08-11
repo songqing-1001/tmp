@@ -1,0 +1,25 @@
+digraph "clang::PreprocessorLexer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::PreprocessorLexer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MIOpt" ,fontname="Helvetica"];
+  Node2 [label="clang::MultipleIncludeOpt",height=0.2,width=0.4,color="black",URL="$classclang_1_1MultipleIncludeOpt.html",tooltip="Implements the simple state machine that the Lexer class uses to detect files subject to the 'multipl..."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PP" ,fontname="Helvetica"];
+  Node3 [label="clang::Preprocessor",height=0.2,width=0.4,color="black",URL="$classclang_1_1Preprocessor.html",tooltip="Engages in a tight little dance with the lexer to efficiently preprocess tokens."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TUKind" ,fontname="Helvetica"];
+  Node4 [label="const TranslationUnitKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ParsingPreprocessorDirective\nLexingRawMode\nParsingFilename" ,fontname="Helvetica"];
+  Node5 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FID" ,fontname="Helvetica"];
+  Node6 [label="clang::FileID",height=0.2,width=0.4,color="black",URL="$classclang_1_1FileID.html",tooltip="An opaque identifier used by SourceManager which refers to a source file (MemoryBuffer) along with it..."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InitialNumSLocEntries" ,fontname="Helvetica"];
+  Node7 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ConditionalStack" ,fontname="Helvetica"];
+  Node8 [label="llvm::SmallVector\<\l clang::PPConditionalInfo, 4 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::PPConditionalInfo, 4 \>" ,fontname="Helvetica"];
+  Node9 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+}

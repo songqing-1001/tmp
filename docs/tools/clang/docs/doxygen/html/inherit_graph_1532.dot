@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::serialization\l::InputFile",height=0.2,width=0.4,color="black",URL="$classclang_1_1serialization_1_1InputFile.html",tooltip="The input file that has been loaded from this AST file, along with bools indicating whether this was ..."];
+}

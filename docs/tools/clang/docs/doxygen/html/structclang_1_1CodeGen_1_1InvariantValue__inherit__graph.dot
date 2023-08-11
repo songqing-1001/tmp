@@ -1,0 +1,14 @@
+digraph "clang::CodeGen::InvariantValue&lt; T &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::CodeGen::Invariant\lValue\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::CodeGen::Dominating\lValue\< T \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1CodeGen_1_1DominatingValue.html",tooltip="A metaprogramming class for ensuring that a value will dominate an arbitrary position in a function."];
+  Node1 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< T * \>" ,fontname="Helvetica"];
+  Node3 [label="clang::CodeGen::Invariant\lValue\< T * \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1CodeGen_1_1InvariantValue.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::CodeGen::Dominating\lPointer\< T, false \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1CodeGen_1_1DominatingPointer_3_01T_00_01false_01_4.html",tooltip=" "];
+}

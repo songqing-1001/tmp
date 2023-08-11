@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::scc_member_iterator\l\< GraphT, GT \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1scc__member__iterator.html",tooltip="Sort the nodes of a directed SCC in the decreasing order of the edge weights."];
+}

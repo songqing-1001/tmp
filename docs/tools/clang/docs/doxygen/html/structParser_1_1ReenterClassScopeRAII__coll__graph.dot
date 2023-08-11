@@ -1,0 +1,35 @@
+digraph "clang::Parser::ReenterClassScopeRAII"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::Parser::ReenterClass\lScopeRAII",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Utility to re-enter a class scope while parsing its late-parsed components."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::Parser::ReenterTemplate\lScopeRAII",height=0.2,width=0.4,color="black",URL="$structParser_1_1ReenterTemplateScopeRAII.html",tooltip="Utility to re-enter a possibly-templated scope while parsing its late-parsed components."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" P" ,fontname="Helvetica"];
+  Node3 [label="clang::Parser",height=0.2,width=0.4,color="black",URL="$classclang_1_1Parser.html",tooltip="Parser - This implements a parser for the C family of languages."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::CodeCompletionHandler",height=0.2,width=0.4,color="black",URL="$classclang_1_1CodeCompletionHandler.html",tooltip="Callback handler that receives notifications when performing code completion within the preprocessor."];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MisleadingIndentationElseLoc" ,fontname="Helvetica"];
+  Node5 [label="clang::SourceLocation",height=0.2,width=0.4,color="black",URL="$classclang_1_1SourceLocation.html",tooltip="Encodes a location in the source."];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CurTemplateDepthTracker" ,fontname="Helvetica"];
+  Node6 [label="clang::Parser::TemplateParameter\lDepthRAII",height=0.2,width=0.4,color="grey75",tooltip="RAII class that manages the template parameter depth."];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Scopes" ,fontname="Helvetica"];
+  Node7 [label="clang::Parser::MultiParse\lScope",height=0.2,width=0.4,color="black",URL="$classclang_1_1Parser_1_1MultiParseScope.html",tooltip="Introduces zero or more scopes for parsing."];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Class" ,fontname="Helvetica"];
+  Node8 [label="clang::Parser::ParsingClass",height=0.2,width=0.4,color="grey75",tooltip="Representation of a class that has been parsed, including any member function declarations or definit..."];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LateParsedDeclarations" ,fontname="Helvetica"];
+  Node9 [label="llvm::SmallVector\<\l LateParsedDeclaration\l *, 2 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< LateParsedDeclaration\l *, 2 \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node11 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" IsInterface\nTopLevelClass" ,fontname="Helvetica"];
+  Node11 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node12 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TagOrTemplate" ,fontname="Helvetica"];
+  Node12 [label="clang::Decl",height=0.2,width=0.4,color="black",URL="$classclang_1_1Decl.html",tooltip="Decl - This represents one declaration (or definition), e.g."];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NextInContextAndBits" ,fontname="Helvetica"];
+  Node13 [label="PointerIntPair\< clang\l::Decl *, 3, ModuleOwnership\lKind \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Access\nFromASTFile\nIdentifierNamespace\nCacheValidAndLinkage" ,fontname="Helvetica"];
+  Node14 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+}

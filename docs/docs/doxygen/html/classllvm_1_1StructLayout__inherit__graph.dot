@@ -1,0 +1,20 @@
+digraph "llvm::StructLayout"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::StructLayout",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Used to lazily calculate structure layout information for a target machine, based on the DataLayout s..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::TrailingObjects\l\< StructLayout, uint64_t \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1TrailingObjects.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::trailing_objects\l_internal::TrailingObjectsImpl\l\< trailing_objects_internal\l::AlignmentCalcHelper\< TrailingTys...\l \>::Alignment, StructLayout, TrailingObjects\l\< StructLayout, TrailingTys... \>, StructLayout,\l TrailingTys... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1trailing__objects__internal_1_1TrailingObjectsImpl.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< trailing_objects\l_internal::AlignmentCalcHelper\l\< TrailingTys... \>::Alignment,\l StructLayout, TrailingObjects\l\< StructLayout, TrailingTys...\l \>, StructLayout, TrailingTys... \>" ,fontname="Helvetica"];
+  Node4 [label="llvm::trailing_objects\l_internal::TrailingObjectsImpl\l\< Align, BaseTy, TopTrailingObj,\l PrevTy, MoreTys \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1trailing__objects__internal_1_1TrailingObjectsImpl.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< StructLayout, uint64_t \>" ,fontname="Helvetica"];
+  Node5 [label="llvm::TrailingObjects\l\< BaseTy, TrailingTys \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1TrailingObjects.html",tooltip="See the file comment for details on the usage of the TrailingObjects type."];
+  Node6 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::trailing_objects\l_internal::TrailingObjectsImpl\l\< trailing_objects_internal\l::AlignmentCalcHelper\< TrailingTys...\l \>::Alignment, BaseTy, TrailingObjects\l\< BaseTy, TrailingTys... \>, BaseTy, TrailingTys... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1trailing__objects__internal_1_1TrailingObjectsImpl.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< trailing_objects\l_internal::AlignmentCalcHelper\l\< TrailingTys... \>::Alignment,\l BaseTy, TrailingObjects\< BaseTy,\l TrailingTys... \>, BaseTy, TrailingTys... \>" ,fontname="Helvetica"];
+}

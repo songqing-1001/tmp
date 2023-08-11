@@ -1,0 +1,19 @@
+digraph "lib/Target/AVR/AsmParser" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e025955df7d625b5b4f5fd3465d9c8da {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AVR" fontname="Helvetica", fontsize="10", URL="dir_e025955df7d625b5b4f5fd3465d9c8da.html"]
+  dir_ab7d2808bb95f24df46439cfaa089d5b [shape=box, label="AsmParser", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ab7d2808bb95f24df46439cfaa089d5b.html"];
+  }
+  dir_88ebf0c1408e3a3b1c0df70923f233b8 [shape=box label="MCTargetDesc" URL="dir_88ebf0c1408e3a3b1c0df70923f233b8.html"];
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_2454bd238024ca9f2c36237eef40a3dc [shape=box label="TargetInfo" URL="dir_2454bd238024ca9f2c36237eef40a3dc.html"];
+  dir_88ebf0c1408e3a3b1c0df70923f233b8->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="77", labeldistance=1.5 headhref="dir_000121_000001.html"];
+  dir_88ebf0c1408e3a3b1c0df70923f233b8->dir_2454bd238024ca9f2c36237eef40a3dc [headlabel="1", labeldistance=1.5 headhref="dir_000121_000122.html"];
+  dir_ab7d2808bb95f24df46439cfaa089d5b->dir_88ebf0c1408e3a3b1c0df70923f233b8 [headlabel="3", labeldistance=1.5 headhref="dir_000119_000121.html"];
+  dir_ab7d2808bb95f24df46439cfaa089d5b->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="15", labeldistance=1.5 headhref="dir_000119_000001.html"];
+  dir_ab7d2808bb95f24df46439cfaa089d5b->dir_2454bd238024ca9f2c36237eef40a3dc [headlabel="1", labeldistance=1.5 headhref="dir_000119_000122.html"];
+  dir_2454bd238024ca9f2c36237eef40a3dc->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000122_000001.html"];
+}

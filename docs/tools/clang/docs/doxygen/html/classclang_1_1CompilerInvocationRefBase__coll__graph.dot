@@ -1,0 +1,24 @@
+digraph "clang::CompilerInvocationRefBase"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::CompilerInvocation\lRefBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The base class of CompilerInvocation with reference semantics."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TargetOpts" ,fontname="Helvetica"];
+  Node2 [label="shared_ptr\< clang::\lTargetOptions \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AnalyzerOpts" ,fontname="Helvetica"];
+  Node3 [label="llvm::IntrusiveRefCntPtr\l\< AnalyzerOptions \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1IntrusiveRefCntPtr.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< AnalyzerOptions \>" ,fontname="Helvetica"];
+  Node4 [label="llvm::IntrusiveRefCntPtr\< T \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1IntrusiveRefCntPtr.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DiagnosticOpts" ,fontname="Helvetica"];
+  Node5 [label="llvm::IntrusiveRefCntPtr\l\< clang::DiagnosticOptions \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1IntrusiveRefCntPtr.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::DiagnosticOptions \>" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LangOpts" ,fontname="Helvetica"];
+  Node6 [label="shared_ptr\< clang::\lLangOptions \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" HeaderSearchOpts" ,fontname="Helvetica"];
+  Node7 [label="shared_ptr\< clang::\lHeaderSearchOptions \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PreprocessorOpts" ,fontname="Helvetica"];
+  Node8 [label="shared_ptr\< clang::\lPreprocessorOptions \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

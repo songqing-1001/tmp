@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::objcopy::macho\l::CodeSignatureInfo",height=0.2,width=0.4,color="black",URL="$structllvm_1_1objcopy_1_1macho_1_1CodeSignatureInfo.html",tooltip="When MachO binaries include a LC_CODE_SIGNATURE load command, the __LINKEDIT data segment will includ..."];
+}

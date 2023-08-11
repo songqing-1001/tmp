@@ -1,0 +1,33 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3279 [label="clang::ExternalHeaderFile\lInfoSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalHeaderFileInfoSource.html",tooltip="An external source of header file information, which may supply information about header files alread..."];
+  Node3279 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::ASTReader",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTReader.html",tooltip="Reads an AST files chain containing the contents of a translation unit."];
+  Node3278 [label="clang::ExternalPreprocessing\lRecordSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalPreprocessingRecordSource.html",tooltip="An abstract class that should be subclassed by any external source of preprocessing record entries."];
+  Node3278 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3277 [label="clang::ExternalPreprocessor\lSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalPreprocessorSource.html",tooltip="Abstract interface for external sources of preprocessor information."];
+  Node3277 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3276 [label="clang::ExternalSLocEntry\lSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalSLocEntrySource.html",tooltip="External source of source location entries."];
+  Node3276 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2906 [label="clang::IdentifierInfoLookup",height=0.2,width=0.4,color="black",URL="$classclang_1_1IdentifierInfoLookup.html",tooltip="Provides lookups to, and iteration over, IdentiferInfo objects."];
+  Node2906 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="llvm::RefCountedBase\l\< ExternalASTSource \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1RefCountedBase.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="clang::ExternalASTSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalASTSource.html",tooltip="Abstract interface for external sources of AST nodes."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::ExternalASTMerger",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalASTMerger.html",tooltip="ExternalASTSource implementation that merges information from several ASTContexts."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::ExternalSemaSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExternalSemaSource.html",tooltip="An abstract interface that should be implemented by external AST sources that also provide informatio..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::HLSLExternalSemaSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1HLSLExternalSemaSource.html",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::MultiplexExternal\lSemaSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1MultiplexExternalSemaSource.html",tooltip="An abstract interface that should be implemented by external AST sources that also provide informatio..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="clang::LayoutOverrideSource",height=0.2,width=0.4,color="black",URL="$classclang_1_1LayoutOverrideSource.html",tooltip="An external AST source that overrides the layout of a specified set of record types."];
+}

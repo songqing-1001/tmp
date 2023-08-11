@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::orc::shared::\lSPSExpected\< SPSTagT \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1SPSExpected.html",tooltip="SPS tag type for expecteds, which are either a T or a string representing an error."];
+}

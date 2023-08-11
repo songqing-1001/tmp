@@ -1,0 +1,12 @@
+digraph "lib/MC/MCParser" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_741b3efb3a0fb2aad3417ac1ac9df3e5 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="MC" fontname="Helvetica", fontsize="10", URL="dir_741b3efb3a0fb2aad3417ac1ac9df3e5.html"]
+  dir_63836eccac385a8353277d2b47aa4305 [shape=box, label="MCParser", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_63836eccac385a8353277d2b47aa4305.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_63836eccac385a8353277d2b47aa4305->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="203", labeldistance=1.5 headhref="dir_000081_000001.html"];
+}

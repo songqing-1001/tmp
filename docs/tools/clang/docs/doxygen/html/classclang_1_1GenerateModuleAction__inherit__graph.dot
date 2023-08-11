@@ -1,0 +1,19 @@
+digraph "clang::GenerateModuleAction"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::GenerateModuleAction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::ASTFrontendAction",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTFrontendAction.html",tooltip="Abstract base class to use for AST consumer-based frontend actions."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::FrontendAction",height=0.2,width=0.4,color="black",URL="$classclang_1_1FrontendAction.html",tooltip="Abstract base class for actions which can be performed by the frontend."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::GenerateHeaderUnit\lAction",height=0.2,width=0.4,color="black",URL="$classclang_1_1GenerateHeaderUnitAction.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::GenerateModuleFrom\lModuleMapAction",height=0.2,width=0.4,color="black",URL="$classclang_1_1GenerateModuleFromModuleMapAction.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::GenerateModuleInterface\lAction",height=0.2,width=0.4,color="black",URL="$classclang_1_1GenerateModuleInterfaceAction.html",tooltip=" "];
+}

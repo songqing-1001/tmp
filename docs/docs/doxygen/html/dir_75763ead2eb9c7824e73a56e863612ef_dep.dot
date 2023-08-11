@@ -1,0 +1,12 @@
+digraph "lib/Frontend/OpenACC" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_852f2fa92acda3856ce29eb983aeba4a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Frontend" fontname="Helvetica", fontsize="10", URL="dir_852f2fa92acda3856ce29eb983aeba4a.html"]
+  dir_75763ead2eb9c7824e73a56e863612ef [shape=box, label="OpenACC", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_75763ead2eb9c7824e73a56e863612ef.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_75763ead2eb9c7824e73a56e863612ef->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="3", labeldistance=1.5 headhref="dir_000071_000001.html"];
+}

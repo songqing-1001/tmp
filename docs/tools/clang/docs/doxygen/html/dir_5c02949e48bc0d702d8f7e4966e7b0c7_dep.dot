@@ -1,0 +1,12 @@
+digraph "include/clang/APINotes" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7c3366c0dfc05dfe1380b9a1e2bf7190 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="clang" fontname="Helvetica", fontsize="10", URL="dir_7c3366c0dfc05dfe1380b9a1e2bf7190.html"]
+  dir_5c02949e48bc0d702d8f7e4966e7b0c7 [shape=box, label="APINotes", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5c02949e48bc0d702d8f7e4966e7b0c7.html"];
+  }
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_5c02949e48bc0d702d8f7e4966e7b0c7->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000014.html"];
+}

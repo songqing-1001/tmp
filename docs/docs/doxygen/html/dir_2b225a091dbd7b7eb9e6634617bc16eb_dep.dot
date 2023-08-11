@@ -1,0 +1,12 @@
+digraph "lib/ToolDrivers/llvm-lib" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0deb98a24ce3a530e05f88881105608c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ToolDrivers" fontname="Helvetica", fontsize="10", URL="dir_0deb98a24ce3a530e05f88881105608c.html"]
+  dir_2b225a091dbd7b7eb9e6634617bc16eb [shape=box, label="llvm-lib", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2b225a091dbd7b7eb9e6634617bc16eb.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_2b225a091dbd7b7eb9e6634617bc16eb->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="17", labeldistance=1.5 headhref="dir_000228_000001.html"];
+}

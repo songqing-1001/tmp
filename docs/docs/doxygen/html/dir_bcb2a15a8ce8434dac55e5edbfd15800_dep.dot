@@ -1,0 +1,12 @@
+digraph "lib/Target/LoongArch/TargetInfo" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8993447dfe7bd991ad9979871c8ba9dc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="LoongArch" fontname="Helvetica", fontsize="10", URL="dir_8993447dfe7bd991ad9979871c8ba9dc.html"]
+  dir_bcb2a15a8ce8434dac55e5edbfd15800 [shape=box, label="TargetInfo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bcb2a15a8ce8434dac55e5edbfd15800.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_bcb2a15a8ce8434dac55e5edbfd15800->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000152_000001.html"];
+}

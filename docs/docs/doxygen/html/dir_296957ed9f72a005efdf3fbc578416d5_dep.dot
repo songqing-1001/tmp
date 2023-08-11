@@ -1,0 +1,12 @@
+digraph "lib/Transforms/ObjCARC" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a72932e0778af28115095468f6286ff8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Transforms" fontname="Helvetica", fontsize="10", URL="dir_a72932e0778af28115095468f6286ff8.html"]
+  dir_296957ed9f72a005efdf3fbc578416d5 [shape=box, label="ObjCARC", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_296957ed9f72a005efdf3fbc578416d5.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_296957ed9f72a005efdf3fbc578416d5->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="118", labeldistance=1.5 headhref="dir_000237_000001.html"];
+}

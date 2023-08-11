@@ -1,0 +1,40 @@
+digraph "llvm::sampleprof::CSProfileConverter::FrameNode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::sampleprof::CSProfile\lConverter::FrameNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CallSiteLoc" ,fontname="Helvetica"];
+  Node2 [label="llvm::sampleprof::LineLocation",height=0.2,width=0.4,color="black",URL="$structllvm_1_1sampleprof_1_1LineLocation.html",tooltip="Represents the relative location of an instruction."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LineOffset\nDiscriminator" ,fontname="Helvetica"];
+  Node3 [label="uint32_t",height=0.2,width=0.4,color="black",URL="$classuint32__t.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FuncName" ,fontname="Helvetica"];
+  Node4 [label="llvm::StringRef",height=0.2,width=0.4,color="black",URL="$classllvm_1_1StringRef.html",tooltip="StringRef - Represent a constant reference to a string, i.e."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" npos" ,fontname="Helvetica"];
+  Node5 [label="size_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FuncSamples" ,fontname="Helvetica"];
+  Node6 [label="llvm::sampleprof::Function\lSamples",height=0.2,width=0.4,color="black",URL="$classllvm_1_1sampleprof_1_1FunctionSamples.html",tooltip="Representation of the samples collected for a function."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" GUIDToFuncNameMap" ,fontname="Helvetica"];
+  Node7 [label="llvm::DenseMap\< uint64\l_t, llvm::StringRef \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DenseMap.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="llvm::DenseMapBase\l\< DenseMap\< uint64_t,\l llvm::StringRef, DenseMapInfo\l\< uint64_t \>, llvm::detail\l::DenseMapPair\< uint64_t, llvm\l::StringRef \> \>, uint64_t, llvm\l::StringRef, DenseMapInfo\< uint64\l_t \>, llvm::detail::DenseMapPair\<\l uint64_t, llvm::StringRef \> \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DenseMapBase.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="llvm::DebugEpochBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DebugEpochBase.html",tooltip="A base class for data structure classes wishing to make iterators (\"handles\") pointing into themselve..."];
+  Node10 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DenseMap\< uint64\l_t, llvm::StringRef,\l DenseMapInfo\< uint64\l_t \>, llvm::detail::DenseMap\lPair\< uint64_t, llvm::StringRef\l \> \>, uint64_t, llvm::StringRef,\l DenseMapInfo\< uint64_t \>, llvm\l::detail::DenseMapPair\< uint64_t,\l llvm::StringRef \> \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::DenseMapBase\l\< DerivedT, KeyT, ValueT,\l KeyInfoT, BucketT \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DenseMapBase.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< uint64_t, llvm::String\lRef \>" ,fontname="Helvetica"];
+  Node11 [label="llvm::DenseMap\< KeyT,\l ValueT, KeyInfoT, BucketT \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DenseMap.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="llvm::DenseMapBase\l\< DenseMap\< KeyT, ValueT,\l DenseMapInfo\< KeyT \>,\l llvm::detail::DenseMapPair\l\< KeyT, ValueT \> \>, KeyT, ValueT,\l DenseMapInfo\< KeyT \>, llvm::detail\l::DenseMapPair\< KeyT, ValueT \> \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DenseMapBase.html",tooltip=" "];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DenseMap\< KeyT, ValueT,\l DenseMapInfo\< KeyT \>,\l llvm::detail::DenseMapPair\l\< KeyT, ValueT \> \>, KeyT, ValueT,\l DenseMapInfo\< KeyT \>, llvm::detail\l::DenseMapPair\< KeyT, ValueT \> \>" ,fontname="Helvetica"];
+  Node13 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ProfileIsProbeBased\nHasUniqSuffix\nProfileIsPreInlined\nUseMD5\nProfileIsFS\nProfileIsCS" ,fontname="Helvetica"];
+  Node13 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LLVMSuffix\nPartSuffix\nUniqSuffix" ,fontname="Helvetica"];
+  Node14 [label="const",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AllChildFrames" ,fontname="Helvetica"];
+  Node15 [label="map\< uint64_t, llvm\l::sampleprof::CSProfileConverter\l::FrameNode \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

@@ -1,0 +1,20 @@
+digraph "clang::SubstTemplateTemplateParmPackStorage"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::SubstTemplateTemplate\lParmPackStorage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A structure for storing an already-substituted template template parameter pack."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::UncommonTemplateName\lStorage",height=0.2,width=0.4,color="black",URL="$classclang_1_1UncommonTemplateNameStorage.html",tooltip="Implementation class used to describe either a set of overloaded template names or an already-substit..."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Bits" ,fontname="Helvetica"];
+  Node3 [label="clang::UncommonTemplateName\lStorage::BitsTag",height=0.2,width=0.4,color="black",URL="$structclang_1_1UncommonTemplateNameStorage_1_1BitsTag.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Kind\nData\nIndex" ,fontname="Helvetica"];
+  Node4 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @109" ,fontname="Helvetica"];
+  Node5 [label="anonymous:@109",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PointerAlignment" ,fontname="Helvetica"];
+  Node6 [label="void *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="llvm::FoldingSetNode",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

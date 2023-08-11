@@ -1,0 +1,44 @@
+digraph "CXIdxObjCProtocolRefListInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CXIdxObjCProtocolRefListInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" protocols" ,fontname="Helvetica"];
+  Node2 [label="CXIdxObjCProtocolRefInfo",height=0.2,width=0.4,color="black",URL="$structCXIdxObjCProtocolRefInfo.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursor" ,fontname="Helvetica"];
+  Node3 [label="CXCursor",height=0.2,width=0.4,color="black",URL="$structCXCursor.html",tooltip="A cursor representing some element in the abstract syntax tree for a translation unit."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" data" ,fontname="Helvetica"];
+  Node4 [label="const void *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" xdata" ,fontname="Helvetica"];
+  Node5 [label="int",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kind" ,fontname="Helvetica"];
+  Node6 [label="enum CXCursorKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" loc" ,fontname="Helvetica"];
+  Node7 [label="CXIdxLoc",height=0.2,width=0.4,color="black",URL="$structCXIdxLoc.html",tooltip="Source location passed to index callbacks."];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" int_data" ,fontname="Helvetica"];
+  Node8 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ptr_data" ,fontname="Helvetica"];
+  Node9 [label="void *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" protocol" ,fontname="Helvetica"];
+  Node10 [label="CXIdxEntityInfo",height=0.2,width=0.4,color="black",URL="$structCXIdxEntityInfo.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kind" ,fontname="Helvetica"];
+  Node11 [label="CXIdxEntityKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node12 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" templateKind" ,fontname="Helvetica"];
+  Node12 [label="CXIdxEntityCXXTemplateKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node13 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name\nUSR" ,fontname="Helvetica"];
+  Node13 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attributes" ,fontname="Helvetica"];
+  Node14 [label="CXIdxAttrInfo",height=0.2,width=0.4,color="black",URL="$structCXIdxAttrInfo.html",tooltip=" "];
+  Node3 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursor" ,fontname="Helvetica"];
+  Node7 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" loc" ,fontname="Helvetica"];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kind" ,fontname="Helvetica"];
+  Node15 [label="CXIdxAttrKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursor" ,fontname="Helvetica"];
+  Node16 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lang" ,fontname="Helvetica"];
+  Node16 [label="CXIdxEntityLanguage",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" numAttributes" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" numProtocols" ,fontname="Helvetica"];
+}

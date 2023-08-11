@@ -1,0 +1,16 @@
+digraph "include/llvm/BinaryFormat/GOFF.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/llvm/BinaryFormat\l/GOFF.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="include/llvm/MC/MCSection\lGOFF.h",height=0.2,width=0.4,color="black",URL="$MCSectionGOFF_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lib/CodeGen/TargetLowering\lObjectFileImpl.cpp",height=0.2,width=0.4,color="black",URL="$TargetLoweringObjectFileImpl_8cpp.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lib/MC/MCContext.cpp",height=0.2,width=0.4,color="black",URL="$MCContext_8cpp.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lib/MC/MCObjectFileInfo.cpp",height=0.2,width=0.4,color="black",URL="$MCObjectFileInfo_8cpp.html",tooltip=" "];
+}

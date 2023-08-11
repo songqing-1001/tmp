@@ -1,0 +1,57 @@
+digraph "llvm::AArch64Subtarget"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::AArch64Subtarget",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AArch64GenSubtargetInfo",height=0.2,width=0.4,color="black",URL="$classAArch64GenSubtargetInfo.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Legalizer" ,fontname="Helvetica"];
+  Node3 [label="unique_ptr\< llvm::Legalizer\lInfo \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TLInfo" ,fontname="Helvetica"];
+  Node4 [label="llvm::AArch64TargetLowering",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AArch64TargetLowering.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm::TargetLowering",height=0.2,width=0.4,color="black",URL="$classllvm_1_1TargetLowering.html",tooltip="This class defines information used to lower LLVM code to legal SelectionDAG operators that the targe..."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::TargetLoweringBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1TargetLoweringBase.html",tooltip="This base class for TargetLowering contains the SelectionDAG-independent parts that can be used from ..."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PredictableSelectIsExpensive\nEnableExtLdPromotion\nIsStrictFPEnabled" ,fontname="Helvetica"];
+  Node7 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MaxStoresPerMemcpyOptSize\nMaxLoadsPerMemcmpOptSize\nMaxStoresPerMemsetOptSize\nMaxStoresPerMemmoveOptSize\nMaxStoresPerMemcpy\nMaxGluedStoresPerMemcpy\nMaxStoresPerMemset\nMaxStoresPerMemmove\nMaxLoadsPerMemcmp\nGatherAllAliasesMaxDepth\n..." ,fontname="Helvetica"];
+  Node8 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ARMProcFamily" ,fontname="Helvetica"];
+  Node9 [label="ARMProcFamilyEnum",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RegBankInfo" ,fontname="Helvetica"];
+  Node10 [label="unique_ptr\< llvm::Register\lBankInfo \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InstSelector" ,fontname="Helvetica"];
+  Node11 [label="unique_ptr\< llvm::Instruction\lSelector \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MinPrefetchStride\nCacheLineSize\nPrefetchDistance" ,fontname="Helvetica"];
+  Node12 [label="uint16_t",height=0.2,width=0.4,color="black",URL="$classuint16__t.html",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineAsmLoweringInfo" ,fontname="Helvetica"];
+  Node13 [label="unique_ptr\< llvm::Inline\lAsmLowering \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TSInfo" ,fontname="Helvetica"];
+  Node14 [label="llvm::AArch64SelectionDAGInfo",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AArch64SelectionDAGInfo.html",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="llvm::SelectionDAGTargetInfo",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SelectionDAGTargetInfo.html",tooltip="Targets can subclass this to parameterize the SelectionDAG lowering and instruction selection process..."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" StreamingSVEModeDisabled\nIsLittle" ,fontname="Helvetica"];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MaxInterleaveFactor\nVectorInsertExtractBaseCost" ,fontname="Helvetica"];
+  Node16 [label="uint8_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CallLoweringInfo" ,fontname="Helvetica"];
+  Node17 [label="unique_ptr\< llvm::CallLowering \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FrameLowering" ,fontname="Helvetica"];
+  Node18 [label="llvm::AArch64FrameLowering",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AArch64FrameLowering.html",tooltip=" "];
+  Node19 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="llvm::TargetFrameLowering",height=0.2,width=0.4,color="black",URL="$classllvm_1_1TargetFrameLowering.html",tooltip="Information about stack frame layout on the target."];
+  Node20 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PrefLoopAlignment\nPrefFunctionAlignment" ,fontname="Helvetica"];
+  Node20 [label="llvm::Align",height=0.2,width=0.4,color="black",URL="$structllvm_1_1Align.html",tooltip="This struct is a compact representation of a valid (non-zero power of two) alignment."];
+  Node21 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TargetTriple" ,fontname="Helvetica"];
+  Node21 [label="llvm::Triple",height=0.2,width=0.4,color="black",URL="$classllvm_1_1Triple.html",tooltip="Triple - Helper class for working with autoconf configuration names."];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" VScaleForTuning\nMinSVEVectorSizeInBits\nMinVectorRegisterBitWidth\nMaxJumpTableSize\nMaxSVEVectorSizeInBits\nMaxPrefetchIterationsAhead\nMaxBytesForLoopAlignment" ,fontname="Helvetica"];
+  Node22 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InstrInfo" ,fontname="Helvetica"];
+  Node22 [label="llvm::AArch64InstrInfo",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AArch64InstrInfo.html",tooltip=" "];
+  Node23 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="AArch64GenInstrInfo",height=0.2,width=0.4,color="black",URL="$classAArch64GenInstrInfo.html",tooltip=" "];
+  Node24 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ReserveXRegister\nReserveXRegisterForRA\nCustomCallSavedXRegs" ,fontname="Helvetica"];
+  Node24 [label="llvm::BitVector",height=0.2,width=0.4,color="black",URL="$classllvm_1_1BitVector.html",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "include/clang/ASTMatchers/Dynamic" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_703be670abb56edad3751116797aa3ec {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ASTMatchers" fontname="Helvetica", fontsize="10", URL="dir_703be670abb56edad3751116797aa3ec.html"]
+  dir_7391cd63140a506c97bd63b360ff23eb [shape=box, label="Dynamic", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7391cd63140a506c97bd63b360ff23eb.html"];
+  }
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_7391cd63140a506c97bd63b360ff23eb->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="1", labeldistance=1.5 headhref="dir_000072_000014.html"];
+}

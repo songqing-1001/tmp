@@ -1,0 +1,12 @@
+digraph "lib/DebugInfo/LogicalView/Readers" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_35726c853ff3be0c227effe88eaffdae {
+    graph [ bgcolor="#ddddee", pencolor="black", label="LogicalView" fontname="Helvetica", fontsize="10", URL="dir_35726c853ff3be0c227effe88eaffdae.html"]
+  dir_5bb148124d8b33d05751c45d4bae076b [shape=box, label="Readers", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5bb148124d8b33d05751c45d4bae076b.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_5bb148124d8b33d05751c45d4bae076b->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="15", labeldistance=1.5 headhref="dir_000323_000001.html"];
+}

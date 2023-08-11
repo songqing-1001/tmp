@@ -1,0 +1,15 @@
+digraph "include/clang/Rewrite/Core" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ebac8d32669fe13b32ad4d0601436cfb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Rewrite" fontname="Helvetica", fontsize="10", URL="dir_ebac8d32669fe13b32ad4d0601436cfb.html"]
+  dir_181b760d8c5c02eabccaa45c84959e32 [shape=box, label="Core", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_181b760d8c5c02eabccaa45c84959e32.html"];
+  }
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_75e2a3c204180452df3eef4502f5497d [shape=box label="Lex" URL="dir_75e2a3c204180452df3eef4502f5497d.html"];
+  dir_181b760d8c5c02eabccaa45c84959e32->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="5", labeldistance=1.5 headhref="dir_000091_000014.html"];
+  dir_181b760d8c5c02eabccaa45c84959e32->dir_75e2a3c204180452df3eef4502f5497d [headlabel="1", labeldistance=1.5 headhref="dir_000091_000090.html"];
+  dir_75e2a3c204180452df3eef4502f5497d->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="55", labeldistance=1.5 headhref="dir_000090_000014.html"];
+}

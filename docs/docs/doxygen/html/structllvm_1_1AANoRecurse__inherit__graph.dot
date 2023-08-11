@@ -1,0 +1,37 @@
+digraph "llvm::AANoRecurse"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::AANoRecurse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An abstract attribute for norecurse."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::IRAttribute\<\l Attribute::NoRecurse,\l StateWrapper\< BooleanState,\l AbstractAttribute \> \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IRAttribute.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::StateWrapper\l\< BooleanState, AbstractAttribute \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1StateWrapper.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="llvm::AbstractAttribute",height=0.2,width=0.4,color="black",URL="$structllvm_1_1AbstractAttribute.html",tooltip="Base struct for all \"concrete attribute\" deductions."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm::IRPosition",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IRPosition.html",tooltip="Helper to describe and deal with positions in the LLVM-IR."];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::AADepGraphNode",height=0.2,width=0.4,color="black",URL="$structllvm_1_1AADepGraphNode.html",tooltip="}"];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="llvm::BooleanState",height=0.2,width=0.4,color="black",URL="$structllvm_1_1BooleanState.html",tooltip="Simple wrapper for a single bit (boolean) state."];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="llvm::IntegerStateBase\l\< bool, true, false \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IntegerStateBase.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="llvm::AbstractState",height=0.2,width=0.4,color="black",URL="$structllvm_1_1AbstractState.html",tooltip="An interface to query the internal state of an abstract attribute."];
+  Node10 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< bool, true, false \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::IntegerStateBase\l\< base_ty, BestState,\l WorstState \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IntegerStateBase.html",tooltip="Simple state with integers encoding."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< BooleanState, Abstract\lAttribute \>" ,fontname="Helvetica"];
+  Node11 [label="llvm::StateWrapper\l\< StateTy, BaseType, Ts \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1StateWrapper.html",tooltip="Helper to tie a abstract state implementation to an abstract attribute."];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="BaseType",height=0.2,width=0.4,color="black",URL="$classBaseType.html",tooltip=" "];
+  Node13 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="StateTy",height=0.2,width=0.4,color="black",URL="$classStateTy.html",tooltip=" "];
+  Node14 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Attribute::NoRecurse,\l StateWrapper\< BooleanState,\l AbstractAttribute \> \>" ,fontname="Helvetica"];
+  Node14 [label="llvm::IRAttribute\<\l AK, BaseType \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IRAttribute.html",tooltip="Helper class that provides common functionality to manifest IR attributes."];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

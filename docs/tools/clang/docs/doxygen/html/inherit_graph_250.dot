@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::ASTReader::Listener\lScope",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTReader_1_1ListenerScope.html",tooltip="RAII object to temporarily add an AST callback listener."];
+}

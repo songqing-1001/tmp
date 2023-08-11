@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::EvaluatedStmt",height=0.2,width=0.4,color="black",URL="$structclang_1_1EvaluatedStmt.html",tooltip="Structure used to store a statement, the constant value to which it was evaluated (if any),..."];
+}

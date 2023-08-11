@@ -1,0 +1,23 @@
+digraph "clang::tooling::dependencies::TranslationUnitDeps"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::tooling::dependencies\l::TranslationUnitDeps",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The full dependencies and module graph for a specific input."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ID" ,fontname="Helvetica"];
+  Node2 [label="clang::tooling::dependencies\l::ModuleID",height=0.2,width=0.4,color="black",URL="$structclang_1_1tooling_1_1dependencies_1_1ModuleID.html",tooltip="This is used to identify a specific module."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ModuleName\nContextHash" ,fontname="Helvetica"];
+  Node3 [label="string",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ModuleGraph" ,fontname="Helvetica"];
+  Node4 [label="vector\< ModuleDeps \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DriverCommandLine\nFileDeps" ,fontname="Helvetica"];
+  Node5 [label="vector\< std::string \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Commands" ,fontname="Helvetica"];
+  Node6 [label="vector\< clang::tooling\l::dependencies::Command \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ClangModuleDeps" ,fontname="Helvetica"];
+  Node7 [label="vector\< clang::tooling\l::dependencies::ModuleID \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PrebuiltModuleDeps" ,fontname="Helvetica"];
+  Node8 [label="vector\< clang::tooling\l::dependencies::PrebuiltModuleDep \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

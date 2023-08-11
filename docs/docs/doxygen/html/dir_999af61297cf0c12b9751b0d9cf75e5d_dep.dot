@@ -1,0 +1,12 @@
+digraph "lib/MCA/Stages" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_cb45c0f3679d3f959ecd5a490a86aa87 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="MCA" fontname="Helvetica", fontsize="10", URL="dir_cb45c0f3679d3f959ecd5a490a86aa87.html"]
+  dir_999af61297cf0c12b9751b0d9cf75e5d [shape=box, label="Stages", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_999af61297cf0c12b9751b0d9cf75e5d.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_999af61297cf0c12b9751b0d9cf75e5d->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="20", labeldistance=1.5 headhref="dir_000327_000001.html"];
+}

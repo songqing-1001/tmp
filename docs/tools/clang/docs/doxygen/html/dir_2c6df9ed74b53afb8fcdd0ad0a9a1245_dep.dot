@@ -1,0 +1,12 @@
+digraph "lib/Tooling/Refactoring/Extract" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fd59975060ceb1c62f940102f7f6fbcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Refactoring" fontname="Helvetica", fontsize="10", URL="dir_fd59975060ceb1c62f940102f7f6fbcd.html"]
+  dir_2c6df9ed74b53afb8fcdd0ad0a9a1245 [shape=box, label="Extract", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2c6df9ed74b53afb8fcdd0ad0a9a1245.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_2c6df9ed74b53afb8fcdd0ad0a9a1245->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="13", labeldistance=1.5 headhref="dir_000120_000001.html"];
+}

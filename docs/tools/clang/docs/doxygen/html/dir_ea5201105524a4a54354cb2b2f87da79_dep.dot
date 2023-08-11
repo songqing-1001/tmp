@@ -1,0 +1,12 @@
+digraph "include/clang/Analysis/DomainSpecific" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6024dad6eb738b6c5ec170cdb0ebf79d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Analysis" fontname="Helvetica", fontsize="10", URL="dir_6024dad6eb738b6c5ec170cdb0ebf79d.html"]
+  dir_ea5201105524a4a54354cb2b2f87da79 [shape=box, label="DomainSpecific", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ea5201105524a4a54354cb2b2f87da79.html"];
+  }
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_ea5201105524a4a54354cb2b2f87da79->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="2", labeldistance=1.5 headhref="dir_000006_000014.html"];
+}

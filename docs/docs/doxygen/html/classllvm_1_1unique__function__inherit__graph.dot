@@ -1,0 +1,35 @@
+digraph "llvm::unique_function&lt; FunctionT &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::unique_function\l\< FunctionT \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="unique_function is a type-erasing functor similar to std::function."];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< bool(const SymbolString\lPtr &)\>" ,fontname="Helvetica"];
+  Node2 [label="llvm::unique_function\l\< bool(const SymbolStringPtr &)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< void(Expected\< SymbolMap \>)\>" ,fontname="Helvetica"];
+  Node3 [label="llvm::unique_function\l\< void(Expected\< SymbolMap \>)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Expected\< Materialization\lUnit::Interface \>(ExecutionSession\l &ES, MemoryBufferRef ObjBuffer)\>" ,fontname="Helvetica"];
+  Node4 [label="llvm::unique_function\l\< Expected\< Materialization\lUnit::Interface \>(ExecutionSession\l &ES, MemoryBufferRef ObjBuffer)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< void(llvm::orc::shared\l::WrapperFunctionResult)\>" ,fontname="Helvetica"];
+  Node5 [label="llvm::unique_function\l\< void(llvm::orc::shared\l::WrapperFunctionResult)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Expected\< ThreadSafeModule\l \>(ThreadSafeModule, Materialization\lResponsibility &R)\>" ,fontname="Helvetica"];
+  Node6 [label="llvm::unique_function\l\< Expected\< ThreadSafeModule\l \>(ThreadSafeModule, Materialization\lResponsibility &R)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Error(JITDylib &JD,\l StringRef DLLFileName)\>" ,fontname="Helvetica"];
+  Node7 [label="llvm::unique_function\l\< Error(JITDylib &JD,\l StringRef DLLFileName)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< void(std::unique\l_ptr\< Task \> T)\>" ,fontname="Helvetica"];
+  Node8 [label="llvm::unique_function\l\< void(std::unique_ptr\l\< Task \> T)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< void(Error)\>" ,fontname="Helvetica"];
+  Node9 [label="llvm::unique_function\l\< void(Error)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< CreateMemoryManagerFn \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::unique_function\l\< CreateMemoryManagerFn \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< std::unique_ptr\<\l RuntimeDyld::MemoryManager \>()\>" ,fontname="Helvetica"];
+  Node11 [label="llvm::unique_function\l\< std::unique_ptr\< RuntimeDyld\l::MemoryManager \>()\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Expected\< JITTargetAddress \>()\>" ,fontname="Helvetica"];
+  Node12 [label="llvm::unique_function\l\< Expected\< JITTargetAddress \>()\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::Expected \>" ,fontname="Helvetica"];
+  Node13 [label="llvm::unique_function\l\< llvm::Expected \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< void(llvm::Expected\l\< llvm::DenseMap \>)\>" ,fontname="Helvetica"];
+  Node14 [label="llvm::unique_function\l\< void(llvm::Expected\l\< llvm::DenseMap \>)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function.html",tooltip=" "];
+}

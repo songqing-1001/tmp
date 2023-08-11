@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::format::Additional\lKeywords",height=0.2,width=0.4,color="black",URL="$structclang_1_1format_1_1AdditionalKeywords.html",tooltip="Encapsulates keywords that are context sensitive or for languages not properly supported by Clang's l..."];
+}

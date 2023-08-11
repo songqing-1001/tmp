@@ -1,0 +1,19 @@
+digraph "clang::arcmt::trans::ASTTraverser"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::arcmt::trans\l::ASTTraverser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::arcmt::trans\l::BlockObjCVariableTraverser",height=0.2,width=0.4,color="black",URL="$classclang_1_1arcmt_1_1trans_1_1BlockObjCVariableTraverser.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::arcmt::trans\l::GCAttrsTraverser",height=0.2,width=0.4,color="black",URL="$classclang_1_1arcmt_1_1trans_1_1GCAttrsTraverser.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::arcmt::trans\l::GCCollectableCallsTraverser",height=0.2,width=0.4,color="black",URL="$classclang_1_1arcmt_1_1trans_1_1GCCollectableCallsTraverser.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::arcmt::trans\l::PropertyRewriteTraverser",height=0.2,width=0.4,color="black",URL="$classclang_1_1arcmt_1_1trans_1_1PropertyRewriteTraverser.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::arcmt::trans\l::ProtectedScopeTraverser",height=0.2,width=0.4,color="black",URL="$classclang_1_1arcmt_1_1trans_1_1ProtectedScopeTraverser.html",tooltip=" "];
+}

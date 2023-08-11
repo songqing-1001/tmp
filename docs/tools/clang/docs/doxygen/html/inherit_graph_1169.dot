@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::IsResultPtrLowBit\lFree\< CXXCtorInitializer * \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1IsResultPtrLowBitFree_3_01CXXCtorInitializer_01_5_01_4.html",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "include/llvm/CodeGen/PBQP" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_19e251b771363806b5435ead42278477 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CodeGen" fontname="Helvetica", fontsize="10", URL="dir_19e251b771363806b5435ead42278477.html"]
+  dir_b580c976172ba385868521c0da021173 [shape=box, label="PBQP", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b580c976172ba385868521c0da021173.html"];
+  }
+  dir_32453792af2ba70c54e3ccae3a790d1b [shape=box label="ADT" URL="dir_32453792af2ba70c54e3ccae3a790d1b.html"];
+  dir_b580c976172ba385868521c0da021173->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="4", labeldistance=1.5 headhref="dir_000247_000007.html"];
+}

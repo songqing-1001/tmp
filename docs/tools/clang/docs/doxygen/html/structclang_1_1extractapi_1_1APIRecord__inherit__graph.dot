@@ -1,0 +1,47 @@
+digraph "clang::extractapi::APIRecord"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::extractapi::\lAPIRecord",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The base representation of an API record. Holds common symbol information."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::extractapi::\lEnumConstantRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1EnumConstantRecord.html",tooltip="This holds information associated with enum constants."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::extractapi::\lEnumRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1EnumRecord.html",tooltip="This holds information associated with enums."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::extractapi::\lGlobalFunctionRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1GlobalFunctionRecord.html",tooltip="This holds information associated with global functions."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::extractapi::\lGlobalVariableRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1GlobalVariableRecord.html",tooltip="This holds information associated with global functions."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::extractapi::\lMacroDefinitionRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1MacroDefinitionRecord.html",tooltip="This holds information associated with macro definitions."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="clang::extractapi::\lObjCContainerRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCContainerRecord.html",tooltip="The base representation of an Objective-C container record."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="clang::extractapi::\lObjCCategoryRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCCategoryRecord.html",tooltip="This holds information associated with Objective-C categories."];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="clang::extractapi::\lObjCInterfaceRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCInterfaceRecord.html",tooltip="This holds information associated with Objective-C interfaces/classes."];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="clang::extractapi::\lObjCProtocolRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCProtocolRecord.html",tooltip="This holds information associated with Objective-C protocols."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="clang::extractapi::\lObjCInstanceVariableRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCInstanceVariableRecord.html",tooltip="This holds information associated with Objective-C instance variables."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="clang::extractapi::\lObjCMethodRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCMethodRecord.html",tooltip="This holds information associated with Objective-C methods."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="clang::extractapi::\lObjCClassMethodRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCClassMethodRecord.html",tooltip=" "];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="clang::extractapi::\lObjCInstanceMethodRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCInstanceMethodRecord.html",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="clang::extractapi::\lObjCPropertyRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCPropertyRecord.html",tooltip="This holds information associated with Objective-C properties."];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="clang::extractapi::\lObjCClassPropertyRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCClassPropertyRecord.html",tooltip=" "];
+  Node15 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="clang::extractapi::\lObjCInstancePropertyRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1ObjCInstancePropertyRecord.html",tooltip=" "];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="clang::extractapi::\lStructFieldRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1StructFieldRecord.html",tooltip="This holds information associated with struct fields."];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="clang::extractapi::\lStructRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1StructRecord.html",tooltip="This holds information associated with structs."];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="clang::extractapi::\lTypedefRecord",height=0.2,width=0.4,color="black",URL="$structclang_1_1extractapi_1_1TypedefRecord.html",tooltip="This holds information associated with typedefs."];
+}

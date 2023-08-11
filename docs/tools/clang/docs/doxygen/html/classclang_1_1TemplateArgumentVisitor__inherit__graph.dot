@@ -1,0 +1,13 @@
+digraph "clang::TemplateArgumentVisitor&lt; ImplClass, RetTy, ParamTys &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::TemplateArgumentVisitor\l\< ImplClass, RetTy, ParamTys \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A simple visitor class that helps create template argument visitors."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::templateargumentvisitor\l::Base\< std::add_lvalue_reference,\l ImplClass, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< std::add_lvalue_reference,\l ImplClass, void, ParamTys... \>" ,fontname="Helvetica"];
+  Node3 [label="clang::templateargumentvisitor\l::Base\< Ref, ImplClass, RetTy,\l ParamTys \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip="A simple visitor class that helps create template argument visitors."];
+}

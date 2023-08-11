@@ -1,0 +1,12 @@
+digraph "lib/IR" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_97aefd0d527b934f1d99a682da8fe6a9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_97aefd0d527b934f1d99a682da8fe6a9.html"]
+  dir_bfcfa2223a05221bedc89835a6573260 [shape=box, label="IR", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bfcfa2223a05221bedc89835a6573260.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_bfcfa2223a05221bedc89835a6573260->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="861", labeldistance=1.5 headhref="dir_000075_000001.html"];
+}

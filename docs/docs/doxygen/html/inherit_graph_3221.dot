@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::iterator_facade\l_base\< call_iterator,\l std::forward_iterator\l_tag, typename std::iterator\l_traits\< VectorImplT::iterator\l \>::value_type, typename std::\literator_traits\< VectorImplT::iterator\l \>::difference_type, std::conditional\l_t\< std::is_same\< typename std::iterator\l_traits\< VectorImplT::iterator \>::value\l_type, typename std::iterator_traits\< VectorImplT\l::iterator \>::value_type \>::value, typename std\l::iterator_traits\< VectorImplT::iterator \>::pointer,\l typename std::iterator_traits\< VectorImplT::iterator\l \>::value_type * \>, std::conditional_t\< std::is_same\l\< typename std::iterator_traits\< VectorImplT::iterator\l \>::value_type, typename std::iterator_traits\< VectorImplT\l::iterator \>::value_type \>::value, typename std::iterator\l_traits\< VectorImplT::iterator \>::reference, typename std::\literator_traits\< VectorImplT::iterator \>::value_type & \> \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1iterator__facade__base.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="llvm::iterator_adaptor\l_base\< call_iterator,\l VectorImplT::iterator,\l std::forward_iterator_tag \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1iterator__adaptor__base.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::LazyCallGraph\l::EdgeSequence::call\l_iterator",height=0.2,width=0.4,color="black",URL="$classllvm_1_1LazyCallGraph_1_1EdgeSequence_1_1call__iterator.html",tooltip="An iterator over specifically call edges."];
+}

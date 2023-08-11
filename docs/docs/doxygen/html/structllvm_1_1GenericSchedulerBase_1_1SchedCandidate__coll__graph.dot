@@ -1,0 +1,54 @@
+digraph "llvm::GenericSchedulerBase::SchedCandidate"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::GenericSchedulerBase\l::SchedCandidate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Store the state used by GenericScheduler heuristics, required for the lifetime of one invocation of p..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RPDelta" ,fontname="Helvetica"];
+  Node2 [label="llvm::RegPressureDelta",height=0.2,width=0.4,color="black",URL="$structllvm_1_1RegPressureDelta.html",tooltip="Store the effects of a change in pressure on things that MI scheduler cares about."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Excess\nCriticalMax\nCurrentMax" ,fontname="Helvetica"];
+  Node3 [label="llvm::PressureChange",height=0.2,width=0.4,color="black",URL="$classllvm_1_1PressureChange.html",tooltip="Capture a change in pressure for a single pressure set."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SU" ,fontname="Helvetica"];
+  Node4 [label="llvm::SUnit",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SUnit.html",tooltip="Scheduling unit. This is a node in the scheduling DAG."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Succs\nPreds" ,fontname="Helvetica"];
+  Node5 [label="llvm::SmallVector\<\l llvm::SDep, 4 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::SmallVectorImpl\l\< llvm::SDep \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVectorImpl.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::SDep \>" ,fontname="Helvetica"];
+  Node7 [label="llvm::SmallVectorImpl\< T \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVectorImpl.html",tooltip="This class consists of common code factored out of the SmallVector class to reduce code duplication b..."];
+  Node8 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="llvm::SmallVectorStorage\l\< llvm::SDep, N \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node9 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::SDep, N \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::SmallVectorStorage\l\< T, N \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip="Storage for the SmallVector elements."];
+  Node9 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node11 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::SDep, 4 \>" ,fontname="Helvetica"];
+  Node11 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip="This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small."];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node11 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="llvm::SmallVectorStorage\l\< T, CalculateSmallVectorDefault\lInlinedElements\< T \>::value \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip=" "];
+  Node9 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node10 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< T, CalculateSmallVector\lDefaultInlinedElements\l\< T \>::value \>" ,fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OrigNode" ,fontname="Helvetica"];
+  Node13 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" isVRegCycle\nisUnbuffered\nisTwoAddress\nhasPhysRegDefs\nhasPhysRegUses\nisScheduled\nisCommutable\nisCallOp\nisCall\nisCloned\n..." ,fontname="Helvetica"];
+  Node13 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SchedulingPref" ,fontname="Helvetica"];
+  Node14 [label="Preference",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node15 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" WeakSuccsLeft\nWeakPredsLeft\nNodeNum\nTopReadyCycle\nNumRegDefsLeft\nNumPredsLeft\nLatency\nNumSuccsLeft\nNodeQueueId\nNumSuccs\n..." ,fontname="Helvetica"];
+  Node15 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node16 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SchedClass\nCopySrcRC\nCopyDstRC" ,fontname="Helvetica"];
+  Node16 [label="const",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AtTop" ,fontname="Helvetica"];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Policy" ,fontname="Helvetica"];
+  Node17 [label="llvm::GenericSchedulerBase\l::CandPolicy",height=0.2,width=0.4,color="black",URL="$structllvm_1_1GenericSchedulerBase_1_1CandPolicy.html",tooltip="Policy for scheduling the next instruction in the candidate's zone."];
+  Node13 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ReduceLatency" ,fontname="Helvetica"];
+  Node15 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ReduceResIdx\nDemandResIdx" ,fontname="Helvetica"];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ResDelta" ,fontname="Helvetica"];
+  Node18 [label="llvm::GenericSchedulerBase\l::SchedResourceDelta",height=0.2,width=0.4,color="black",URL="$structllvm_1_1GenericSchedulerBase_1_1SchedResourceDelta.html",tooltip="Status of an instruction's critical resource consumption."];
+  Node15 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CritResources\nDemandedResources" ,fontname="Helvetica"];
+  Node19 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Reason" ,fontname="Helvetica"];
+  Node19 [label="CandReason",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

@@ -1,0 +1,17 @@
+digraph "llvm::gsym::FunctionInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::gsym::FunctionInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Function information in GSYM files encodes information for one contiguous address range."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Name" ,fontname="Helvetica"];
+  Node2 [label="uint32_t",height=0.2,width=0.4,color="black",URL="$classuint32__t.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Inline" ,fontname="Helvetica"];
+  Node3 [label="optional\< llvm::gsym\l::InlineInfo \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OptLineTable" ,fontname="Helvetica"];
+  Node4 [label="optional\< llvm::gsym\l::LineTable \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Range" ,fontname="Helvetica"];
+  Node5 [label="llvm::AddressRange",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AddressRange.html",tooltip="A class that represents an address range."];
+}

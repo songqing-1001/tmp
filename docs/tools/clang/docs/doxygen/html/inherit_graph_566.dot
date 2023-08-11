@@ -1,0 +1,15 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::concepts::Requirement",height=0.2,width=0.4,color="black",URL="$classclang_1_1concepts_1_1Requirement.html",tooltip="A static requirement that can be used in a requires-expression to check properties of types and expre..."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="clang::concepts::ExprRequirement",height=0.2,width=0.4,color="black",URL="$classclang_1_1concepts_1_1ExprRequirement.html",tooltip="A requires-expression requirement which queries the validity and properties of an expression ('simple..."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::concepts::NestedRequirement",height=0.2,width=0.4,color="black",URL="$classclang_1_1concepts_1_1NestedRequirement.html",tooltip="A requires-expression requirement which is satisfied when a general constraint expression is satisfie..."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::concepts::TypeRequirement",height=0.2,width=0.4,color="black",URL="$classclang_1_1concepts_1_1TypeRequirement.html",tooltip="A requires-expression requirement which queries the existence of a type name or type template special..."];
+}

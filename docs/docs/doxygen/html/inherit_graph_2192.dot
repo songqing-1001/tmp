@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::detail::first\l_or_second_type\< EltTy,\l FirstTy \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1detail_1_1first__or__second__type.html",tooltip="Return a reference to the first or second member of a reference."];
+}

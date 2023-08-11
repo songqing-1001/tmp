@@ -1,0 +1,19 @@
+digraph "lib/Target/PowerPC/Disassembler" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1854d513cb8eef295481a59a854f7656 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="PowerPC" fontname="Helvetica", fontsize="10", URL="dir_1854d513cb8eef295481a59a854f7656.html"]
+  dir_968c5c9b1f33bf46375badfb75e715ed [shape=box, label="Disassembler", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_968c5c9b1f33bf46375badfb75e715ed.html"];
+  }
+  dir_9caa13905757761738893b9bf4320c4b [shape=box label="TargetInfo" URL="dir_9caa13905757761738893b9bf4320c4b.html"];
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_5145c5eb0f1c1165a8aedc8d28dc1d66 [shape=box label="MCTargetDesc" URL="dir_5145c5eb0f1c1165a8aedc8d28dc1d66.html"];
+  dir_968c5c9b1f33bf46375badfb75e715ed->dir_9caa13905757761738893b9bf4320c4b [headlabel="1", labeldistance=1.5 headhref="dir_000173_000175.html"];
+  dir_968c5c9b1f33bf46375badfb75e715ed->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="6", labeldistance=1.5 headhref="dir_000173_000001.html"];
+  dir_968c5c9b1f33bf46375badfb75e715ed->dir_5145c5eb0f1c1165a8aedc8d28dc1d66 [headlabel="1", labeldistance=1.5 headhref="dir_000173_000174.html"];
+  dir_9caa13905757761738893b9bf4320c4b->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000175_000001.html"];
+  dir_5145c5eb0f1c1165a8aedc8d28dc1d66->dir_9caa13905757761738893b9bf4320c4b [headlabel="1", labeldistance=1.5 headhref="dir_000174_000175.html"];
+  dir_5145c5eb0f1c1165a8aedc8d28dc1d66->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="118", labeldistance=1.5 headhref="dir_000174_000001.html"];
+}

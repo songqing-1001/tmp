@@ -1,0 +1,19 @@
+digraph "lib/Target/Hexagon/Disassembler" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_44384080de1e1933d0286d6003f85ecf {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Hexagon" fontname="Helvetica", fontsize="10", URL="dir_44384080de1e1933d0286d6003f85ecf.html"]
+  dir_37f0de9a207e38008eeeeb1d6c5f7376 [shape=box, label="Disassembler", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_37f0de9a207e38008eeeeb1d6c5f7376.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_3d7862656705ee0d71c69c2baa3e9062 [shape=box label="TargetInfo" URL="dir_3d7862656705ee0d71c69c2baa3e9062.html"];
+  dir_7869d76095a905f9f558764af4fcad9d [shape=box label="MCTargetDesc" URL="dir_7869d76095a905f9f558764af4fcad9d.html"];
+  dir_37f0de9a207e38008eeeeb1d6c5f7376->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="14", labeldistance=1.5 headhref="dir_000140_000001.html"];
+  dir_37f0de9a207e38008eeeeb1d6c5f7376->dir_3d7862656705ee0d71c69c2baa3e9062 [headlabel="1", labeldistance=1.5 headhref="dir_000140_000142.html"];
+  dir_37f0de9a207e38008eeeeb1d6c5f7376->dir_7869d76095a905f9f558764af4fcad9d [headlabel="4", labeldistance=1.5 headhref="dir_000140_000141.html"];
+  dir_3d7862656705ee0d71c69c2baa3e9062->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000142_000001.html"];
+  dir_7869d76095a905f9f558764af4fcad9d->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="157", labeldistance=1.5 headhref="dir_000141_000001.html"];
+  dir_7869d76095a905f9f558764af4fcad9d->dir_3d7862656705ee0d71c69c2baa3e9062 [headlabel="1", labeldistance=1.5 headhref="dir_000141_000142.html"];
+}

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::CastIsPossible\l\< To, From, std::enable\l_if_t\< std::is_base_of\l\< To, From \>::value \> \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1CastIsPossible_3_01To_00_01From_00_01std_1_1enable__if__t_3_01std_1_1is__base__of_77bcfee5d189834b52df4c80a62b4786.html",tooltip="Upcasting (from derived to base) and casting from a type to itself should always be possible."];
+}

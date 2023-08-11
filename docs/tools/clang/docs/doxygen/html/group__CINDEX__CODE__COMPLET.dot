@@ -1,0 +1,10 @@
+digraph "Code completion"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="libclang: C Interface\l to Clang",height=0.2,width=0.4,color="black",URL="$group__CINDEX.html",tooltip="The C Interface to Clang provides a relatively small API that exposes facilities for parsing source c..."];
+  Node1 [label="Code completion",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Code completion involves taking an (incomplete) source file, along with knowledge of where the user i..."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+}

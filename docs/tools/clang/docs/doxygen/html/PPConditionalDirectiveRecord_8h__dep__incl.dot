@@ -1,0 +1,14 @@
+digraph "include/clang/Lex/PPConditionalDirectiveRecord.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/clang/Lex/PPConditional\lDirectiveRecord.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lib/ARCMigrate/ObjCMT.cpp",height=0.2,width=0.4,color="black",URL="$ObjCMT_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lib/Edit/Commit.cpp",height=0.2,width=0.4,color="black",URL="$Commit_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lib/Lex/PPConditionalDirective\lRecord.cpp",height=0.2,width=0.4,color="black",URL="$PPConditionalDirectiveRecord_8cpp.html",tooltip=" "];
+}

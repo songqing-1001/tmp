@@ -1,0 +1,12 @@
+digraph "include/llvm/Support/Windows" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ae1e398ac700924fa434b51c248a5531 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Support" fontname="Helvetica", fontsize="10", URL="dir_ae1e398ac700924fa434b51c248a5531.html"]
+  dir_4d6e3ab4e36e03bf1b9164b4b5d23cdd [shape=box, label="Windows", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4d6e3ab4e36e03bf1b9164b4b5d23cdd.html"];
+  }
+  dir_32453792af2ba70c54e3ccae3a790d1b [shape=box label="ADT" URL="dir_32453792af2ba70c54e3ccae3a790d1b.html"];
+  dir_4d6e3ab4e36e03bf1b9164b4b5d23cdd->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="4", labeldistance=1.5 headhref="dir_000302_000007.html"];
+}

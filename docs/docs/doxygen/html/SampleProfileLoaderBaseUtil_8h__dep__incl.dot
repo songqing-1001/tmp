@@ -1,0 +1,22 @@
+digraph "include/llvm/Transforms/Utils/SampleProfileLoaderBaseUtil.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/llvm/Transforms\l/Utils/SampleProfileLoaderBase\lUtil.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="include/llvm/Transforms\l/Utils/SampleProfileLoaderBase\lImpl.h",height=0.2,width=0.4,color="black",URL="$SampleProfileLoaderBaseImpl_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lib/CodeGen/MIRSampleProfile.cpp",height=0.2,width=0.4,color="black",URL="$MIRSampleProfile_8cpp.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lib/Transforms/IPO\l/SampleProfile.cpp",height=0.2,width=0.4,color="black",URL="$SampleProfile_8cpp.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lib/CodeGen/MIRFSDiscriminator.cpp",height=0.2,width=0.4,color="black",URL="$MIRFSDiscriminator_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="lib/Transforms/Utils\l/AddDiscriminators.cpp",height=0.2,width=0.4,color="black",URL="$AddDiscriminators_8cpp.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="lib/Transforms/Utils\l/SampleProfileLoaderBaseUtil.cpp",height=0.2,width=0.4,color="black",URL="$SampleProfileLoaderBaseUtil_8cpp.html",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "lib/Tooling/DependencyScanning" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c4270fa7a06cd7372c7af2452fb3367e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Tooling" fontname="Helvetica", fontsize="10", URL="dir_c4270fa7a06cd7372c7af2452fb3367e.html"]
+  dir_0401983ff919e10e15cea8062239e19e [shape=box, label="DependencyScanning", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0401983ff919e10e15cea8062239e19e.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_0401983ff919e10e15cea8062239e19e->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="25", labeldistance=1.5 headhref="dir_000064_000001.html"];
+}

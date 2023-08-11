@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::detail::UniqueFunction\lBase\< R, P... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1detail_1_1UniqueFunctionBase.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="llvm::unique_function\l\< R(P...) const \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function_3_01R_07P_8_8_8_08_01const_01_4.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::unique_function\l\< R(P...)\>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1unique__function_3_01R_07P_8_8_8_08_4.html",tooltip=" "];
+}

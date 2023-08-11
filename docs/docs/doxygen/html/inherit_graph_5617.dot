@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::SDNode::use_iterator",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SDNode_1_1use__iterator.html",tooltip="This class provides iterator support for SDUse operands that use a specific SDNode."];
+}

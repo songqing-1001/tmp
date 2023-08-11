@@ -1,0 +1,32 @@
+digraph "llvm::objcopy::xcoff::Section"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::objcopy::xcoff\l::Section",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SectionHeader" ,fontname="Helvetica"];
+  Node2 [label="llvm::object::XCOFFSection\lHeader32",height=0.2,width=0.4,color="black",URL="$structllvm_1_1object_1_1XCOFFSectionHeader32.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::object::XCOFFSection\lHeader\< XCOFFSectionHeader32 \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1object_1_1XCOFFSectionHeader.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SectionFlagsTypeMask\nSectionFlagsReservedMask" ,fontname="Helvetica"];
+  Node4 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< XCOFFSectionHeader32 \>" ,fontname="Helvetica"];
+  Node5 [label="llvm::object::XCOFFSection\lHeader\< T \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1object_1_1XCOFFSectionHeader.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SectionFlagsTypeMask\nSectionFlagsReservedMask" ,fontname="Helvetica"];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NumberOfRelocations\nNumberOfLineNumbers" ,fontname="Helvetica"];
+  Node6 [label="packed_endian_specific\l_integral\< uint16_t, big,\l unaligned \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Name" ,fontname="Helvetica"];
+  Node7 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FileOffsetToRelocationInfo\nFileOffsetToRawData\nFileOffsetToLineNumberInfo\nPhysicalAddress\nSectionSize\nVirtualAddress" ,fontname="Helvetica"];
+  Node8 [label="packed_endian_specific\l_integral\< uint32_t, big,\l unaligned \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Flags" ,fontname="Helvetica"];
+  Node9 [label="packed_endian_specific\l_integral\< int32_t, big,\l unaligned \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Contents" ,fontname="Helvetica"];
+  Node10 [label="llvm::ArrayRef\< uint8_t \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1ArrayRef.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< uint8_t \>" ,fontname="Helvetica"];
+  Node11 [label="llvm::ArrayRef\< T \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1ArrayRef.html",tooltip="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),..."];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Relocations" ,fontname="Helvetica"];
+  Node12 [label="vector\< llvm::object\l::XCOFFRelocation32 \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

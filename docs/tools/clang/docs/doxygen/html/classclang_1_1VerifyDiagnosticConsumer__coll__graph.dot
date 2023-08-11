@@ -1,0 +1,14 @@
+digraph "clang::VerifyDiagnosticConsumer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::VerifyDiagnosticConsumer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="VerifyDiagnosticConsumer - Create a diagnostic client which will use markers in the input source to c..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::DiagnosticConsumer",height=0.2,width=0.4,color="black",URL="$classclang_1_1DiagnosticConsumer.html",tooltip="Abstract interface, implemented by clients of the front-end, which formats and prints fully processed..."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NumErrors\nNumWarnings" ,fontname="Helvetica"];
+  Node3 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::CommentHandler",height=0.2,width=0.4,color="black",URL="$classclang_1_1CommentHandler.html",tooltip="Abstract base class that describes a handler that will receive source ranges for each of the comments..."];
+}

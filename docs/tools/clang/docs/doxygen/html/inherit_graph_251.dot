@@ -1,0 +1,33 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2782 [label="iterator_adaptor_base",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node2782 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="clang::ASTReader::Module\lDeclIterator",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTReader_1_1ModuleDeclIterator.html",tooltip=" "];
+  Node2782 -> Node2784 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2784 [label="clang::CanTypeIterator\l\< InputIterator \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1CanTypeIterator.html",tooltip="Iterator adaptor that turns an iterator over canonical QualTypes into an iterator over CanQualTypes."];
+  Node2782 -> Node2785 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2785 [label="clang::LazyVector\<\l T, Source, Loader,\l LoadedStorage, LocalStorage\l \>::iterator",height=0.2,width=0.4,color="black",URL="$classclang_1_1LazyVector_1_1iterator.html",tooltip="Iteration over the elements in the vector."];
+  Node2782 -> Node2786 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2786 [label="clang::OMPExecutableDirective\l::specific_clause_iterator\l\< SpecificClause \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1OMPExecutableDirective_1_1specific__clause__iterator.html",tooltip="Iterates over a filtered subrange of clauses applied to a directive."];
+  Node2782 -> Node2787 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2787 [label="clang::OMPExecutableDirective\l::used_clauses_child_iterator",height=0.2,width=0.4,color="black",URL="$classclang_1_1OMPExecutableDirective_1_1used__clauses__child__iterator.html",tooltip="Iterates over expressions/statements used in the construct."];
+  Node2782 -> Node2788 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2788 [label="clang::OMPMappableExprList\lClause\< T \>::const_component\l_lists_iterator",height=0.2,width=0.4,color="black",URL="$classclang_1_1OMPMappableExprListClause_1_1const__component__lists__iterator.html",tooltip="Iterator that browse the components by lists."];
+  Node2782 -> Node2789 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2789 [label="clang::ParsedAttributesView\l::const_iterator",height=0.2,width=0.4,color="black",URL="$structclang_1_1ParsedAttributesView_1_1const__iterator.html",tooltip=" "];
+  Node2782 -> Node2790 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2790 [label="clang::ParsedAttributesView\l::iterator",height=0.2,width=0.4,color="black",URL="$structclang_1_1ParsedAttributesView_1_1iterator.html",tooltip=" "];
+  Node2782 -> Node2791 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2791 [label="clang::PreprocessingRecord\l::iterator",height=0.2,width=0.4,color="black",URL="$classclang_1_1PreprocessingRecord_1_1iterator.html",tooltip="Iteration over the preprocessed entities."];
+  Node2782 -> Node2792 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2792 [label="clang::RedeclarableTemplate\lDecl::SpecIterator\< EntryType,\l SETraits, DeclType \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1RedeclarableTemplateDecl_1_1SpecIterator.html",tooltip=" "];
+  Node2782 -> Node2793 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2793 [label="clang::Stmt::CastIterator\l\< T, TPtr, StmtPtr \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1Stmt_1_1CastIterator.html",tooltip="Iterator for iterating over Stmt * arrays that contain only T *."];
+  Node2782 -> Node2794 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2794 [label="clang::UnresolvedSetIterator",height=0.2,width=0.4,color="black",URL="$classclang_1_1UnresolvedSetIterator.html",tooltip="The iterator over UnresolvedSets."];
+}

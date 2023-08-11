@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::CXXBasePaths",height=0.2,width=0.4,color="black",URL="$classclang_1_1CXXBasePaths.html",tooltip="BasePaths - Represents the set of paths from a derived class to one of its (direct or indirect) bases..."];
+}

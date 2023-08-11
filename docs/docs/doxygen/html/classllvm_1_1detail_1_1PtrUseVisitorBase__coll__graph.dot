@@ -1,0 +1,58 @@
+digraph "llvm::detail::PtrUseVisitorBase"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::detail::PtrUseVisitorBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Implementation of non-dependent functionality for PtrUseVisitor."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Offset" ,fontname="Helvetica"];
+  Node2 [label="llvm::APInt",height=0.2,width=0.4,color="black",URL="$classllvm_1_1APInt.html",tooltip="Class for arbitrary precision integers."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pVal\nVAL\nWORDTYPE_MAX" ,fontname="Helvetica"];
+  Node3 [label="uint64_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PI" ,fontname="Helvetica"];
+  Node4 [label="llvm::detail::PtrUseVisitor\lBase::PtrInfo",height=0.2,width=0.4,color="black",URL="$classllvm_1_1detail_1_1PtrUseVisitorBase_1_1PtrInfo.html",tooltip="This class provides information about the result of a visit."];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" VisitedUses" ,fontname="Helvetica"];
+  Node5 [label="llvm::SmallPtrSet\<\l llvm::Use *, 8 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSet.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::SmallPtrSetImpl\l\< llvm::Use * \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSetImpl.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="llvm::SmallPtrSetImplBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSetImplBase.html",tooltip="SmallPtrSetImplBase - This is the common code shared among all the SmallPtrSet<>'s,..."];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="llvm::DebugEpochBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DebugEpochBase.html",tooltip="A base class for data structure classes wishing to make iterators (\"handles\") pointing into themselve..."];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CurArraySize\nNumNonEmpty\nNumTombstones" ,fontname="Helvetica"];
+  Node9 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CurArray\nSmallArray" ,fontname="Helvetica"];
+  Node10 [label="const",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::Use * \>" ,fontname="Helvetica"];
+  Node11 [label="llvm::SmallPtrSetImpl\l\< PtrType \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSetImpl.html",tooltip="A templated base class for SmallPtrSet which provides the typesafe interface that is common across al..."];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::Use *, 8 \>" ,fontname="Helvetica"];
+  Node12 [label="llvm::SmallPtrSet\<\l PtrType, SmallSize \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSet.html",tooltip="SmallPtrSet - This class implements a set which is optimized for holding SmallSize or less elements."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" IsOffsetKnown" ,fontname="Helvetica"];
+  Node13 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Worklist" ,fontname="Helvetica"];
+  Node14 [label="llvm::SmallVector\<\l llvm::detail::PtrUseVisitor\lBase::UseToVisit, 8 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="llvm::SmallVectorImpl\l\< llvm::detail::PtrUseVisitor\lBase::UseToVisit \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVectorImpl.html",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::detail::PtrUseVisitor\lBase::UseToVisit \>" ,fontname="Helvetica"];
+  Node16 [label="llvm::SmallVectorImpl\< T \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVectorImpl.html",tooltip="This class consists of common code factored out of the SmallVector class to reduce code duplication b..."];
+  Node17 -> Node14 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="llvm::SmallVectorStorage\l\< llvm::detail::PtrUseVisitorBase\l::UseToVisit, N \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip=" "];
+  Node18 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node18 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node19 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::detail::PtrUseVisitor\lBase::UseToVisit, N \>" ,fontname="Helvetica"];
+  Node19 [label="llvm::SmallVectorStorage\l\< T, N \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip="Storage for the SmallVector elements."];
+  Node18 -> Node19 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node20 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::detail::PtrUseVisitor\lBase::UseToVisit, 8 \>" ,fontname="Helvetica"];
+  Node20 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip="This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small."];
+  Node16 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 -> Node20 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="llvm::SmallVectorStorage\l\< T, CalculateSmallVectorDefault\lInlinedElements\< T \>::value \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip=" "];
+  Node18 -> Node21 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node19 -> Node21 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< T, CalculateSmallVector\lDefaultInlinedElements\l\< T \>::value \>" ,fontname="Helvetica"];
+  Node22 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" U" ,fontname="Helvetica"];
+  Node22 [label="llvm::Use",height=0.2,width=0.4,color="black",URL="$classllvm_1_1Use.html",tooltip="A Use represents the edge between a Value definition and its users."];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DL" ,fontname="Helvetica"];
+}

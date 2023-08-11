@@ -1,0 +1,12 @@
+digraph "include/clang/Lex" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7c3366c0dfc05dfe1380b9a1e2bf7190 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="clang" fontname="Helvetica", fontsize="10", URL="dir_7c3366c0dfc05dfe1380b9a1e2bf7190.html"]
+  dir_75e2a3c204180452df3eef4502f5497d [shape=box, label="Lex", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_75e2a3c204180452df3eef4502f5497d.html"];
+  }
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_75e2a3c204180452df3eef4502f5497d->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="55", labeldistance=1.5 headhref="dir_000090_000014.html"];
+}

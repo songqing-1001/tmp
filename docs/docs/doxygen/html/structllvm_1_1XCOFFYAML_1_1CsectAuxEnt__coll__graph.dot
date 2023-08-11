@@ -1,0 +1,21 @@
+digraph "llvm::XCOFFYAML::CsectAuxEnt"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::XCOFFYAML::CsectAuxEnt",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::XCOFFYAML::AuxSymbolEnt",height=0.2,width=0.4,color="black",URL="$structllvm_1_1XCOFFYAML_1_1AuxSymbolEnt.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Type" ,fontname="Helvetica"];
+  Node3 [label="AuxSymbolType",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SymbolAlignmentAndType" ,fontname="Helvetica"];
+  Node4 [label="optional\< uint8_t \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" StorageMappingClass" ,fontname="Helvetica"];
+  Node5 [label="optional\< XCOFF::Storage\lMappingClass \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TypeChkSectNum\nStabSectNum" ,fontname="Helvetica"];
+  Node6 [label="optional\< uint16_t \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SectionOrLengthHi\nSectionOrLengthLo\nStabInfoIndex\nSectionOrLength\nParameterHashIndex" ,fontname="Helvetica"];
+  Node7 [label="optional\< uint32_t \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

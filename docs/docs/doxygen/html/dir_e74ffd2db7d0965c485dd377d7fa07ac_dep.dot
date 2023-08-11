@@ -1,0 +1,12 @@
+digraph "lib/Target/ARM/TargetInfo" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_4394675d1fa84070817ace1e93b57e8a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ARM" fontname="Helvetica", fontsize="10", URL="dir_4394675d1fa84070817ace1e93b57e8a.html"]
+  dir_e74ffd2db7d0965c485dd377d7fa07ac [shape=box, label="TargetInfo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e74ffd2db7d0965c485dd377d7fa07ac.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_e74ffd2db7d0965c485dd377d7fa07ac->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000116_000001.html"];
+}

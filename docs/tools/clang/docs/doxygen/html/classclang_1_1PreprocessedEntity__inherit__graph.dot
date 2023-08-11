@@ -1,0 +1,16 @@
+digraph "clang::PreprocessedEntity"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::PreprocessedEntity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base class that describes a preprocessed entity, which may be a preprocessor directive or macro expan..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::MacroExpansion",height=0.2,width=0.4,color="black",URL="$classclang_1_1MacroExpansion.html",tooltip="Records the location of a macro expansion."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::PreprocessingDirective",height=0.2,width=0.4,color="black",URL="$classclang_1_1PreprocessingDirective.html",tooltip="Records the presence of a preprocessor directive."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::InclusionDirective",height=0.2,width=0.4,color="black",URL="$classclang_1_1InclusionDirective.html",tooltip="Record the location of an inclusion directive, such as an #include or #import statement."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::MacroDefinitionRecord",height=0.2,width=0.4,color="black",URL="$classclang_1_1MacroDefinitionRecord.html",tooltip="Record the location of a macro definition."];
+}

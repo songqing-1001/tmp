@@ -1,0 +1,28 @@
+digraph "clang::CXXRecordDecl"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::CXXRecordDecl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a C++ struct/union/class."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::RecordDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1RecordDecl.html",tooltip="Represents a struct/union/class."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::TagDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1TagDecl.html",tooltip="Represents the declaration of a struct/union/class/enum."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::TypeDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1TypeDecl.html",tooltip="Represents a declaration of a type."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::NamedDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1NamedDecl.html",tooltip="This represents a decl that may have a name."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="clang::Decl",height=0.2,width=0.4,color="black",URL="$classclang_1_1Decl.html",tooltip="Decl - This represents one declaration (or definition), e.g."];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="clang::DeclContext",height=0.2,width=0.4,color="black",URL="$classclang_1_1DeclContext.html",tooltip="DeclContext - This is used only as base class of specific decl types that can act as declaration cont..."];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="clang::Redeclarable\l\< TagDecl \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1Redeclarable.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TagDecl \>" ,fontname="Helvetica"];
+  Node9 [label="clang::Redeclarable\l\< decl_type \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1Redeclarable.html",tooltip="Provides common interface for the Decls that can be redeclared."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="clang::ClassTemplateSpecializationDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1ClassTemplateSpecializationDecl.html",tooltip="Represents a class template specialization, which refers to a class template with a given set of temp..."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="clang::ClassTemplatePartial\lSpecializationDecl",height=0.2,width=0.4,color="black",URL="$classclang_1_1ClassTemplatePartialSpecializationDecl.html",tooltip=" "];
+}

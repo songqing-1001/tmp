@@ -1,0 +1,23 @@
+digraph "include/llvm/Analysis/StackLifetime.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/llvm/Analysis\l/StackLifetime.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lib/Analysis/StackLifetime.cpp",height=0.2,width=0.4,color="black",URL="$StackLifetime_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lib/Analysis/StackSafety\lAnalysis.cpp",height=0.2,width=0.4,color="black",URL="$StackSafetyAnalysis_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lib/CodeGen/SafeStackLayout.h",height=0.2,width=0.4,color="black",URL="$SafeStackLayout_8h.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lib/CodeGen/SafeStack.cpp",height=0.2,width=0.4,color="black",URL="$SafeStack_8cpp.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="lib/CodeGen/SafeStackLayout.cpp",height=0.2,width=0.4,color="black",URL="$SafeStackLayout_8cpp.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="lib/Passes/PassBuilder.cpp",height=0.2,width=0.4,color="black",URL="$PassBuilder_8cpp.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="lib/Transforms/Coroutines\l/CoroFrame.cpp",height=0.2,width=0.4,color="black",URL="$CoroFrame_8cpp.html",tooltip=" "];
+}

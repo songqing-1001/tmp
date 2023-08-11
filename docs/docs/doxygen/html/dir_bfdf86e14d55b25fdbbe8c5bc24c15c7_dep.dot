@@ -1,0 +1,12 @@
+digraph "lib/InterfaceStub" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_97aefd0d527b934f1d99a682da8fe6a9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_97aefd0d527b934f1d99a682da8fe6a9.html"]
+  dir_bfdf86e14d55b25fdbbe8c5bc24c15c7 [shape=box, label="InterfaceStub", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bfdf86e14d55b25fdbbe8c5bc24c15c7.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_bfdf86e14d55b25fdbbe8c5bc24c15c7->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="25", labeldistance=1.5 headhref="dir_000074_000001.html"];
+}

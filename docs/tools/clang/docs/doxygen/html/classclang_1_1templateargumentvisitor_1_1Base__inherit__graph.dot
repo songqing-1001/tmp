@@ -1,0 +1,58 @@
+digraph "clang::templateargumentvisitor::Base&lt; Ref, ImplClass, RetTy, ParamTys &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::templateargumentvisitor\l::Base\< Ref, ImplClass, RetTy,\l ParamTys \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A simple visitor class that helps create template argument visitors."];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::make_const\l_ref, ImplClass, void,\l ParamTys... \>" ,fontname="Helvetica"];
+  Node2 [label="clang::templateargumentvisitor\l::Base\< llvm::make_const_ref,\l ImplClass, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::ConstTemplateArgument\lVisitor\< ImplClass, RetTy,\l ParamTys \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ConstTemplateArgumentVisitor.html",tooltip="A simple visitor class that helps create template argument visitors."];
+  Node3 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< JSONNodeDumper \>" ,fontname="Helvetica"];
+  Node4 [label="clang::ConstTemplateArgument\lVisitor\< JSONNodeDumper \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ConstTemplateArgumentVisitor.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::JSONNodeDumper",height=0.2,width=0.4,color="black",URL="$classclang_1_1JSONNodeDumper.html",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ASTDumper \>" ,fontname="Helvetica"];
+  Node6 [label="clang::ConstTemplateArgument\lVisitor\< ASTDumper \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ConstTemplateArgumentVisitor.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="clang::ASTNodeTraverser\l\< ASTDumper, TextNodeDumper \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTNodeTraverser.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="clang::ASTDumper",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTDumper.html",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Derived \>" ,fontname="Helvetica"];
+  Node9 [label="clang::ConstTemplateArgument\lVisitor\< Derived \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ConstTemplateArgumentVisitor.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="clang::ASTNodeTraverser\l\< Derived, NodeDelegateType \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTNodeTraverser.html",tooltip="ASTNodeTraverser traverses the Clang AST for dumping purposes."];
+  Node10 -> Node11 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< JSONDumper, JSONNodeDumper \>" ,fontname="Helvetica"];
+  Node11 [label="clang::ASTNodeTraverser\l\< JSONDumper, JSONNodeDumper \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ASTNodeTraverser.html",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="clang::JSONDumper",height=0.2,width=0.4,color="black",URL="$classclang_1_1JSONDumper.html",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ASTDumper, TextNodeDumper \>" ,fontname="Helvetica"];
+  Node3 -> Node13 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< JSONDumper \>" ,fontname="Helvetica"];
+  Node13 [label="clang::ConstTemplateArgument\lVisitor\< JSONDumper \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ConstTemplateArgumentVisitor.html",tooltip=" "];
+  Node13 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TextNodeDumper \>" ,fontname="Helvetica"];
+  Node14 [label="clang::ConstTemplateArgument\lVisitor\< TextNodeDumper \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ConstTemplateArgumentVisitor.html",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="clang::TextNodeDumper",height=0.2,width=0.4,color="black",URL="$classclang_1_1TextNodeDumper.html",tooltip=" "];
+  Node1 -> Node16 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::make_const\l_ref, JSONNodeDumper,\l void, ParamTys... \>" ,fontname="Helvetica"];
+  Node16 [label="clang::templateargumentvisitor\l::Base\< llvm::make_const_ref,\l JSONNodeDumper, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node16 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::make_const\l_ref, JSONDumper, void,\l ParamTys... \>" ,fontname="Helvetica"];
+  Node17 [label="clang::templateargumentvisitor\l::Base\< llvm::make_const_ref,\l JSONDumper, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node17 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node18 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< std::add_lvalue_reference,\l ImplClass, void, ParamTys... \>" ,fontname="Helvetica"];
+  Node18 [label="clang::templateargumentvisitor\l::Base\< std::add_lvalue_reference,\l ImplClass, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="clang::TemplateArgumentVisitor\l\< ImplClass, RetTy, ParamTys \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1TemplateArgumentVisitor.html",tooltip="A simple visitor class that helps create template argument visitors."];
+  Node1 -> Node20 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::make_const\l_ref, Derived, void,\l ParamTys... \>" ,fontname="Helvetica"];
+  Node20 [label="clang::templateargumentvisitor\l::Base\< llvm::make_const_ref,\l Derived, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node20 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node21 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::make_const\l_ref, ASTDumper, void,\l ParamTys... \>" ,fontname="Helvetica"];
+  Node21 [label="clang::templateargumentvisitor\l::Base\< llvm::make_const_ref,\l ASTDumper, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node21 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node22 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::make_const\l_ref, TextNodeDumper,\l void, ParamTys... \>" ,fontname="Helvetica"];
+  Node22 [label="clang::templateargumentvisitor\l::Base\< llvm::make_const_ref,\l TextNodeDumper, void, ParamTys... \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1templateargumentvisitor_1_1Base.html",tooltip=" "];
+  Node22 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

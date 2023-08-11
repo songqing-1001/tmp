@@ -1,0 +1,12 @@
+digraph "clang::comments::TextComment"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::comments::TextComment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Plain text."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::comments::InlineContent\lComment",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1InlineContentComment.html",tooltip="Inline content (contained within a block)."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::comments::Comment",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment.html",tooltip="Any part of the comment."];
+}

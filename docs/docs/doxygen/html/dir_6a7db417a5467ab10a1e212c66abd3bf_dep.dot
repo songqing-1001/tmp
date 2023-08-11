@@ -1,0 +1,12 @@
+digraph "lib/Target/WebAssembly/Utils" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_96ba75976c22f2500bfbc06f8c4c2b70 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="WebAssembly" fontname="Helvetica", fontsize="10", URL="dir_96ba75976c22f2500bfbc06f8c4c2b70.html"]
+  dir_6a7db417a5467ab10a1e212c66abd3bf [shape=box, label="Utils", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6a7db417a5467ab10a1e212c66abd3bf.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_6a7db417a5467ab10a1e212c66abd3bf->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="10", labeldistance=1.5 headhref="dir_000205_000001.html"];
+}

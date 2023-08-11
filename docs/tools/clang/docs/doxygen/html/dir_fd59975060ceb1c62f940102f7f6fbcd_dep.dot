@@ -1,0 +1,18 @@
+digraph "lib/Tooling/Refactoring" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c4270fa7a06cd7372c7af2452fb3367e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Tooling" fontname="Helvetica", fontsize="10", URL="dir_c4270fa7a06cd7372c7af2452fb3367e.html"]
+  subgraph clusterdir_fd59975060ceb1c62f940102f7f6fbcd {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fd59975060ceb1c62f940102f7f6fbcd.html"];
+    dir_fd59975060ceb1c62f940102f7f6fbcd [shape=plaintext label="Refactoring"];
+    dir_2c6df9ed74b53afb8fcdd0ad0a9a1245 [shape=box label="Extract" color="black" fillcolor="white" style="filled" URL="dir_2c6df9ed74b53afb8fcdd0ad0a9a1245.html"];
+    dir_a42c6a0909d4a61ba3d4f35e651e716c [shape=box label="Rename" color="black" fillcolor="white" style="filled" URL="dir_a42c6a0909d4a61ba3d4f35e651e716c.html"];
+  }
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_2c6df9ed74b53afb8fcdd0ad0a9a1245->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="13", labeldistance=1.5 headhref="dir_000120_000001.html"];
+  dir_a42c6a0909d4a61ba3d4f35e651e716c->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="55", labeldistance=1.5 headhref="dir_000121_000001.html"];
+}

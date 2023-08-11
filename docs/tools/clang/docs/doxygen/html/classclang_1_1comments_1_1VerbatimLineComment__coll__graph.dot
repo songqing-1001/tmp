@@ -1,0 +1,49 @@
+digraph "clang::comments::VerbatimLineComment"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::comments::Verbatim\lLineComment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A verbatim line command."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::comments::BlockCommand\lComment",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1BlockCommandComment.html",tooltip="A command that has zero or more word-like arguments (number of word-like arguments depends on command..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::comments::BlockContent\lComment",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1BlockContentComment.html",tooltip="Block content (contains inline content)."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::comments::Comment",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment.html",tooltip="Any part of the comment."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ParagraphCommentBits" ,fontname="Helvetica"];
+  Node5 [label="clang::comments::Comment\l::ParagraphCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1ParagraphCommentBitfields.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Range" ,fontname="Helvetica"];
+  Node6 [label="clang::SourceRange",height=0.2,width=0.4,color="black",URL="$classclang_1_1SourceRange.html",tooltip="A trivial tuple used to represent a source range."];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Loc" ,fontname="Helvetica"];
+  Node7 [label="clang::SourceLocation",height=0.2,width=0.4,color="black",URL="$classclang_1_1SourceLocation.html",tooltip="Encodes a location in the source."];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BlockCommandCommentBits" ,fontname="Helvetica"];
+  Node8 [label="clang::comments::Comment\l::BlockCommandCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1BlockCommandCommentBitfields.html",tooltip=" "];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ParamCommandCommentBits" ,fontname="Helvetica"];
+  Node9 [label="clang::comments::Comment\l::ParamCommandCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1ParamCommandCommentBitfields.html",tooltip=" "];
+  Node10 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TextCommentBits" ,fontname="Helvetica"];
+  Node10 [label="clang::comments::Comment\l::TextCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1TextCommentBitfields.html",tooltip=" "];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @13" ,fontname="Helvetica"];
+  Node11 [label="anonymous:@13",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node12 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineCommandCommentBits" ,fontname="Helvetica"];
+  Node12 [label="clang::comments::Comment\l::InlineCommandCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1InlineCommandCommentBitfields.html",tooltip=" "];
+  Node13 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" HTMLStartTagCommentBits" ,fontname="Helvetica"];
+  Node13 [label="clang::comments::Comment\l::HTMLStartTagCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1HTMLStartTagCommentBitfields.html",tooltip=" "];
+  Node14 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CommentBits" ,fontname="Helvetica"];
+  Node14 [label="clang::comments::Comment\l::CommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1CommentBitfields.html",tooltip=" "];
+  Node15 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineContentCommentBits" ,fontname="Helvetica"];
+  Node15 [label="clang::comments::Comment\l::InlineContentCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1InlineContentCommentBitfields.html",tooltip=" "];
+  Node16 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" HTMLTagCommentBits" ,fontname="Helvetica"];
+  Node16 [label="clang::comments::Comment\l::HTMLTagCommentBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1Comment_1_1HTMLTagCommentBitfields.html",tooltip=" "];
+  Node17 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Paragraph" ,fontname="Helvetica"];
+  Node17 [label="clang::comments::Paragraph\lComment",height=0.2,width=0.4,color="black",URL="$classclang_1_1comments_1_1ParagraphComment.html",tooltip="A single paragraph that contains inline content."];
+  Node3 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Args" ,fontname="Helvetica"];
+  Node18 [label="llvm::ArrayRef\< Argument \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1ArrayRef.html",tooltip=" "];
+  Node19 -> Node18 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Argument \>" ,fontname="Helvetica"];
+  Node19 [label="llvm::ArrayRef\< T \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1ArrayRef.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TextBegin" ,fontname="Helvetica"];
+  Node20 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Text" ,fontname="Helvetica"];
+  Node20 [label="StringRef",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

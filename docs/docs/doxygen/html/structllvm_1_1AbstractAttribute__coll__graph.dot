@@ -1,0 +1,26 @@
+digraph "llvm::AbstractAttribute"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::AbstractAttribute",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base struct for all \"concrete attribute\" deductions."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::IRPosition",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IRPosition.html",tooltip="Helper to describe and deal with positions in the LLVM-IR."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TombstoneKey\nEmptyKey" ,fontname="Helvetica"];
+  Node3 [label="const",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="llvm::AADepGraphNode",height=0.2,width=0.4,color="black",URL="$structllvm_1_1AADepGraphNode.html",tooltip="}"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Deps" ,fontname="Helvetica"];
+  Node5 [label="llvm::SmallSetVector\l\< DepTy, 2 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallSetVector.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::SetVector\< DepTy,\l SmallVector\< DepTy, N\l \>, SmallDenseSet\< DepTy, N \> \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SetVector.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DepTy, SmallVector\l\< DepTy, N \>, SmallDenseSet\l\< DepTy, N \> \>" ,fontname="Helvetica"];
+  Node7 [label="llvm::SetVector\< T,\l Vector, Set \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SetVector.html",tooltip="A vector that has set insertion semantics."];
+  Node8 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DepTy, 2 \>" ,fontname="Helvetica"];
+  Node8 [label="llvm::SmallSetVector\l\< T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallSetVector.html",tooltip="A SetVector that performs no allocations if smaller than a certain size."];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="llvm::SetVector\< T,\l SmallVector\< T, N \>\l, SmallDenseSet\< T, N \> \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SetVector.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< T, SmallVector\< T,\l N \>, SmallDenseSet\l\< T, N \> \>" ,fontname="Helvetica"];
+}

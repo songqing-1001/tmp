@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::ObjCInterfaceDecl\l::filtered_category_iterator\l\< Filter \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1ObjCInterfaceDecl_1_1filtered__category__iterator.html",tooltip="Iterator that walks over the list of categories, filtering out those that do not meet specific criter..."];
+}

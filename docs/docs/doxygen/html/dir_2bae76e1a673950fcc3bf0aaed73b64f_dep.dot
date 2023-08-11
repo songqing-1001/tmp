@@ -1,0 +1,16 @@
+digraph "lib/ProfileData" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_97aefd0d527b934f1d99a682da8fe6a9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_97aefd0d527b934f1d99a682da8fe6a9.html"]
+  subgraph clusterdir_2bae76e1a673950fcc3bf0aaed73b64f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2bae76e1a673950fcc3bf0aaed73b64f.html"];
+    dir_2bae76e1a673950fcc3bf0aaed73b64f [shape=plaintext label="ProfileData"];
+    dir_f5821e7610ce9b5d3741e36767c5acfe [shape=box label="Coverage" color="black" fillcolor="white" style="filled" URL="dir_f5821e7610ce9b5d3741e36767c5acfe.html"];
+  }
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_f5821e7610ce9b5d3741e36767c5acfe->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="48", labeldistance=1.5 headhref="dir_000089_000001.html"];
+}

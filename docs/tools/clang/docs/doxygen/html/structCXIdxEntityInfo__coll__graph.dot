@@ -1,0 +1,37 @@
+digraph "CXIdxEntityInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CXIdxEntityInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kind" ,fontname="Helvetica"];
+  Node2 [label="CXIdxEntityKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" templateKind" ,fontname="Helvetica"];
+  Node3 [label="CXIdxEntityCXXTemplateKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name\nUSR" ,fontname="Helvetica"];
+  Node4 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attributes" ,fontname="Helvetica"];
+  Node5 [label="CXIdxAttrInfo",height=0.2,width=0.4,color="black",URL="$structCXIdxAttrInfo.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursor" ,fontname="Helvetica"];
+  Node6 [label="CXCursor",height=0.2,width=0.4,color="black",URL="$structCXCursor.html",tooltip="A cursor representing some element in the abstract syntax tree for a translation unit."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" data" ,fontname="Helvetica"];
+  Node7 [label="const void *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" xdata" ,fontname="Helvetica"];
+  Node8 [label="int",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kind" ,fontname="Helvetica"];
+  Node9 [label="enum CXCursorKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" loc" ,fontname="Helvetica"];
+  Node10 [label="CXIdxLoc",height=0.2,width=0.4,color="black",URL="$structCXIdxLoc.html",tooltip="Source location passed to index callbacks."];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" int_data" ,fontname="Helvetica"];
+  Node11 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node12 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ptr_data" ,fontname="Helvetica"];
+  Node12 [label="void *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node13 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kind" ,fontname="Helvetica"];
+  Node13 [label="CXIdxAttrKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursor" ,fontname="Helvetica"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lang" ,fontname="Helvetica"];
+  Node14 [label="CXIdxEntityLanguage",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" numAttributes" ,fontname="Helvetica"];
+}

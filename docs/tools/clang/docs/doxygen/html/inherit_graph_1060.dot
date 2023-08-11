@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::FunctionProtoType\l::ExceptionSpecInfo",height=0.2,width=0.4,color="black",URL="$structclang_1_1FunctionProtoType_1_1ExceptionSpecInfo.html",tooltip="Holds information about the various types of exception specification."];
+}

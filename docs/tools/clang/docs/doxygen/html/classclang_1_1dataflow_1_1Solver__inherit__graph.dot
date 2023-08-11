@@ -1,0 +1,10 @@
+digraph "clang::dataflow::Solver"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::dataflow::Solver",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An interface for a SAT solver that can be used by dataflow analyses."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::dataflow::Watched\lLiteralsSolver",height=0.2,width=0.4,color="black",URL="$classclang_1_1dataflow_1_1WatchedLiteralsSolver.html",tooltip="A SAT solver that is an implementation of Algorithm D from Knuth's The Art of Computer Programming Vo..."];
+}

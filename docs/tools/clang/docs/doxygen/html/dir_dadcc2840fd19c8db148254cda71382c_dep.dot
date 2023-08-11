@@ -1,0 +1,24 @@
+digraph "include/clang/Tooling/DependencyScanning" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e1ce9e33a6714cd40d140bf8ba3da7d2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Tooling" fontname="Helvetica", fontsize="10", URL="dir_e1ce9e33a6714cd40d140bf8ba3da7d2.html"]
+  dir_dadcc2840fd19c8db148254cda71382c [shape=box, label="DependencyScanning", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_dadcc2840fd19c8db148254cda71382c.html"];
+  }
+  dir_4eb95a2bf174e585f7375e1a61e8870b [shape=box label="Serialization" URL="dir_4eb95a2bf174e585f7375e1a61e8870b.html"];
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_16802a82ee139c8ddd8808f7b0d7fd41 [shape=box label="Frontend" URL="dir_16802a82ee139c8ddd8808f7b0d7fd41.html"];
+  dir_75e2a3c204180452df3eef4502f5497d [shape=box label="Lex" URL="dir_75e2a3c204180452df3eef4502f5497d.html"];
+  dir_dadcc2840fd19c8db148254cda71382c->dir_4eb95a2bf174e585f7375e1a61e8870b [headlabel="1", labeldistance=1.5 headhref="dir_000099_000017.html"];
+  dir_dadcc2840fd19c8db148254cda71382c->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="6", labeldistance=1.5 headhref="dir_000099_000014.html"];
+  dir_dadcc2840fd19c8db148254cda71382c->dir_16802a82ee139c8ddd8808f7b0d7fd41 [headlabel="3", labeldistance=1.5 headhref="dir_000099_000082.html"];
+  dir_dadcc2840fd19c8db148254cda71382c->dir_75e2a3c204180452df3eef4502f5497d [headlabel="3", labeldistance=1.5 headhref="dir_000099_000090.html"];
+  dir_4eb95a2bf174e585f7375e1a61e8870b->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="23", labeldistance=1.5 headhref="dir_000017_000014.html"];
+  dir_4eb95a2bf174e585f7375e1a61e8870b->dir_75e2a3c204180452df3eef4502f5497d [headlabel="5", labeldistance=1.5 headhref="dir_000017_000090.html"];
+  dir_16802a82ee139c8ddd8808f7b0d7fd41->dir_4eb95a2bf174e585f7375e1a61e8870b [headlabel="4", labeldistance=1.5 headhref="dir_000082_000017.html"];
+  dir_16802a82ee139c8ddd8808f7b0d7fd41->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="47", labeldistance=1.5 headhref="dir_000082_000014.html"];
+  dir_16802a82ee139c8ddd8808f7b0d7fd41->dir_75e2a3c204180452df3eef4502f5497d [headlabel="8", labeldistance=1.5 headhref="dir_000082_000090.html"];
+  dir_75e2a3c204180452df3eef4502f5497d->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="55", labeldistance=1.5 headhref="dir_000090_000014.html"];
+}

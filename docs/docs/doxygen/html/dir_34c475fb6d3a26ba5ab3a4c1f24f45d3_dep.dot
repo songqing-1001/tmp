@@ -1,0 +1,12 @@
+digraph "lib/Target/NVPTX/TargetInfo" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fe493ff4c29aeb7f930cb534e2b86d17 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="NVPTX" fontname="Helvetica", fontsize="10", URL="dir_fe493ff4c29aeb7f930cb534e2b86d17.html"]
+  dir_34c475fb6d3a26ba5ab3a4c1f24f45d3 [shape=box, label="TargetInfo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_34c475fb6d3a26ba5ab3a4c1f24f45d3.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_34c475fb6d3a26ba5ab3a4c1f24f45d3->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000170_000001.html"];
+}

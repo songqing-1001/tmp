@@ -1,0 +1,18 @@
+digraph "lib/DebugInfo/LogicalView" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fd055cdb294ed2abe541ad964f928ab2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DebugInfo" fontname="Helvetica", fontsize="10", URL="dir_fd055cdb294ed2abe541ad964f928ab2.html"]
+  subgraph clusterdir_35726c853ff3be0c227effe88eaffdae {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_35726c853ff3be0c227effe88eaffdae.html"];
+    dir_35726c853ff3be0c227effe88eaffdae [shape=plaintext label="LogicalView"];
+    dir_7dcc79f6b3198810fd9d53ec0de211b9 [shape=box label="Core" color="black" fillcolor="white" style="filled" URL="dir_7dcc79f6b3198810fd9d53ec0de211b9.html"];
+    dir_5bb148124d8b33d05751c45d4bae076b [shape=box label="Readers" color="black" fillcolor="white" style="filled" URL="dir_5bb148124d8b33d05751c45d4bae076b.html"];
+  }
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_7dcc79f6b3198810fd9d53ec0de211b9->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="54", labeldistance=1.5 headhref="dir_000322_000001.html"];
+  dir_5bb148124d8b33d05751c45d4bae076b->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="15", labeldistance=1.5 headhref="dir_000323_000001.html"];
+}

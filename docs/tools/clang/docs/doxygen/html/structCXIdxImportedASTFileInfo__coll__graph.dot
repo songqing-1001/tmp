@@ -1,0 +1,17 @@
+digraph "CXIdxImportedASTFileInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CXIdxImportedASTFileInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Data for IndexerCallbacks::importedASTFile."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" isImplicit" ,fontname="Helvetica"];
+  Node2 [label="int",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" loc" ,fontname="Helvetica"];
+  Node3 [label="CXIdxLoc",height=0.2,width=0.4,color="black",URL="$structCXIdxLoc.html",tooltip="Source location passed to index callbacks."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" int_data" ,fontname="Helvetica"];
+  Node4 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ptr_data" ,fontname="Helvetica"];
+  Node5 [label="void *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" module\nfile" ,fontname="Helvetica"];
+}

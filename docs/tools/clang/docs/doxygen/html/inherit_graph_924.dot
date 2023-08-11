@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::ento::ProgramState\lPartialTrait\< llvm::ImmutableMap\l\< Key, Data, Info \> \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1ento_1_1ProgramStatePartialTrait_3_01llvm_1_1ImmutableMap_3_01Key_00_01Data_00_01Info_01_4_01_4.html",tooltip=" "];
+}

@@ -1,0 +1,29 @@
+digraph "llvm::StringMap&lt; ValueTy, AllocatorTy &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::StringMap\< ValueTy,\l AllocatorTy \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="StringMap - This is an unconventional map that is specialized for handling keys that are \"strings\",..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::StringMapImpl",height=0.2,width=0.4,color="black",URL="$classllvm_1_1StringMapImpl.html",tooltip="StringMapImpl - This is the base class of StringMap that is shared among all of its instantiations."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TheTable" ,fontname="Helvetica"];
+  Node3 [label="llvm::StringMapEntryBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1StringMapEntryBase.html",tooltip="StringMapEntryBase - Shared base class of StringMapEntry instances."];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NumItems\nNumBuckets\nItemSize\nNumTombstones" ,fontname="Helvetica"];
+  Node4 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TombstoneIntVal" ,fontname="Helvetica"];
+  Node5 [label="uintptr_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="llvm::detail::AllocatorHolder\l\< MallocAllocator \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1detail_1_1AllocatorHolder.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="llvm::MallocAllocator",height=0.2,width=0.4,color="black",URL="$classllvm_1_1MallocAllocator.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="llvm::AllocatorBase\l\< MallocAllocator \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AllocatorBase.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< MallocAllocator \>" ,fontname="Helvetica"];
+  Node9 [label="llvm::AllocatorBase\l\< DerivedT \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1AllocatorBase.html",tooltip="CRTP base class providing obvious overloads for the core Allocate() methods of LLVM-style allocators."];
+  Node10 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< MallocAllocator \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::detail::AllocatorHolder\l\< Alloc \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1detail_1_1AllocatorHolder.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Alloc",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

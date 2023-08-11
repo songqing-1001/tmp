@@ -1,0 +1,20 @@
+digraph "lib/Target/SPIRV" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_794e483eb1cc7921d35fd149d9cc325b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Target" fontname="Helvetica", fontsize="10", URL="dir_794e483eb1cc7921d35fd149d9cc325b.html"]
+  subgraph clusterdir_ac3785bb61599da224f3f094ecb2eaf7 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ac3785bb61599da224f3f094ecb2eaf7.html"];
+    dir_ac3785bb61599da224f3f094ecb2eaf7 [shape=plaintext label="SPIRV"];
+    dir_7f50f663c3e0b642312ba922eec19577 [shape=box label="MCTargetDesc" color="black" fillcolor="white" style="filled" URL="dir_7f50f663c3e0b642312ba922eec19577.html"];
+    dir_1c7a3c615072cba8848962af9beed454 [shape=box label="TargetInfo" color="black" fillcolor="white" style="filled" URL="dir_1c7a3c615072cba8848962af9beed454.html"];
+  }
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_7f50f663c3e0b642312ba922eec19577->dir_1c7a3c615072cba8848962af9beed454 [headlabel="1", labeldistance=1.5 headhref="dir_000188_000189.html"];
+  dir_7f50f663c3e0b642312ba922eec19577->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="39", labeldistance=1.5 headhref="dir_000188_000001.html"];
+  dir_1c7a3c615072cba8848962af9beed454->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000189_000001.html"];
+  dir_ac3785bb61599da224f3f094ecb2eaf7->dir_7f50f663c3e0b642312ba922eec19577 [headlabel="9", labeldistance=1.5 headhref="dir_000187_000188.html"];
+}

@@ -1,0 +1,12 @@
+digraph "lib/DWARFLinker" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_97aefd0d527b934f1d99a682da8fe6a9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lib" fontname="Helvetica", fontsize="10", URL="dir_97aefd0d527b934f1d99a682da8fe6a9.html"]
+  dir_d9cbaa4fe6085f9b8b642358dfaa02d8 [shape=box, label="DWARFLinker", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d9cbaa4fe6085f9b8b642358dfaa02d8.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_d9cbaa4fe6085f9b8b642358dfaa02d8->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="53", labeldistance=1.5 headhref="dir_000053_000001.html"];
+}

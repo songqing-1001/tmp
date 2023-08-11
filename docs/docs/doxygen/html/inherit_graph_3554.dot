@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::MachineRegisterInfo\l::defusechain_instr_iterator\l\< ReturnUses, ReturnDefs, SkipDebug,\l ByOperand, ByInstr, ByBundle \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1MachineRegisterInfo_1_1defusechain__instr__iterator.html",tooltip="defusechain_iterator - This class provides iterator support for machine operands in the function that..."];
+}

@@ -1,0 +1,15 @@
+digraph "lib/Target/MSP430/MCTargetDesc" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1fbfc9619b7fcb26c3e383a9737c5864 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="MSP430" fontname="Helvetica", fontsize="10", URL="dir_1fbfc9619b7fcb26c3e383a9737c5864.html"]
+  dir_1523478d02a1099e8f26063b1a70b36e [shape=box, label="MCTargetDesc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1523478d02a1099e8f26063b1a70b36e.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_4247d1ea9743fbac91674b411882f57a [shape=box label="TargetInfo" URL="dir_4247d1ea9743fbac91674b411882f57a.html"];
+  dir_1523478d02a1099e8f26063b1a70b36e->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="54", labeldistance=1.5 headhref="dir_000166_000001.html"];
+  dir_1523478d02a1099e8f26063b1a70b36e->dir_4247d1ea9743fbac91674b411882f57a [headlabel="1", labeldistance=1.5 headhref="dir_000166_000167.html"];
+  dir_4247d1ea9743fbac91674b411882f57a->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000167_000001.html"];
+}

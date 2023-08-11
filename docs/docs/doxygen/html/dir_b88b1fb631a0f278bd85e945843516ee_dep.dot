@@ -1,0 +1,15 @@
+digraph "include/llvm/Transforms/Coroutines" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5625ec55672b6ae9c183a884d9f7b761 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Transforms" fontname="Helvetica", fontsize="10", URL="dir_5625ec55672b6ae9c183a884d9f7b761.html"]
+  dir_b88b1fb631a0f278bd85e945843516ee [shape=box, label="Coroutines", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b88b1fb631a0f278bd85e945843516ee.html"];
+  }
+  dir_c3e93f23a4a31c717998b98ce143b7c0 [shape=box label="IR" URL="dir_c3e93f23a4a31c717998b98ce143b7c0.html"];
+  dir_97cdd6ae7e6843add574fb55e792badd [shape=box label="Analysis" color="red" URL="dir_97cdd6ae7e6843add574fb55e792badd.html"];
+  dir_b88b1fb631a0f278bd85e945843516ee->dir_c3e93f23a4a31c717998b98ce143b7c0 [headlabel="5", labeldistance=1.5 headhref="dir_000310_000010.html"];
+  dir_b88b1fb631a0f278bd85e945843516ee->dir_97cdd6ae7e6843add574fb55e792badd [headlabel="2", labeldistance=1.5 headhref="dir_000310_000012.html"];
+  dir_97cdd6ae7e6843add574fb55e792badd->dir_c3e93f23a4a31c717998b98ce143b7c0 [headlabel="163", labeldistance=1.5 headhref="dir_000012_000010.html"];
+}

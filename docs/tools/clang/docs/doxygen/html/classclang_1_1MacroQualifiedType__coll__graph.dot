@@ -1,0 +1,55 @@
+digraph "clang::MacroQualifiedType"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::MacroQualifiedType",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sugar type that represents a type that was qualified by a qualifier written as a macro invocation."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::Type",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type.html",tooltip="The base class of the type hierarchy."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::ExtQualsTypeCommonBase",height=0.2,width=0.4,color="black",URL="$classclang_1_1ExtQualsTypeCommonBase.html",tooltip="Base class that is common to both the ExtQuals and Type classes, which allows QualType to access the ..."];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SubstTemplateTypeParmTypeBits" ,fontname="Helvetica"];
+  Node4 [label="clang::Type::SubstTemplate\lTypeParmTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1SubstTemplateTypeParmTypeBitfields.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ObjCObjectTypeBits" ,fontname="Helvetica"];
+  Node5 [label="clang::Type::ObjCObjectType\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1ObjCObjectTypeBitfields.html",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FunctionTypeBits" ,fontname="Helvetica"];
+  Node6 [label="clang::Type::FunctionType\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1FunctionTypeBitfields.html",tooltip="FunctionTypeBitfields store various bits belonging to FunctionProtoType."];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" UsingBits" ,fontname="Helvetica"];
+  Node7 [label="clang::Type::UsingBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1UsingBitfields.html",tooltip=" "];
+  Node8 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" VectorTypeBits" ,fontname="Helvetica"];
+  Node8 [label="clang::Type::VectorTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1VectorTypeBitfields.html",tooltip=" "];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TypeWithKeywordBits" ,fontname="Helvetica"];
+  Node9 [label="clang::Type::TypeWithKeyword\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1TypeWithKeywordBitfields.html",tooltip=" "];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TypedefBits" ,fontname="Helvetica"];
+  Node10 [label="clang::Type::TypedefBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1TypedefBitfields.html",tooltip=" "];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DependentTemplateSpecialization\lTypeBits" ,fontname="Helvetica"];
+  Node11 [label="clang::Type::DependentTemplate\lSpecializationTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1DependentTemplateSpecializationTypeBitfields.html",tooltip=" "];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ReferenceTypeBits" ,fontname="Helvetica"];
+  Node12 [label="clang::Type::ReferenceType\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1ReferenceTypeBitfields.html",tooltip=" "];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TypeOfBits" ,fontname="Helvetica"];
+  Node13 [label="clang::Type::TypeOfBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1TypeOfBitfields.html",tooltip=" "];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PackExpansionTypeBits" ,fontname="Helvetica"];
+  Node14 [label="clang::Type::PackExpansion\lTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1PackExpansionTypeBitfields.html",tooltip=" "];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ElaboratedTypeBits" ,fontname="Helvetica"];
+  Node15 [label="clang::Type::ElaboratedType\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1ElaboratedTypeBitfields.html",tooltip=" "];
+  Node16 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AutoTypeBits" ,fontname="Helvetica"];
+  Node16 [label="clang::Type::AutoTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1AutoTypeBitfields.html",tooltip=" "];
+  Node17 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SubstTemplateTypeParmPack\lTypeBits" ,fontname="Helvetica"];
+  Node17 [label="clang::Type::SubstTemplate\lTypeParmPackTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1SubstTemplateTypeParmPackTypeBitfields.html",tooltip=" "];
+  Node18 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AttributedTypeBits" ,fontname="Helvetica"];
+  Node18 [label="clang::Type::AttributedType\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1AttributedTypeBitfields.html",tooltip=" "];
+  Node19 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @117" ,fontname="Helvetica"];
+  Node19 [label="anonymous:@117",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node20 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TypeBits" ,fontname="Helvetica"];
+  Node20 [label="clang::Type::TypeBitfields",height=0.2,width=0.4,color="grey75",tooltip="Bitfields required by the Type class."];
+  Node21 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ConstantArrayTypeBits" ,fontname="Helvetica"];
+  Node21 [label="clang::Type::ConstantArray\lTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1ConstantArrayTypeBitfields.html",tooltip=" "];
+  Node22 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ArrayTypeBits" ,fontname="Helvetica"];
+  Node22 [label="clang::Type::ArrayTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1ArrayTypeBitfields.html",tooltip=" "];
+  Node23 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TemplateSpecializationTypeBits" ,fontname="Helvetica"];
+  Node23 [label="clang::Type::TemplateSpecialization\lTypeBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1TemplateSpecializationTypeBitfields.html",tooltip=" "];
+  Node24 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BuiltinTypeBits" ,fontname="Helvetica"];
+  Node24 [label="clang::Type::BuiltinType\lBitfields",height=0.2,width=0.4,color="black",URL="$classclang_1_1Type_1_1BuiltinTypeBitfields.html",tooltip=" "];
+}

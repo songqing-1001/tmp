@@ -1,0 +1,22 @@
+digraph "clang::driver::JobAction"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::driver::JobAction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::driver::Action",height=0.2,width=0.4,color="black",URL="$classclang_1_1driver_1_1Action.html",tooltip="Action - Represent an abstract compilation step to perform."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OffloadingDeviceKind" ,fontname="Helvetica"];
+  Node3 [label="OffloadKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OffloadingArch" ,fontname="Helvetica"];
+  Node4 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ActiveOffloadKindMask" ,fontname="Helvetica"];
+  Node5 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OffloadingToolChain" ,fontname="Helvetica"];
+  Node6 [label="clang::driver::ToolChain",height=0.2,width=0.4,color="black",URL="$classclang_1_1driver_1_1ToolChain.html",tooltip="ToolChain - Access to tools for a single platform."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Multilibs" ,fontname="Helvetica"];
+  Node7 [label="clang::driver::MultilibSet",height=0.2,width=0.4,color="black",URL="$classclang_1_1driver_1_1MultilibSet.html",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SelectedMultilib" ,fontname="Helvetica"];
+  Node8 [label="clang::driver::Multilib",height=0.2,width=0.4,color="black",URL="$classclang_1_1driver_1_1Multilib.html",tooltip="This corresponds to a single GCC Multilib, or a segment of one controlled by a command line flag."];
+}

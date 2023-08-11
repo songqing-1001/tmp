@@ -1,0 +1,17 @@
+digraph "clang::CorrectionCandidateCallback"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::CorrectionCandidate\lCallback",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base class for callback objects used by Sema::CorrectTypo to check the validity of a potential typo c..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::DeclFilterCCC\< C \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1DeclFilterCCC.html",tooltip="Simple template class for restricting typo correction candidates to ones having a single Decl* of the..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::DefaultFilterCCC",height=0.2,width=0.4,color="black",URL="$classclang_1_1DefaultFilterCCC.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::FunctionCallFilterCCC",height=0.2,width=0.4,color="black",URL="$classclang_1_1FunctionCallFilterCCC.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::NoTypoCorrectionCCC",height=0.2,width=0.4,color="black",URL="$classclang_1_1NoTypoCorrectionCCC.html",tooltip=" "];
+}

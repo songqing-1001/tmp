@@ -1,0 +1,12 @@
+digraph "lib/Target/Lanai/TargetInfo" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fe688c5a7f28af787195a7225fc9d3ae {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Lanai" fontname="Helvetica", fontsize="10", URL="dir_fe688c5a7f28af787195a7225fc9d3ae.html"]
+  dir_675e2f6da15740038c90615091f2e3df [shape=box, label="TargetInfo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_675e2f6da15740038c90615091f2e3df.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_675e2f6da15740038c90615091f2e3df->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000147_000001.html"];
+}

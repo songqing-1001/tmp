@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::DynTypedNode\l::BaseConverter\< T,\l std::enable_if_t\< std\l::is_base_of\< Type, T \>\l::value \> \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1DynTypedNode_1_1BaseConverter_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__basea2f27b96240d8197c9e4ec45d0762bc9.html",tooltip=" "];
+}

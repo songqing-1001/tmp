@@ -1,0 +1,12 @@
+digraph "llvm::detail::Visitor&lt; Ts &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::detail::Visitor\l\< Ts \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TailTs... \>" ,fontname="Helvetica"];
+  Node2 [label="llvm::detail::Visitor\l\< TailTs... \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1detail_1_1Visitor.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::detail::Visitor\l\< HeadT, TailTs... \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1detail_1_1Visitor_3_01HeadT_00_01TailTs_8_8_8_01_4.html",tooltip=" "];
+}

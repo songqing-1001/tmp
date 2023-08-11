@@ -1,0 +1,12 @@
+digraph "llvm::DeadLaneDetector::VRegInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::DeadLaneDetector\l::VRegInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Contains a bitmask of which lanes of a given virtual register are defined and which ones are actually..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" UsedLanes\nDefinedLanes" ,fontname="Helvetica"];
+  Node2 [label="llvm::LaneBitmask",height=0.2,width=0.4,color="black",URL="$structllvm_1_1LaneBitmask.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FormatStr" ,fontname="Helvetica"];
+  Node3 [label="const",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

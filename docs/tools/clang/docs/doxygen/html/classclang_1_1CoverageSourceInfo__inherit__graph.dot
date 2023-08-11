@@ -1,0 +1,14 @@
+digraph "clang::CoverageSourceInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::CoverageSourceInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Stores additional source code information like skipped ranges which is required by the coverage mappi..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::PPCallbacks",height=0.2,width=0.4,color="black",URL="$classclang_1_1PPCallbacks.html",tooltip="This interface provides a way to observe the actions of the preprocessor as it does its thing."];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::CommentHandler",height=0.2,width=0.4,color="black",URL="$classclang_1_1CommentHandler.html",tooltip="Abstract base class that describes a handler that will receive source ranges for each of the comments..."];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::EmptylineHandler",height=0.2,width=0.4,color="black",URL="$classclang_1_1EmptylineHandler.html",tooltip="Abstract base class that describes a handler that will receive source ranges for empty lines encounte..."];
+}

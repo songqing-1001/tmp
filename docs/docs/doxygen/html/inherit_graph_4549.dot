@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::orc::shared::\lSPSSerializationTraits\l\< SPSExecutorAddr, jitlink\l::JITLinkMemoryManager::Finalized\lAlloc \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1SPSSerializationTraits_3_01SPSExecutorAddr_00_01jitlink_1_1JITLinkf6b848a777e8a8d52cc015d1f9476ed2.html",tooltip="FIXME: This specialization should be moved into TargetProcessControlTypes.h (or whereever those types..."];
+}

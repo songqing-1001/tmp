@@ -1,0 +1,16 @@
+digraph "llvm::RootDDGNode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::RootDDGNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Subclass of DDGNode representing the root node of the graph."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::DDGNode",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DDGNode.html",tooltip="Data Dependence Graph Node The graph can represent the following types of nodes:"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DDGNodeBase",height=0.2,width=0.4,color="black",URL="$classllvm_1_1DGNode.html",tooltip="Represent a node in the directed graph."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Edges" ,fontname="Helvetica"];
+  Node4 [label="llvm::SetVector\< EdgeType * \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SetVector.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< EdgeType * \>" ,fontname="Helvetica"];
+  Node5 [label="llvm::SetVector\< T,\l Vector, Set \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SetVector.html",tooltip="A vector that has set insertion semantics."];
+}

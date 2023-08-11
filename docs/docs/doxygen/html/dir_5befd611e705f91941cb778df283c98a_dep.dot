@@ -1,0 +1,19 @@
+digraph "lib/Target/RISCV/MCA" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fc62c913e8b7bfce256a9466d87d79c7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="RISCV" fontname="Helvetica", fontsize="10", URL="dir_fc62c913e8b7bfce256a9466d87d79c7.html"]
+  dir_5befd611e705f91941cb778df283c98a [shape=box, label="MCA", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5befd611e705f91941cb778df283c98a.html"];
+  }
+  dir_72076151150f9c89e8fe93bb4df5dbe1 [shape=box label="MCTargetDesc" URL="dir_72076151150f9c89e8fe93bb4df5dbe1.html"];
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_04c42cdfbc306d281ff52dd260421e86 [shape=box label="TargetInfo" URL="dir_04c42cdfbc306d281ff52dd260421e86.html"];
+  dir_5befd611e705f91941cb778df283c98a->dir_72076151150f9c89e8fe93bb4df5dbe1 [headlabel="1", labeldistance=1.5 headhref="dir_000179_000180.html"];
+  dir_5befd611e705f91941cb778df283c98a->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="7", labeldistance=1.5 headhref="dir_000179_000001.html"];
+  dir_5befd611e705f91941cb778df283c98a->dir_04c42cdfbc306d281ff52dd260421e86 [headlabel="1", labeldistance=1.5 headhref="dir_000179_000181.html"];
+  dir_72076151150f9c89e8fe93bb4df5dbe1->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="116", labeldistance=1.5 headhref="dir_000180_000001.html"];
+  dir_72076151150f9c89e8fe93bb4df5dbe1->dir_04c42cdfbc306d281ff52dd260421e86 [headlabel="1", labeldistance=1.5 headhref="dir_000180_000181.html"];
+  dir_04c42cdfbc306d281ff52dd260421e86->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000181_000001.html"];
+}

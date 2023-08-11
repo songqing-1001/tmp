@@ -1,0 +1,15 @@
+digraph "include/clang/StaticAnalyzer/Checkers" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e5ceb20f2d002bb0a19d19a00a4f0171 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="StaticAnalyzer" fontname="Helvetica", fontsize="10", URL="dir_e5ceb20f2d002bb0a19d19a00a4f0171.html"]
+  dir_7e071b4b59dbba22cd8b8f320c65a98a [shape=box, label="Checkers", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7e071b4b59dbba22cd8b8f320c65a98a.html"];
+  }
+  dir_b7f1fb8e22c16abc1bb9b644ee717a58 [shape=box label="AST" URL="dir_b7f1fb8e22c16abc1bb9b644ee717a58.html"];
+  dir_adae70df7cbf294349926297fc786666 [shape=box label="Core" color="red" URL="dir_adae70df7cbf294349926297fc786666.html"];
+  dir_7e071b4b59dbba22cd8b8f320c65a98a->dir_b7f1fb8e22c16abc1bb9b644ee717a58 [headlabel="2", labeldistance=1.5 headhref="dir_000019_000013.html"];
+  dir_7e071b4b59dbba22cd8b8f320c65a98a->dir_adae70df7cbf294349926297fc786666 [headlabel="5", labeldistance=1.5 headhref="dir_000019_000093.html"];
+  dir_adae70df7cbf294349926297fc786666->dir_b7f1fb8e22c16abc1bb9b644ee717a58 [headlabel="41", labeldistance=1.5 headhref="dir_000093_000013.html"];
+}

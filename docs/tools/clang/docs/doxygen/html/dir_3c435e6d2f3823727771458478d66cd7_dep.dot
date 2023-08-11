@@ -1,0 +1,23 @@
+digraph "include/clang/Tooling/Transformer" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e1ce9e33a6714cd40d140bf8ba3da7d2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Tooling" fontname="Helvetica", fontsize="10", URL="dir_e1ce9e33a6714cd40d140bf8ba3da7d2.html"]
+  dir_3c435e6d2f3823727771458478d66cd7 [shape=box, label="Transformer", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3c435e6d2f3823727771458478d66cd7.html"];
+  }
+  dir_43b4ec3567f48cc4de5ff046c1905a70 [shape=box label="Refactoring" color="red" URL="dir_43b4ec3567f48cc4de5ff046c1905a70.html"];
+  dir_b7f1fb8e22c16abc1bb9b644ee717a58 [shape=box label="AST" URL="dir_b7f1fb8e22c16abc1bb9b644ee717a58.html"];
+  dir_a004adf44f176e430fc6c2b869b0fb57 [shape=box label="Basic" URL="dir_a004adf44f176e430fc6c2b869b0fb57.html"];
+  dir_703be670abb56edad3751116797aa3ec [shape=box label="ASTMatchers" color="red" URL="dir_703be670abb56edad3751116797aa3ec.html"];
+  dir_43b4ec3567f48cc4de5ff046c1905a70->dir_b7f1fb8e22c16abc1bb9b644ee717a58 [headlabel="7", labeldistance=1.5 headhref="dir_000092_000013.html"];
+  dir_43b4ec3567f48cc4de5ff046c1905a70->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="21", labeldistance=1.5 headhref="dir_000092_000014.html"];
+  dir_b7f1fb8e22c16abc1bb9b644ee717a58->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="158", labeldistance=1.5 headhref="dir_000013_000014.html"];
+  dir_703be670abb56edad3751116797aa3ec->dir_b7f1fb8e22c16abc1bb9b644ee717a58 [headlabel="39", labeldistance=1.5 headhref="dir_000071_000013.html"];
+  dir_703be670abb56edad3751116797aa3ec->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="11", labeldistance=1.5 headhref="dir_000071_000014.html"];
+  dir_3c435e6d2f3823727771458478d66cd7->dir_43b4ec3567f48cc4de5ff046c1905a70 [headlabel="2", labeldistance=1.5 headhref="dir_000103_000092.html"];
+  dir_3c435e6d2f3823727771458478d66cd7->dir_b7f1fb8e22c16abc1bb9b644ee717a58 [headlabel="6", labeldistance=1.5 headhref="dir_000103_000013.html"];
+  dir_3c435e6d2f3823727771458478d66cd7->dir_a004adf44f176e430fc6c2b869b0fb57 [headlabel="4", labeldistance=1.5 headhref="dir_000103_000014.html"];
+  dir_3c435e6d2f3823727771458478d66cd7->dir_703be670abb56edad3751116797aa3ec [headlabel="8", labeldistance=1.5 headhref="dir_000103_000071.html"];
+}

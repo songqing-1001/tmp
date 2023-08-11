@@ -1,0 +1,17 @@
+digraph "llvm::orc::shared::detail::WrapperFunctionAsyncHandlerHelper&lt; WrapperFunctionImplT, ResultSerializer, SPSTagTs &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::orc::shared::\ldetail::WrapperFunctionAsync\lHandlerHelper\< WrapperFunctionImpl\lT, ResultSerializer, SPSTagTs \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< RetT(ArgTs...), Result\lSerializer, SPSTagTs... \>" ,fontname="Helvetica"];
+  Node2 [label="llvm::orc::shared::\ldetail::WrapperFunctionAsync\lHandlerHelper\< RetT(ArgTs...)\l, ResultSerializer, SPSTagTs... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1detail_1_1WrapperFunctionAsyncHandlerHelper.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::orc::shared::\ldetail::WrapperFunctionAsync\lHandlerHelper\< RetT(*)(ArgTs...)\l, ResultSerializer, SPSTagTs... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1detail_1_1WrapperFunctionAsyncHandlerHelper_3_01RetT_07_5_08_07Arg1b580f0bdb772a8e710064f516708ad8.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="llvm::orc::shared::\ldetail::WrapperFunctionAsync\lHandlerHelper\< RetT(ClassT\l::*)(ArgTs...) const, ResultSerializer,\l SPSTagTs... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1detail_1_1WrapperFunctionAsyncHandlerHelper_3_01RetT_07ClassT_1_1_a94be35758806967f3ad1cc302bee690.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm::orc::shared::\ldetail::WrapperFunctionAsync\lHandlerHelper\< RetT(ClassT\l::*)(ArgTs...), ResultSerializer,\l SPSTagTs... \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1orc_1_1shared_1_1detail_1_1WrapperFunctionAsyncHandlerHelper_3_01RetT_07ClassT_1_1_3d9bc3c091aa8ca5300f52c1b3cbe1b3.html",tooltip=" "];
+}

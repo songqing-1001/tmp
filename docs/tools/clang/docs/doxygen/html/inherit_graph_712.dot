@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::detail::CXXOperator\lIdName",height=0.2,width=0.4,color="black",URL="$classclang_1_1detail_1_1CXXOperatorIdName.html",tooltip="Contains extra information for the name of an overloaded operator in C++, such as \"operator+."];
+}

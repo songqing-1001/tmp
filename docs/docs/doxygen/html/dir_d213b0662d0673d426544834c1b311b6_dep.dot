@@ -1,0 +1,12 @@
+digraph "lib/Target/M68k/GISel" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_75be98d036773b3a0c8f79f20c9e218b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="M68k" fontname="Helvetica", fontsize="10", URL="dir_75be98d036773b3a0c8f79f20c9e218b.html"]
+  dir_d213b0662d0673d426544834c1b311b6 [shape=box, label="GISel", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d213b0662d0673d426544834c1b311b6.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_d213b0662d0673d426544834c1b311b6->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="23", labeldistance=1.5 headhref="dir_000335_000001.html"];
+}

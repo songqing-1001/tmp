@@ -1,0 +1,42 @@
+digraph "llvm::rdf::RefNode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::rdf::RefNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::rdf::NodeBase",height=0.2,width=0.4,color="black",URL="$structllvm_1_1rdf_1_1NodeBase.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @207" ,fontname="Helvetica"];
+  Node3 [label="anonymous:@207",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Attrs\nReserved" ,fontname="Helvetica"];
+  Node4 [label="uint16_t",height=0.2,width=0.4,color="black",URL="$classuint16__t.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Ref" ,fontname="Helvetica"];
+  Node5 [label="llvm::rdf::NodeBase\l::Ref_struct",height=0.2,width=0.4,color="black",URL="$structllvm_1_1rdf_1_1NodeBase_1_1Ref__struct.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Def" ,fontname="Helvetica"];
+  Node6 [label="llvm::rdf::NodeBase\l::Def_struct",height=0.2,width=0.4,color="black",URL="$structllvm_1_1rdf_1_1NodeBase_1_1Def__struct.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DU\nDD" ,fontname="Helvetica"];
+  Node7 [label="uint32_t",height=0.2,width=0.4,color="black",URL="$classuint32__t.html",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @209" ,fontname="Helvetica"];
+  Node8 [label="anonymous:@209",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PhiU" ,fontname="Helvetica"];
+  Node9 [label="llvm::rdf::NodeBase\l::PhiU_struct",height=0.2,width=0.4,color="black",URL="$structllvm_1_1rdf_1_1NodeBase_1_1PhiU__struct.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PredB" ,fontname="Helvetica"];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Op" ,fontname="Helvetica"];
+  Node10 [label="llvm::MachineOperand",height=0.2,width=0.4,color="black",URL="$classllvm_1_1MachineOperand.html",tooltip="MachineOperand class - Representation of each machine instruction operand."];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OffsetLo\nRegNo" ,fontname="Helvetica"];
+  Node11 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RD\nSib" ,fontname="Helvetica"];
+  Node12 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PR" ,fontname="Helvetica"];
+  Node12 [label="llvm::rdf::PackedRegisterRef",height=0.2,width=0.4,color="black",URL="$structllvm_1_1rdf_1_1PackedRegisterRef.html",tooltip=" "];
+  Node7 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MaskId\nReg" ,fontname="Helvetica"];
+  Node13 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" @211" ,fontname="Helvetica"];
+  Node13 [label="anonymous:@211",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Code" ,fontname="Helvetica"];
+  Node14 [label="llvm::rdf::NodeBase\l::Code_struct",height=0.2,width=0.4,color="black",URL="$structllvm_1_1rdf_1_1NodeBase_1_1Code__struct.html",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CP" ,fontname="Helvetica"];
+  Node15 [label="void",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LastM\nFirstM" ,fontname="Helvetica"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Next" ,fontname="Helvetica"];
+}

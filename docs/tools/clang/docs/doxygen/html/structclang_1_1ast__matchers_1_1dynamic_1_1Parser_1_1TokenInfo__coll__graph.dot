@@ -1,0 +1,23 @@
+digraph "clang::ast_matchers::dynamic::Parser::TokenInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::ast_matchers\l::dynamic::Parser::TokenInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Simple structure to hold information for one token from the parser."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Value" ,fontname="Helvetica"];
+  Node2 [label="clang::ast_matchers\l::dynamic::VariantValue",height=0.2,width=0.4,color="black",URL="$classclang_1_1ast__matchers_1_1dynamic_1_1VariantValue.html",tooltip="Variant value class."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ID_Bind\nID_With" ,fontname="Helvetica"];
+  Node3 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Range" ,fontname="Helvetica"];
+  Node4 [label="clang::ast_matchers\l::dynamic::SourceRange",height=0.2,width=0.4,color="black",URL="$structclang_1_1ast__matchers_1_1dynamic_1_1SourceRange.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" End\nStart" ,fontname="Helvetica"];
+  Node5 [label="clang::ast_matchers\l::dynamic::SourceLocation",height=0.2,width=0.4,color="black",URL="$structclang_1_1ast__matchers_1_1dynamic_1_1SourceLocation.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Column\nLine" ,fontname="Helvetica"];
+  Node6 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Kind" ,fontname="Helvetica"];
+  Node7 [label="TokenKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Text" ,fontname="Helvetica"];
+  Node8 [label="StringRef",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

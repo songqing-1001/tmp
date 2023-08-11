@@ -1,0 +1,12 @@
+digraph "lib/Target/AVR/TargetInfo" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e025955df7d625b5b4f5fd3465d9c8da {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AVR" fontname="Helvetica", fontsize="10", URL="dir_e025955df7d625b5b4f5fd3465d9c8da.html"]
+  dir_2454bd238024ca9f2c36237eef40a3dc [shape=box, label="TargetInfo", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2454bd238024ca9f2c36237eef40a3dc.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_2454bd238024ca9f2c36237eef40a3dc->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000122_000001.html"];
+}

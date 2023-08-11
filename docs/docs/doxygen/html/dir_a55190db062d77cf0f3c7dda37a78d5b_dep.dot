@@ -1,0 +1,18 @@
+digraph "lib/Target/WebAssembly/MCTargetDesc" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_96ba75976c22f2500bfbc06f8c4c2b70 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="WebAssembly" fontname="Helvetica", fontsize="10", URL="dir_96ba75976c22f2500bfbc06f8c4c2b70.html"]
+  dir_a55190db062d77cf0f3c7dda37a78d5b [shape=box, label="MCTargetDesc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a55190db062d77cf0f3c7dda37a78d5b.html"];
+  }
+  dir_6a7db417a5467ab10a1e212c66abd3bf [shape=box label="Utils" URL="dir_6a7db417a5467ab10a1e212c66abd3bf.html"];
+  dir_e98dc5c8bb83d992569c0d03f1dcb04e [shape=box label="TargetInfo" URL="dir_e98dc5c8bb83d992569c0d03f1dcb04e.html"];
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_a55190db062d77cf0f3c7dda37a78d5b->dir_6a7db417a5467ab10a1e212c66abd3bf [headlabel="4", labeldistance=1.5 headhref="dir_000203_000205.html"];
+  dir_a55190db062d77cf0f3c7dda37a78d5b->dir_e98dc5c8bb83d992569c0d03f1dcb04e [headlabel="1", labeldistance=1.5 headhref="dir_000203_000204.html"];
+  dir_a55190db062d77cf0f3c7dda37a78d5b->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="70", labeldistance=1.5 headhref="dir_000203_000001.html"];
+  dir_6a7db417a5467ab10a1e212c66abd3bf->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="10", labeldistance=1.5 headhref="dir_000205_000001.html"];
+  dir_e98dc5c8bb83d992569c0d03f1dcb04e->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000204_000001.html"];
+}

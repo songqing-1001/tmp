@@ -1,0 +1,51 @@
+digraph "clang::Sema::ExpressionEvaluationContextRecord"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::Sema::ExpressionEvaluation\lContextRecord",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Data structure used to record current or nested expression evaluation contexts."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" VolatileAssignmentLHSs" ,fontname="Helvetica"];
+  Node2 [label="llvm::SmallVector\<\l clang::Expr *, 2 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::Expr *, 2 \>" ,fontname="Helvetica"];
+  Node3 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ImmediateInvocationCandidates" ,fontname="Helvetica"];
+  Node4 [label="llvm::SmallVector\<\l ImmediateInvocationCandidate, 4 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< ImmediateInvocationCandidate, 4 \>" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PossibleDerefs" ,fontname="Helvetica"];
+  Node5 [label="llvm::SmallPtrSet\<\l const clang::Expr *, 8 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSet.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< const clang::Expr\l *, 8 \>" ,fontname="Helvetica"];
+  Node6 [label="llvm::SmallPtrSet\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSet.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SavedMaybeODRUseExprs" ,fontname="Helvetica"];
+  Node7 [label="SetVector\< Expr *,\l SmallVector\< Expr *,\l 4 \>, llvm::SmallPtrSet\l\< Expr *, 4 \> \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DelayedDecltypeCalls" ,fontname="Helvetica"];
+  Node8 [label="llvm::SmallVector\<\l clang::CallExpr *, 8 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::CallExpr *, 8 \>" ,fontname="Helvetica"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Context" ,fontname="Helvetica"];
+  Node9 [label="ExpressionEvaluationContext",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DelayedDefaultInitialization\lContext" ,fontname="Helvetica"];
+  Node10 [label="optional\< clang::Sema\l::ExpressionEvaluationContext\lRecord::InitializationContext \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ReferenceToConsteval" ,fontname="Helvetica"];
+  Node11 [label="llvm::SmallPtrSet\<\l clang::DeclRefExpr\l *, 4 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallPtrSet.html",tooltip=" "];
+  Node6 -> Node11 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::DeclRefExpr\l *, 4 \>" ,fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InImmediateFunctionContext\nInDiscardedStatement\nIsCurrentlyCheckingDefaultArgument\lOrInitializer" ,fontname="Helvetica"];
+  Node12 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DelayedDecltypeBinds" ,fontname="Helvetica"];
+  Node13 [label="llvm::SmallVector\<\l clang::CXXBindTemporaryExpr\l *, 8 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node3 -> Node13 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::CXXBindTemporary\lExpr *, 8 \>" ,fontname="Helvetica"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ManglingContextDecl" ,fontname="Helvetica"];
+  Node14 [label="clang::Decl",height=0.2,width=0.4,color="black",URL="$classclang_1_1Decl.html",tooltip="Decl - This represents one declaration (or definition), e.g."];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NextInContextAndBits" ,fontname="Helvetica"];
+  Node15 [label="PointerIntPair\< clang\l::Decl *, 3, ModuleOwnership\lKind \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node16 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Access\nFromASTFile\nIdentifierNamespace\nCacheValidAndLinkage" ,fontname="Helvetica"];
+  Node16 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NumCleanupObjects\nNumTypos" ,fontname="Helvetica"];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Lambdas" ,fontname="Helvetica"];
+  Node17 [label="llvm::SmallVector\<\l clang::LambdaExpr *, 2 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node3 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::LambdaExpr\l *, 2 \>" ,fontname="Helvetica"];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ParentCleanup" ,fontname="Helvetica"];
+  Node18 [label="clang::CleanupInfo",height=0.2,width=0.4,color="black",URL="$classclang_1_1CleanupInfo.html",tooltip=" "];
+  Node19 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ExprContext" ,fontname="Helvetica"];
+  Node19 [label="ExpressionKind",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

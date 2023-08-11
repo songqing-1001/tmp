@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="PriorityQueue\< const\l clang::CFGBlock *, llvm\l::SmallVector\< const clang\l::CFGBlock *, QueueSize \>,\l ReversePostOrderCompare \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1PriorityQueue_3_01const_01clang_1_1CFGBlock_01_5_00_01llvm_1_1SmallVector_3_01const9db26b25ed40f234a1a446444184ac34.html",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "lib/Frontend/HLSL" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_852f2fa92acda3856ce29eb983aeba4a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Frontend" fontname="Helvetica", fontsize="10", URL="dir_852f2fa92acda3856ce29eb983aeba4a.html"]
+  dir_f79028b5d44e54100270a0aab9f73aea [shape=box, label="HLSL", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f79028b5d44e54100270a0aab9f73aea.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_f79028b5d44e54100270a0aab9f73aea->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="4", labeldistance=1.5 headhref="dir_000070_000001.html"];
+}

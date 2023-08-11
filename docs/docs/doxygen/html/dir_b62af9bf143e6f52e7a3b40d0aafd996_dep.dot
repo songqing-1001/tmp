@@ -1,0 +1,12 @@
+digraph "lib/ObjCopy/wasm" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_852ebda2bb84520f77418fa9810685ae {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ObjCopy" fontname="Helvetica", fontsize="10", URL="dir_852ebda2bb84520f77418fa9810685ae.html"]
+  dir_b62af9bf143e6f52e7a3b40d0aafd996 [shape=box, label="wasm", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b62af9bf143e6f52e7a3b40d0aafd996.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_b62af9bf143e6f52e7a3b40d0aafd996->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="15", labeldistance=1.5 headhref="dir_000331_000001.html"];
+}

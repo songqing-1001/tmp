@@ -1,0 +1,35 @@
+digraph "llvm::DenseMapInfo&lt; T, Enable &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::DenseMapInfo\l\< T, Enable \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An information struct used to provide DenseMap with the various necessary components for a given valu..."];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< AA::ValueAndContext\l::Base \>" ,fontname="Helvetica"];
+  Node2 [label="llvm::DenseMapInfo\l\< AA::ValueAndContext\l::Base \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="llvm::DenseMapInfo\l\< AA::ValueAndContext \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo_3_01AA_1_1ValueAndContext_01_4.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< IRInstructionData * \>" ,fontname="Helvetica"];
+  Node4 [label="llvm::DenseMapInfo\l\< IRInstructionData * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm::IRSimilarity\l::IRInstructionDataTraits",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IRSimilarity_1_1IRInstructionDataTraits.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DeclContext * \>" ,fontname="Helvetica"];
+  Node6 [label="llvm::DenseMapInfo\l\< DeclContext * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="llvm::DeclMapInfo",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DeclMapInfo.html",tooltip="Info type for the DenseMap storing the DeclContext pointers."];
+  Node1 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< void * \>" ,fontname="Helvetica"];
+  Node8 [label="llvm::DenseMapInfo\l\< void * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="llvm::DenseMapInfo\l\< const AA::InstExclusionSet\lTy * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo_3_01const_01AA_1_1InstExclusionSetTy_01_5_01_4.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Instruction * \>" ,fontname="Helvetica"];
+  Node10 [label="llvm::DenseMapInfo\l\< Instruction * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo.html",tooltip=" "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="llvm::AccessAsInstructionInfo",height=0.2,width=0.4,color="black",URL="$structllvm_1_1AccessAsInstructionInfo.html",tooltip="Helper for AA::PointerInfo::Access DenseMap/Set usage ignoring everythign but the instruction."];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="llvm::DenseMapInfo\l\< AAPointerInfo::Access \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo_3_01AAPointerInfo_1_1Access_01_4.html",tooltip="Helper for AA::PointerInfo::Access DenseMap/Set usage."];
+  Node1 -> Node13 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< MachineInstr * \>" ,fontname="Helvetica"];
+  Node13 [label="llvm::DenseMapInfo\l\< MachineInstr * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1DenseMapInfo.html",tooltip=" "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="llvm::MachineInstrExpression\lTrait",height=0.2,width=0.4,color="black",URL="$structllvm_1_1MachineInstrExpressionTrait.html",tooltip="Special DenseMapInfo traits to compare MachineInstr* by value of the instruction rather than by point..."];
+}

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::interp::PrimConv\l\< PT_Sint16 \>",height=0.2,width=0.4,color="black",URL="$structclang_1_1interp_1_1PrimConv_3_01PT__Sint16_01_4.html",tooltip=" "];
+}

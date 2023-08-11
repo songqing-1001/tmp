@@ -1,0 +1,56 @@
+digraph "llvm::yaml::SIMachineFunctionInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::yaml::SIMachineFunctionInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="llvm::yaml::MachineFunctionInfo",height=0.2,width=0.4,color="black",URL="$structllvm_1_1yaml_1_1MachineFunctionInfo.html",tooltip="Targets should override this in a way that mirrors the implementation of llvm::MachineFunctionInfo."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ArgInfo" ,fontname="Helvetica"];
+  Node3 [label="optional\< llvm::yaml\l::SIArgumentInfo \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FrameOffsetReg\nScratchRSrcReg\nVGPRForAGPRCopy\nStackPtrOffsetReg" ,fontname="Helvetica"];
+  Node4 [label="llvm::yaml::StringValue",height=0.2,width=0.4,color="black",URL="$structllvm_1_1yaml_1_1StringValue.html",tooltip="A wrapper around std::string which contains a source range that's being set during parsing."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" SourceRange" ,fontname="Helvetica"];
+  Node5 [label="llvm::SMRange",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SMRange.html",tooltip="Represents a range in source code."];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" End\nStart" ,fontname="Helvetica"];
+  Node6 [label="llvm::SMLoc",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SMLoc.html",tooltip="Represents a location in source code."];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Value" ,fontname="Helvetica"];
+  Node7 [label="string",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ExplicitKernArgSize" ,fontname="Helvetica"];
+  Node8 [label="uint64_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" GDSSize\nLDSSize\nHighBitsOf32BitAddress" ,fontname="Helvetica"];
+  Node9 [label="uint32_t",height=0.2,width=0.4,color="black",URL="$classuint32__t.html",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" WaveLimiter\nHasSpilledVGPRs\nMemoryBound\nIsEntryFunction\nReturnsVoid\nHasSpilledSGPRs\nNoSignedZerosFPMath" ,fontname="Helvetica"];
+  Node10 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MaxKernArgAlign\nDynLDSAlign" ,fontname="Helvetica"];
+  Node11 [label="llvm::Align",height=0.2,width=0.4,color="black",URL="$structllvm_1_1Align.html",tooltip="This struct is a compact representation of a valid (non-zero power of two) alignment."];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ScavengeFI" ,fontname="Helvetica"];
+  Node12 [label="optional\< llvm::yaml\l::FrameIndex \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BytesInStackArgArea\nOccupancy" ,fontname="Helvetica"];
+  Node13 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" WWMReservedRegs" ,fontname="Helvetica"];
+  Node14 [label="llvm::SmallVector\<\l llvm::yaml::StringValue \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="llvm::SmallVectorImpl\l\< llvm::yaml::StringValue \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVectorImpl.html",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::yaml::StringValue \>" ,fontname="Helvetica"];
+  Node16 [label="llvm::SmallVectorImpl\< T \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVectorImpl.html",tooltip="This class consists of common code factored out of the SmallVector class to reduce code duplication b..."];
+  Node17 -> Node14 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="llvm::SmallVectorStorage\l\< llvm::yaml::StringValue,\l CalculateSmallVectorDefaultInlined\lElements\< llvm::yaml::StringValue\l \>::value \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip=" "];
+  Node18 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node18 [label="char",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node19 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::yaml::StringValue,\l CalculateSmallVectorDefaultInlined\lElements\< llvm::yaml::StringValue\l \>::value \>" ,fontname="Helvetica"];
+  Node19 [label="llvm::SmallVectorStorage\l\< T, N \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip="Storage for the SmallVector elements."];
+  Node18 -> Node19 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node20 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< llvm::yaml::StringValue \>" ,fontname="Helvetica"];
+  Node20 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip="This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small."];
+  Node16 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 -> Node20 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="llvm::SmallVectorStorage\l\< T, CalculateSmallVectorDefault\lInlinedElements\< T \>::value \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1SmallVectorStorage.html",tooltip=" "];
+  Node18 -> Node21 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" InlineElts" ,fontname="Helvetica"];
+  Node19 -> Node21 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< T, CalculateSmallVector\lDefaultInlinedElements\l\< T \>::value \>" ,fontname="Helvetica"];
+  Node22 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Mode" ,fontname="Helvetica"];
+  Node22 [label="llvm::yaml::SIMode",height=0.2,width=0.4,color="black",URL="$structllvm_1_1yaml_1_1SIMode.html",tooltip=" "];
+  Node10 -> Node22 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" FP32OutputDenormals\nDX10Clamp\nFP32InputDenormals\nFP64FP16InputDenormals\nFP64FP16OutputDenormals\nIEEE" ,fontname="Helvetica"];
+}

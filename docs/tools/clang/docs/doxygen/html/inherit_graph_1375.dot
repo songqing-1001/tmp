@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1158 [label="SpecialCaseList",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node1158 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="clang::ProfileSpecialCaseList",height=0.2,width=0.4,color="black",URL="$classclang_1_1ProfileSpecialCaseList.html",tooltip=" "];
+  Node1158 -> Node1160 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1160 [label="clang::SanitizerSpecialCaseList",height=0.2,width=0.4,color="black",URL="$classclang_1_1SanitizerSpecialCaseList.html",tooltip=" "];
+}

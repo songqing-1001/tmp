@@ -1,0 +1,10 @@
+digraph "clang::interp::Frame"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="clang::interp::Frame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base class for stack frames, shared between VM and walker."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::interp::InterpFrame",height=0.2,width=0.4,color="black",URL="$classclang_1_1interp_1_1InterpFrame.html",tooltip="Frame storing local variables."];
+}

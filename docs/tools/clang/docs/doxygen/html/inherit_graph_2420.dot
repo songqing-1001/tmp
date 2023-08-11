@@ -1,0 +1,19 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Expression",height=0.2,width=0.4,color="black",URL="$classExpression.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="clang::syntax::BinaryOperator\lExpression",height=0.2,width=0.4,color="black",URL="$classclang_1_1syntax_1_1BinaryOperatorExpression.html",tooltip="<lhs> <operator> <rhs>"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::syntax::UnaryOperator\lExpression",height=0.2,width=0.4,color="black",URL="$classclang_1_1syntax_1_1UnaryOperatorExpression.html",tooltip="An abstract class for prefix and postfix unary operators."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::syntax::PostfixUnary\lOperatorExpression",height=0.2,width=0.4,color="black",URL="$classclang_1_1syntax_1_1PostfixUnaryOperatorExpression.html",tooltip="<operand> <operator>"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::syntax::PrefixUnary\lOperatorExpression",height=0.2,width=0.4,color="black",URL="$classclang_1_1syntax_1_1PrefixUnaryOperatorExpression.html",tooltip="<operator> <operand>"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="clang::syntax::UnknownExpression",height=0.2,width=0.4,color="black",URL="$classclang_1_1syntax_1_1UnknownExpression.html",tooltip="An expression of an unknown kind, i.e."];
+}

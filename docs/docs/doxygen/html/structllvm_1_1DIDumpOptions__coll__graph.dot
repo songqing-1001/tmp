@@ -1,0 +1,21 @@
+digraph "llvm::DIDumpOptions"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="llvm::DIDumpOptions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Container for dump options that control which debug information will be dumped."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Version" ,fontname="Helvetica"];
+  Node2 [label="uint16_t",height=0.2,width=0.4,color="black",URL="$classuint16__t.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" GetNameForDWARFReg" ,fontname="Helvetica"];
+  Node3 [label="function\< llvm::StringRef\l(uint64_t DwarfRegNum,\l bool IsEH)\>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ShowAddresses\nShowChildren\nSummarizeTypes\nShowForm\nShowParents\nDisplayRawContents\nIsEH\nVerbose" ,fontname="Helvetica"];
+  Node4 [label="bool",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AddrSize" ,fontname="Helvetica"];
+  Node5 [label="uint8_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RecoverableErrorHandler\nWarningHandler" ,fontname="Helvetica"];
+  Node6 [label="function\< void(llvm\l::Error)\>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ParentRecurseDepth\nChildRecurseDepth\nDumpType" ,fontname="Helvetica"];
+  Node7 [label="unsigned",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

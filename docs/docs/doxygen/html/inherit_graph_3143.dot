@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::IRAttributeManifest",height=0.2,width=0.4,color="black",URL="$structllvm_1_1IRAttributeManifest.html",tooltip="Helper struct necessary as the modular build fails if the virtual method IRAttribute::manifest is def..."];
+}

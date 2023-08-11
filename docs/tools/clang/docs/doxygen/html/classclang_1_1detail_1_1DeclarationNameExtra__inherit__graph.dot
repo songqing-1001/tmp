@@ -1,0 +1,15 @@
+digraph "clang::detail::DeclarationNameExtra"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::detail::Declaration\lNameExtra",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="DeclarationNameExtra is used as a base of various uncommon special names."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clang::detail::CXXDeduction\lGuideNameExtra",height=0.2,width=0.4,color="black",URL="$classclang_1_1detail_1_1CXXDeductionGuideNameExtra.html",tooltip="Contains extra information for the name of a C++ deduction guide."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clang::detail::CXXLiteral\lOperatorIdName",height=0.2,width=0.4,color="black",URL="$classclang_1_1detail_1_1CXXLiteralOperatorIdName.html",tooltip="Contains the actual identifier that makes up the name of a C++ literal operator."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clang::MultiKeywordSelector",height=0.2,width=0.4,color="black",URL="$classclang_1_1MultiKeywordSelector.html",tooltip="One of these variable length records is kept for each selector containing more than one keyword."];
+}

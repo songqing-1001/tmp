@@ -1,0 +1,16 @@
+digraph "LLVMOrcCDependenceMapPair"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LLVMOrcCDependenceMapPair",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a pair of a JITDylib and LLVMOrcCSymbolsList."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Names" ,fontname="Helvetica"];
+  Node2 [label="LLVMOrcCSymbolsList",height=0.2,width=0.4,color="black",URL="$structLLVMOrcCSymbolsList.html",tooltip="Represents a list of LLVMOrcSymbolStringPoolEntryRef and the associated length."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Symbols" ,fontname="Helvetica"];
+  Node3 [label="LLVMOrcSymbolStringPoolEntry\lRef *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Length" ,fontname="Helvetica"];
+  Node4 [label="size_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" JD" ,fontname="Helvetica"];
+  Node5 [label="struct",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

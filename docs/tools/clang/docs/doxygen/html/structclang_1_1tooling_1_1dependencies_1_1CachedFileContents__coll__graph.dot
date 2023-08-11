@@ -1,0 +1,19 @@
+digraph "clang::tooling::dependencies::CachedFileContents"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::tooling::dependencies\l::CachedFileContents",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Contents and directive tokens of a cached file entry."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DepDirectives" ,fontname="Helvetica"];
+  Node2 [label="atomic\< const std::\loptional\< llvm::SmallVector \> * \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ValueLock" ,fontname="Helvetica"];
+  Node3 [label="mutex",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DepDirectiveTokens" ,fontname="Helvetica"];
+  Node4 [label="llvm::SmallVector\<\l clang::dependency_directives\l_scan::Token, 10 \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< clang::dependency\l_directives_scan::Token, 10 \>" ,fontname="Helvetica"];
+  Node5 [label="llvm::SmallVector\<\l T, N \>",height=0.2,width=0.4,color="black",URL="$classllvm_1_1SmallVector.html",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Original" ,fontname="Helvetica"];
+  Node6 [label="unique_ptr\< llvm::Memory\lBuffer \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

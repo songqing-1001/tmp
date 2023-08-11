@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::ast_matchers\l::dynamic::Diagnostics\l::ArgStream",height=0.2,width=0.4,color="black",URL="$classclang_1_1ast__matchers_1_1dynamic_1_1Diagnostics_1_1ArgStream.html",tooltip="Helper stream class."];
+}

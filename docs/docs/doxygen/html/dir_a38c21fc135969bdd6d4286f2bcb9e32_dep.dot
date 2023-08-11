@@ -1,0 +1,19 @@
+digraph "lib/Target/AMDGPU/MCA" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_447ce995d6e35417de5ec3060e97c93e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AMDGPU" fontname="Helvetica", fontsize="10", URL="dir_447ce995d6e35417de5ec3060e97c93e.html"]
+  dir_a38c21fc135969bdd6d4286f2bcb9e32 [shape=box, label="MCA", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a38c21fc135969bdd6d4286f2bcb9e32.html"];
+  }
+  dir_c9171f2c0f5e8c5077bd9fc5c6f70647 [shape=box label="TargetInfo" URL="dir_c9171f2c0f5e8c5077bd9fc5c6f70647.html"];
+  dir_11079433822a7eb4461df62ee7457777 [shape=box label="MCTargetDesc" URL="dir_11079433822a7eb4461df62ee7457777.html"];
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_c9171f2c0f5e8c5077bd9fc5c6f70647->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="1", labeldistance=1.5 headhref="dir_000106_000001.html"];
+  dir_11079433822a7eb4461df62ee7457777->dir_c9171f2c0f5e8c5077bd9fc5c6f70647 [headlabel="1", labeldistance=1.5 headhref="dir_000105_000106.html"];
+  dir_11079433822a7eb4461df62ee7457777->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="82", labeldistance=1.5 headhref="dir_000105_000001.html"];
+  dir_a38c21fc135969bdd6d4286f2bcb9e32->dir_c9171f2c0f5e8c5077bd9fc5c6f70647 [headlabel="1", labeldistance=1.5 headhref="dir_000104_000106.html"];
+  dir_a38c21fc135969bdd6d4286f2bcb9e32->dir_11079433822a7eb4461df62ee7457777 [headlabel="1", labeldistance=1.5 headhref="dir_000104_000105.html"];
+  dir_a38c21fc135969bdd6d4286f2bcb9e32->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="5", labeldistance=1.5 headhref="dir_000104_000001.html"];
+}

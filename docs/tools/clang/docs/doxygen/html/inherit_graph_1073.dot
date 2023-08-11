@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::HeaderSearch",height=0.2,width=0.4,color="black",URL="$classclang_1_1HeaderSearch.html",tooltip="Encapsulates the information needed to find the file referenced by a #include or #include_next,..."];
+}

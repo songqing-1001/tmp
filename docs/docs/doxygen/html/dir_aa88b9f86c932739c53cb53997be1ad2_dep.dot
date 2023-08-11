@@ -1,0 +1,12 @@
+digraph "include/llvm/Support/FileSystem" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ae1e398ac700924fa434b51c248a5531 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Support" fontname="Helvetica", fontsize="10", URL="dir_ae1e398ac700924fa434b51c248a5531.html"]
+  dir_aa88b9f86c932739c53cb53997be1ad2 [shape=box, label="FileSystem", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_aa88b9f86c932739c53cb53997be1ad2.html"];
+  }
+  dir_32453792af2ba70c54e3ccae3a790d1b [shape=box label="ADT" URL="dir_32453792af2ba70c54e3ccae3a790d1b.html"];
+  dir_aa88b9f86c932739c53cb53997be1ad2->dir_32453792af2ba70c54e3ccae3a790d1b [headlabel="2", labeldistance=1.5 headhref="dir_000299_000007.html"];
+}

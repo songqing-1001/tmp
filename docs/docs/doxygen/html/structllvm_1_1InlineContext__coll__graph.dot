@@ -1,0 +1,12 @@
+digraph "llvm::InlineContext"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="llvm::InlineContext",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Provides context on when an inline advisor is constructed in the pipeline (e.g., link phase,..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" LTOPhase" ,fontname="Helvetica"];
+  Node2 [label="ThinOrFullLTOPhase",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Pass" ,fontname="Helvetica"];
+  Node3 [label="InlinePass",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

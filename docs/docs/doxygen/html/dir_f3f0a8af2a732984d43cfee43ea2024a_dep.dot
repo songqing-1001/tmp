@@ -1,0 +1,12 @@
+digraph "lib/Support/BLAKE3" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f0dc79bace318df7ec0fa0bdb179ed95 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Support" fontname="Helvetica", fontsize="10", URL="dir_f0dc79bace318df7ec0fa0bdb179ed95.html"]
+  dir_f3f0a8af2a732984d43cfee43ea2024a [shape=box, label="BLAKE3", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f3f0a8af2a732984d43cfee43ea2024a.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_f3f0a8af2a732984d43cfee43ea2024a->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="2", labeldistance=1.5 headhref="dir_000092_000001.html"];
+}

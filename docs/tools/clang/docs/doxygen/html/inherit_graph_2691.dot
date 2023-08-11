@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="llvm::cast_convert\l_val\< ToTy, const ::\lclang::DeclContext *,\l const ::clang::DeclContext * \>",height=0.2,width=0.4,color="black",URL="$structllvm_1_1cast__convert__val_3_01ToTy_00_01const_01_1_1clang_1_1DeclContext_01_5_00_01const_6ab4e8a77f9db8d29a90f8abc629a702.html",tooltip=" "];
+}

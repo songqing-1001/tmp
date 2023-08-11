@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::analyze_os_log\l::OSLogBufferItem",height=0.2,width=0.4,color="black",URL="$classclang_1_1analyze__os__log_1_1OSLogBufferItem.html",tooltip="An OSLogBufferItem represents a single item in the data written by a call to os_log() or os_trace()."];
+}

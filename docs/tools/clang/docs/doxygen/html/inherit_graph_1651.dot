@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clang::StoredDeclsList",height=0.2,width=0.4,color="black",URL="$classclang_1_1StoredDeclsList.html",tooltip="An array of decls optimized for the common case of only containing one entry."];
+}

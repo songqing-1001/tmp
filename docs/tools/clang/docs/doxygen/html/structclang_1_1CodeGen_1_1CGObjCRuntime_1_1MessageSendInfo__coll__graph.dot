@@ -1,0 +1,35 @@
+digraph "clang::CodeGen::CGObjCRuntime::MessageSendInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clang::CodeGen::CGObjCRuntime\l::MessageSendInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MessengerType" ,fontname="Helvetica"];
+  Node2 [label="PointerType *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CallInfo" ,fontname="Helvetica"];
+  Node3 [label="clang::CodeGen::CGFunctionInfo",height=0.2,width=0.4,color="black",URL="$classclang_1_1CodeGen_1_1CGFunctionInfo.html",tooltip="CGFunctionInfo - Class to encapsulate the information about a function definition."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FoldingSetNode",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="llvm::TrailingObjects\l\< CGFunctionInfo, CGFunction\lInfoArgInfo, FunctionProtoType\l::ExtParameterInfo \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" const_arg_iterator" ,fontname="Helvetica"];
+  Node6 [label="clang::CodeGen::CGFunction\lInfoArgInfo",height=0.2,width=0.4,color="black",URL="$structclang_1_1CodeGen_1_1CGFunctionInfoArgInfo.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" info" ,fontname="Helvetica"];
+  Node7 [label="clang::CodeGen::ABIArgInfo",height=0.2,width=0.4,color="black",URL="$classclang_1_1CodeGen_1_1ABIArgInfo.html",tooltip="ABIArgInfo - Helper class to encapsulate information about how a specific C type should be passed to ..."];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DirectAttr" ,fontname="Helvetica"];
+  Node8 [label="clang::CodeGen::ABIArgInfo\l::DirectAttrInfo",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Offset\nAlign" ,fontname="Helvetica"];
+  Node9 [label="unsigned",height=0.2,width=0.4,color="black",URL="$classunsigned.html",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" IndirectAttr" ,fontname="Helvetica"];
+  Node10 [label="clang::CodeGen::ABIArgInfo\l::IndirectAttrInfo",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Align\nAddrSpace" ,fontname="Helvetica"];
+  Node11 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" UnpaddedCoerceAndExpandType\nPaddingType" ,fontname="Helvetica"];
+  Node11 [label="Type *",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AllocaFieldIndex" ,fontname="Helvetica"];
+  Node12 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" type" ,fontname="Helvetica"];
+  Node12 [label="clang::CanQual\< Type \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip=" "];
+  Node13 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Type \>" ,fontname="Helvetica"];
+  Node13 [label="clang::CanQual\< T \>",height=0.2,width=0.4,color="black",URL="$classclang_1_1CanQual.html",tooltip="Represents a canonical, potentially-qualified type."];
+}
